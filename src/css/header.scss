@@ -954,7 +954,8 @@
                            height: 63px;
                            border: none;
                            border-radius: 23px 0 0 23px;
-                           
+                           transform: skew(-20deg);
+                           outline: none;
                           a{
                               text-decoration: none;
                               font-style: normal;
@@ -966,6 +967,8 @@
                               letter-spacing: 0.1em;
                               position:relative;
                               color: #DFAB5A;
+                              display: inline-block;
+                              transform: skew(20deg);
                           }
                        }
                        .two{
@@ -975,6 +978,8 @@
                         height: 63px;
                         border: none;
                         border-radius: 0 23px 23px 0;
+                        outline: none;
+                        transform: skew(-20deg);
                         a{
                             text-decoration: none;
                             font-style: normal;
@@ -986,6 +991,9 @@
                             letter-spacing: 0.1em;
                             position:relative;
                             color: #DFAB5A;
+                            display: inline-block;
+                            transform: skew(20deg);
+                            outline: none;
                         }
                     }
                     button:hover{
@@ -3232,7 +3240,8 @@
                 display: flex;
                 justify-content: flex-end;
                    .one{
-                       
+                      transform: skew(-20deg);
+                       outline: none;
                        background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                        box-shadow: inset 0px 4px 4px #3E3E3F;
                        width: 182.34px;
@@ -3242,6 +3251,8 @@
                        
                        
                       a{
+                        display: inline-block;
+                        transform: skew(20deg);
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -3260,7 +3271,11 @@
                     height: 63px;
                     border: none;
                     border-radius: 0 23px 23px 0;
+                    transform: skew(-20deg);
+                    outline: none;
                     a{
+                        display: inline-block;
+                        transform: skew(20deg);
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -3827,7 +3842,8 @@
                                height: 63px;
                                border: none;
                                border-radius: 23px 0 0 23px;
-                               
+                               transform: skew(-20deg);
+                               outline: none;
                                
                               a{
                                 font-family: Futura PT;
@@ -3835,7 +3851,8 @@
                                 font-weight: normal;
                                 font-size: 16px;
                                 line-height: 21px;
-                                
+                                display: inline-block;
+                                transform: skew(20deg);
                                 text-align: center;
                                 text-decoration:none;
                                 color: #B1A99D;
@@ -3848,7 +3865,11 @@
                             height: 63px;
                             border: none;
                             border-radius: 0 23px 23px 0;
+                            transform: skew(-20deg);
+                            outline: none;
                             a{
+                                display: inline-block;
+                                transform: skew(20deg);
                                 font-family: Futura PT;
                                 font-style: normal;
                                 font-weight: normal;
