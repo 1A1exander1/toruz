@@ -4166,7 +4166,53 @@
                          img{
                            margin-right:10px ;
                          }
-                         span{
+                         .settings{
+                            background: url(../img/1.png);
+                            background-position: left;
+                             background-repeat:no-repeat;
+                             padding-left: 40px;
+                         }
+                         .settings:hover{
+                             background: url(../img/gr-hover.png);
+                             background-position: left;
+                             background-repeat:no-repeat;
+                         }
+                         .agreement{
+                            background: url(../img/2.png);
+                            background-position: left;
+                             background-repeat:no-repeat;
+                             padding-left: 40px;
+                         }
+                         .agreement:hover{
+                            background: url(../img/XMLID.png);
+                            background-position: left;
+                            background-repeat:no-repeat;
+                        }
+                         .technical{
+                            background: url(../img/3.png);
+                            background-position: left;
+                             background-repeat:no-repeat;
+                             padding-left: 40px;
+                             margin: 0;
+                         }
+                         .technical:hover{
+                            background: url(../img/SUPPORT.png);
+                            background-position: left;
+                            background-repeat:no-repeat;
+                        }
+                         
+                         .politics{
+                            background: url(../img/4.png);
+                            background-position: left;
+                             background-repeat:no-repeat;
+                             padding-left: 40px;
+                         }
+                         .politics:hover{
+                            background: url(../img/polit.png);
+                            background-position: left;
+                            background-repeat:no-repeat;
+                        }
+                         a{
                             font-family: Futura PT;
                             font-style: normal;
                             font-weight: normal;
@@ -4174,6 +4220,9 @@
                             line-height: 21px;
                            
                             color: #E5E5E5;  
+                         }
+                         a:hover{
+                             color: #DFAB5A;
                          }
                         }
                     }
