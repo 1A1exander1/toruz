@@ -4,6 +4,61 @@
     @include wrapper();
     width: 100%;
 }
+body a{
+    text-decoration: none;
+   
+}
+.btn-content .button:hover button {
+  cursor: pointer;
+}
+.content .wrapper .blocks .structure .user .img img{
+  max-width: 60px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #404041;
+}
+.telegram .wrapper,
+.e-mail .wrapper{
+  opacity: 1!important;
+  background: rgba(25, 24, 24, .5);
+}
+.e-mail .wrapper .item .btnAut input {
+  max-width: 314px;
+  width: 100%;
+  height: 63px;
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+  background: -webkit-linear-gradient(261.8deg,#2e2e2e 25.12%,#1e1d1d 95.07%);
+  background: linear-gradient(188.2deg,#2e2e2e 25.12%,#1e1d1d 95.07%);
+  box-shadow: inset 0 4px 4px #3e3e3f;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: .1em;
+  color: #dfab5a;
+}
+.content .wrapper .blocks .operations .heading h3 {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #979085;
+}
 .telegram{
     width: 100%;
     
@@ -182,13 +237,13 @@
    color: white;
    background: rgb(25,24,24);
    background: linear-gradient(90deg, rgba(25,24,24,1) 92%, rgba(35,35,35,1) 92%);
-  
+   border-radius: 20px 0 0 0 0;
    height: 140px;
    margin-left: 0!important;
    margin-right:0!important;
    position: relative;
    @include row-flex();
-       .b{
+       .leftGrayBlock{
     height: 52.21%;
     width: 8.1%;
     background: #232323;
@@ -199,7 +254,7 @@
     
     border-radius: 0 20px 0 0;
 } 
-.a{
+.leftFonBlock{
     height: 30.21%;
     width: 8.1%;
     background: #232323;
@@ -211,7 +266,7 @@
     
     
 } 
-.c{
+.leftMainBlock{
     height: 30.21%;
     width: 8.1%;
     background: rgb(25,24,24);
@@ -221,6 +276,30 @@
    display: block;
    float: left;
    border-radius: 0 0 0 20px;
+    
+}
+.rightFonBlock{
+    height: 30.21%;
+    width: 8.1%;
+    background: #232323;
+    position: absolute;
+   top: 100px;
+   right:  8.02%;
+   display: block;
+   float: right;
+    
+    
+} 
+.rightMainBlock{
+    height: 30.21%;
+    width: 8.1%;
+    background: rgb(25,24,24);
+    position: absolute;
+   top: 98px;
+   right:  8.1%;
+   display: block;
+   float: right;
+   border-radius: 0 0 20px 0;
     
 }
     .items{
@@ -290,7 +369,7 @@
 }   }
 
 .content{
-    
+    min-height: calc(100vh - 306px);
     .wrapper{
         .blocks{
             @include row-flex();
@@ -897,25 +976,25 @@
                             color: #DAD2C6;
                             
                         }
-                        .link1{
+                        .rig{
                           background:url(../img/equip1.png) no-repeat ;
                            
                         }
-                        .link1:hover{
+                        .rig:hover{
                             background:url(../img/equip.png) no-repeat ;
                             color: #DFAB5A;
                         }
-                        .link2{
+                        .contracts{
                             background:url(../img/contract.png) no-repeat ;
                         }
-                        .link2:hover{
+                        .contracts:hover{
                             background:url(../img/contract1.png) no-repeat ;
                             color: #DFAB5A;
                         }
                     }
                 }
                 .box{
-                    #link1{
+                    #rig{
                         .btn-content{
                             margin:0 10px ;
                             padding:10px 0 ;
@@ -1012,7 +1091,7 @@
                         }
                         
                     }
-                    #link2{
+                    #contracts{
                         .btn-content{
                             margin:0 10px ;
                             padding:10px 0 ;
@@ -1177,137 +1256,7 @@
                         background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
-                   }
-            }
-        }
-        .box-2{
-           
-            #choose2{
-               
-                .heading{
-                    display: flex;
-                    
-                    max-width: 100%;
-                    .left{
-                        @include col();
-                        @include size(8);
-                       margin-bottom:20px ;
-                        ul{
-                            display: flex;
-                            justify-content: space-around;
-                            li{
-                                a{
-                                    text-decoration: none;
-                                    font-family: Roboto;
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 12px;
-                                    line-height: 14px;
-                                    display: flex;
-                                    align-items: center;
-                                    
-                                    color: #979085;  
-                                    
-                                }
-                                a:hover{
-                                    color: #DAD2C6;
-                                }
-                            }
-                        }
-                    }
-                    .right{
-                        @include col();
-                        @include size(4);
-                        ul{
-                            display: flex;
-                            justify-content: space-around;
-                            li{
-                                a{
-                                    text-decoration: none;
-                                    font-family: Futura PT;
-                                    font-style: normal;
-                                    font-weight: normal;
-                                    font-size: 16px;
-                                    line-height: 21px;
-                                    display: flex;
-                                    align-items: center;
-                                    text-align: right;
-
-                                    color: #DAD2C6;
-                                    img{
-                                        padding-left: 10px ;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
-                .table{
-                    display: flex;
-                    width: 100%;
-                    table{
-                        margin:0 10px ;
-                        
-                       thead{
-                           tr{
-                             
-                            th{
-                               
-                                
-                                height: 65px;
-                                background: #191818;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 12px;
-                                line-height: 14px;
-                              
-                                text-align: center;
-    
-                                color: #979085;
-                            }
-                           }
-                       }
-                       tbody{
-                        tr{
-                         td{
-                            text-align: center;
-                             
-                             height: 65px;
-                             background: #979085;
-                             opacity: 0.2;
-                         }
-                        }
-                        tr:nth-child(2){
-                            td{
-                                background: #DAD2C6;
-                            }
-                        }
-                    }
-                   }
-                   table:nth-child(1){
-                    max-width: 793px;
-                    width: 100%;
-                    tbody{
-                        tr{
-                            td{
-                                padding: 0 23px ;
-                              img{
-                                  margin: 0 10px ;
-                              }  
-                            }
-                        }
-                    }
-                   }
-                   table:nth-child(2){
-                    max-width: 352px;
-                    width: 100%;
-                   }
-                }
-            }
-        }
-        .box-3{
-            #cho2{
                 .radio{
                     @include row-flex();
                     width: 100%;
@@ -1455,6 +1404,138 @@
                           }
                     }
                 }
+            }
+        }
+        .box-2{
+           
+            #choose2{
+               
+                .heading{
+                    display: flex;
+                    
+                    max-width: 100%;
+                    .left{
+                        @include col();
+                        @include size(8);
+                       margin-bottom:20px ;
+                        ul{
+                            display: flex;
+                            justify-content: space-around;
+                            li{
+                                a{
+                                    text-decoration: none;
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    display: flex;
+                                    align-items: center;
+                                    
+                                    color: #979085;  
+                                    
+                                }
+                                a:hover{
+                                    color: #DAD2C6;
+                                }
+                            }
+                        }
+                    }
+                    .right{
+                        @include col();
+                        @include size(4);
+                        ul{
+                            display: flex;
+                            justify-content: space-around;
+                            li{
+                                a{
+                                    text-decoration: none;
+                                    font-family: Futura PT;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: right;
+
+                                    color: #DAD2C6;
+                                    img{
+                                        padding-left: 10px ;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .table{
+                    display: flex;
+                    width: 100%;
+                    table{
+                        margin:0 10px ;
+                        
+                       thead{
+                           tr{
+                             
+                            th{
+                               
+                                
+                                height: 65px;
+                                background: #191818;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 14px;
+                              
+                                text-align: center;
+    
+                                color: #979085;
+                            }
+                           }
+                       }
+                       tbody{
+                        tr{
+                         td{
+                            text-align: center;
+                             
+                             height: 65px;
+                             background: #979085;
+                             opacity: 0.2;
+                         }
+                        }
+                        tr:nth-child(2){
+                            td{
+                                background: #DAD2C6;
+                            }
+                        }
+                    }
+                   }
+                   table:nth-child(1){
+                    max-width: 793px;
+                    width: 100%;
+                    tbody{
+                        tr{
+                            td{
+                                padding: 0 23px ;
+                              img{
+                                  margin: 0 10px ;
+                              }  
+                            }
+                        }
+                    }
+                   }
+                   table:nth-child(2){
+                    max-width: 352px;
+                    width: 100%;
+                   }
+                }
+            }
+        }
+        
+        .box-3{
+            #cho2{
+              
                 .slidecontainer{
                     position: relative;
                         bottom: 55px;
@@ -4132,7 +4213,7 @@
     background: url(../img/roup2.png) no-repeat;
     background-color:black;
     background-position: right;
-    
+   
     .wrapper{
         .information{
             @include row-flex();
