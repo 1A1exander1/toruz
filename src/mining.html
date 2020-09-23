@@ -101,7 +101,7 @@
                             <p>0.0<span>&#579;</span></p>
                         </div>
                         <div class="btn-content">
-                            <button>Операции</button>
+                            <input type="submit" value="Операции">
                         </div>
         
                     </div>
@@ -113,8 +113,13 @@
                         <div class="box">
                             <article id="rig">
                                 <div class="btn-content">
-                                    <button class="one"><a href="#btn1">Мое оборудование</a></button>
-                                    <button class="two"><a href="#btn2">Купить оборрудование</a></button>
+                                   <div class="myEquipment">
+                                    <input type="submit"  value="Мое оборудование" >
+                                   </div>
+                                   <div class="buyEquipment">
+                                    <input type="submit"  value="Купить оборрудование">
+                                   </div>
+                                    
                                 </div>
                                 <div class="boxEquipment">
                                     <div id="btn1">
@@ -213,8 +218,8 @@
                             <aside class="slidecontainer">
         
                                 <aside class="main">
-                                    <input type="range" min="0" max="100" value="50" id="slider">
-                                    <aside id="selector">
+                                    <input type="range" min="0" max="100" value="50" id="slider" style="height: 16px; outline: none;">
+                                    <aside id="selector" >
                                         <aside class="selectBtn"></aside>
                                         <aside id="selectValue"></aside>
                                     </aside>

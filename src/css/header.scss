@@ -476,7 +476,7 @@ body a{
                             height: 50px;
                             padding-top:10px ;
                             .info{
-                                display: flex;
+                                
                                     .img{
                                         align-self: center;
                                         margin-right: 10px;
@@ -539,7 +539,7 @@ body a{
                     justify-content: center;
                     margin: 15% 0 ;
                     
-                       button{
+                       input{
                            
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
@@ -653,7 +653,7 @@ body a{
                     margin: 20% 0 ;
                    
                     
-                       button{
+                       input{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
@@ -751,7 +751,7 @@ body a{
                     justify-content: center;
                     margin: 20% 0 ;
                     
-                       button{
+                       input{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
@@ -956,7 +956,7 @@ body a{
                     justify-content: center;
                     margin: 8% 0  4% 0;
                     
-                       button{
+                       input{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
@@ -1221,63 +1221,98 @@ body a{
              
                  .btn-content{
                     display: flex;
-                    justify-content: center;
+                    justify-content: flex-end;
                     margin: 8% 0  4% 0;
-                    
-                       .one{
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:291px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px 0 0 23px;
-                           transform: skew(-20deg);
-                           outline: none;
-                          a{
-                              text-decoration: none;
-                              font-style: normal;
-                              font-weight: normal;
-                              font-size: 18px;
-                              line-height: 23px;
-                              font-family: Futura PT;
-                              text-align: center;
-                              letter-spacing: 0.1em;
-                              position:relative;
-                              color: #DFAB5A;
-                              display: inline-block;
-                              transform: skew(20deg);
-                          }
-                       }
-                       .two{
-                        background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 4px #3E3E3F;
-                        width:291px;
-                        height: 63px;
-                        border: none;
-                        border-radius: 0 23px 23px 0;
-                        outline: none;
-                        transform: skew(-20deg);
-                        a{
-                            text-decoration: none;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 23px;
-                            font-family: Futura PT;
-                            text-align: center;
-                            letter-spacing: 0.1em;
-                            position:relative;
-                            color: #DFAB5A;
-                            display: inline-block;
-                            transform: skew(20deg);
+                    .myEquipment{
+                        input{
+                            background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                            box-shadow: inset 0px 4px 0px #3E3E3F;
+                            width:291px;
+                            height: 63px;
+                            border: none;
+                            border-radius: 23px 0 0 23px;
+                            
                             outline: none;
+                           
+                               text-decoration: none;
+                               font-style: normal;
+                               font-weight: normal;
+                               font-size: 18px;
+                               line-height: 23px;
+                               font-family: Futura PT;
+                               text-align: center;
+                               letter-spacing: 0.1em;
+                               position:relative;
+                               color: #DFAB5A;
+                               display: inline-block;
+                              // transform: skew(20deg);
+    
                         }
                     }
-                    button:hover{
+                   /* .myEquipment::after{
+                        content:"";
+                        display: inline-block;
+                        position: absolute;
+                        z-index: 2;
+                        right:  41.5%;
+                        width: 10px;
+                        height: 63px;
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        
+                        transform: skew(-15deg);
+                    }
+                 
+                    .buyEquipment::before{
+                        content:"";
+                        display: inline-block;
+                        position: absolute;
+                        right:  40.7%;
+                        z-index: 2;
+                        
+                        width: 10px;
+                        height: 63px;
+                        background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        transform: skew(-15deg);
+                    }*/
+                 
+                     .buyEquipment{
+                        input{
+                            background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                            box-shadow: inset 0px 4px 0px #3E3E3F;
+                            width:291px;
+                            height: 63px;
+                            border: none;
+                            border-radius: 0 23px 23px 0;
+                            outline: none;
+                            //transform: skew(-20deg);
+                            
+                                text-decoration: none;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 23px;
+                                font-family: Futura PT;
+                                text-align: center;
+                                letter-spacing: 0.1em;
+                                position:relative;
+                                color: #DFAB5A;
+                                display: inline-block;
+                               // transform: skew(20deg);
+                                outline: none;
+                        }
+                     }
+                    
+                       
+                       
+                        
+                   
+                    input[type="submit"]:hover{
                         background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
-                    button:focus{
+                    input[type="submit"]:focus{
                         background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
@@ -2016,28 +2051,28 @@ body a{
                   #selector {
                     height: 104px;
                     width: 48px;
+                    background-image:url(../img/select.png);
+                    background-repeat: no-repeat;
+                    background-position: bottom -5px right 2px;
+                    
+                    z-index: 2;
                     position: absolute;
                     bottom: -20px;
                     left: 50%;
                     transform: translateX(-50%);
-                    z-index: 2;
+                   
                   }
                   .selectBtn {
                     height: 100px;
                     width: 100px;
-                    background-image: url(https://previews.dropbox.com/p/thumb/AA0zAgmvEVKwlRKUYUmDNoZpI54UjiqjFZkMhrgnshfbs66P7Lw1gyndpy9WpH7sADvxhbR_97g7GeYOBRsqpwluHtPLru0TSSVV66iOamH-1Ub8B1PS6i_j4VDad8D1eT17KNf03pPIMowXkgO6oUde4GLLLVr4nRl9gUp8JIg9LGmEUFTKf8q4_rddz4ZZfbspnLeEK96Jv26nfOYN9wn7Ft6VdzqhHKG3IVpX-0k7hjDlkybDao0fqNyhOySN-OqBZcr9PHq2biSxX32D4uXvf0_hakdBgWHcBYiW_EYzXohN2KGKiiJ_9b4c4fmO_h75y3NNhP6wZAcG_jfxLLJI7MmQtc3N1BqhUoR6lRftLA/p.png?fv_content=true&size_mode=5);
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 50%;
-                    position: absolute;
-                    bottom: 0;
+                
                   }
                   #selectValue {
                     width: 48px;
                     height: 40px;
                     position: absolute;
                     color: #b28b5c;
-                    top: 0;
+                    top: -10px;
                     background: #525254;
                     border-radius: 4px;
                     text-align: center;
@@ -2060,26 +2095,19 @@ body a{
                     border-left: 24px solid transparent;
                     border-right: 24px solid transparent;
                     position: absolute;
-                    bottom: -14px;
+                    bottom: -15px;
                     left: 0;
                   }
-                  #progressBar {
-                    width: 50%;
-                    height: 7px;
-                    background: #b28b5c;
-                    border-radius: 3px;
-                    position: absolute;
-                    bottom: 4px;
-                    left: 0;
-                  }
+                
                    input{
                      background: #525254;
+                     
                      
                    }
                   #progressBar {
                     width: 50%;
-                    height: 7px;
-                    background: #b28b5c;
+                    height: 16px;
+                    background: #987447;
                     border-radius: 3px;
                     position: absolute;
                     bottom: 4px;
@@ -2856,7 +2884,7 @@ body a{
                   .selectBtn {
                     height: 100px;
                     width: 100px;
-                    background-image: url(https://previews.dropbox.com/p/thumb/AA0zAgmvEVKwlRKUYUmDNoZpI54UjiqjFZkMhrgnshfbs66P7Lw1gyndpy9WpH7sADvxhbR_97g7GeYOBRsqpwluHtPLru0TSSVV66iOamH-1Ub8B1PS6i_j4VDad8D1eT17KNf03pPIMowXkgO6oUde4GLLLVr4nRl9gUp8JIg9LGmEUFTKf8q4_rddz4ZZfbspnLeEK96Jv26nfOYN9wn7Ft6VdzqhHKG3IVpX-0k7hjDlkybDao0fqNyhOySN-OqBZcr9PHq2biSxX32D4uXvf0_hakdBgWHcBYiW_EYzXohN2KGKiiJ_9b4c4fmO_h75y3NNhP6wZAcG_jfxLLJI7MmQtc3N1BqhUoR6lRftLA/p.png?fv_content=true&size_mode=5);
+                    //background-image: url(https://previews.dropbox.com/p/thumb/AA0zAgmvEVKwlRKUYUmDNoZpI54UjiqjFZkMhrgnshfbs66P7Lw1gyndpy9WpH7sADvxhbR_97g7GeYOBRsqpwluHtPLru0TSSVV66iOamH-1Ub8B1PS6i_j4VDad8D1eT17KNf03pPIMowXkgO6oUde4GLLLVr4nRl9gUp8JIg9LGmEUFTKf8q4_rddz4ZZfbspnLeEK96Jv26nfOYN9wn7Ft6VdzqhHKG3IVpX-0k7hjDlkybDao0fqNyhOySN-OqBZcr9PHq2biSxX32D4uXvf0_hakdBgWHcBYiW_EYzXohN2KGKiiJ_9b4c4fmO_h75y3NNhP6wZAcG_jfxLLJI7MmQtc3N1BqhUoR6lRftLA/p.png?fv_content=true&size_mode=5);
                     background-size: cover;
                     background-position: center;
                     border-radius: 50%;
@@ -2882,7 +2910,7 @@ body a{
                     height: 40px;
                     position: absolute;
                     top: 0;
-                    background: red;
+                   
                     border-radius: 100%;
                   }
                   #selectValue::after {
@@ -3016,29 +3044,48 @@ body a{
                                     color: #DAD2C6;
                                 }
                             }
-                            p{
+                            input[type="text"]{
                                 align-self:center;
                                 font-weight: 300;
-                                font-size: 24px;
+                                font-size: 36px;
                                 line-height: 28px;
-                                display: flex;
-                                align-items: center;
-                                text-align: right;
+                               
                                 
-
+                                text-align: center;
+                                background: none;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
                                 color: #C4C4C4;
-                                span{
-                                    font-size: 14px;
-                                    padding-top: 6px;
-                                    padding-left: 6px;
-                                }
+                             
                             }
                         }
                   
                     }
+                    .form:nth-child(2){
+                        .client{
+                            input[type="text"]{
+                                background-image: url(../img/Ƀ.png);
+                                background-repeat:no-repeat;
+                                background-position-y:  23px;
+                                background-position-x: 65%;
+                               
+                            }
+                        }
+
+                    }
+                   
                     .form:nth-child(4){
                         .client{
                             border:none;
+                            input[type="text"]{
+                                background-image: url(../img/dollar.png);
+                                background-repeat:no-repeat;
+                                background-position-y:  15px;
+                                background-position-x: 65%;
+                               
+                               
+                            }
                         }
 
                     }
@@ -3141,10 +3188,13 @@ body a{
                     justify-content: center;
                     margin: 15% 0 ;
                     
-                       button{
+                       input{
                            
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
+                           
+                           background-repeat:no-repeat;
+                          
                            width:220px;
                            height: 63px;
                            border: none;
@@ -3156,7 +3206,7 @@ body a{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-
+                           
                            color: #DFAB5A;
                        }
                    }
@@ -3253,7 +3303,7 @@ body a{
                     justify-content: center;
                     margin: 15% 0 ;
                     
-                       button{
+                       input{
                            
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
@@ -3387,7 +3437,7 @@ body a{
                     justify-content: center;
                     margin: 15% 0 ;
                     
-                       button{
+                       input{
                            
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
@@ -3461,7 +3511,7 @@ body a{
                  
                     align-self: flex-end;
                     
-                    p{
+                    a{
                         background:url(../img/Frame4.png) no-repeat;
                         font-family: Futura PT;
                         font-style: normal;
@@ -3478,7 +3528,7 @@ body a{
                 }
                 .personal:hover{
                    
-                    p{
+                    a{
                         background:url(../img/Frame14.png) no-repeat;
                         color:#DFAB5A;
                     }
@@ -3488,7 +3538,7 @@ body a{
                    
                     width: 100px;
                     align-self: flex-end;
-                    p{
+                    a{
                         background:url(../img/Vector112.png) no-repeat;
                         font-family: Futura PT;
                         font-style: normal;
@@ -3506,32 +3556,28 @@ body a{
                 }
                 .structure:hover{
                    
-                    p{
+                    a{
                         background:url(../img/Vector121.png) no-repeat;
                         color:#DFAB5A;
                     }
                 }
             }
+         
             .btn-content{
-                
-                @include col();
-                @include size(5);
                 display: flex;
                 justify-content: flex-end;
-                   .one{
-                      transform: skew(-20deg);
-                       outline: none;
-                       background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                       box-shadow: inset 0px 4px 4px #3E3E3F;
-                       width: 182.34px;
-                       height: 63px;
-                       border: none;
-                       border-radius: 23px 0 0 23px;
+                 margin: 0 80px;
+                .myEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 23px 0 0 23px;
+                        
+                        outline: none;
                        
-                       
-                      a{
-                        display: inline-block;
-                        transform: skew(20deg);
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -3539,22 +3585,50 @@ body a{
                         line-height: 21px;
                         
                         text-align: center;
-                        text-decoration:none;
+                        
                         color: #B1A99D;
-                      }
-                   }
-                   .two{
-                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 4px #3E3E3F;
-                    width: 182.34px;
+
+                    }
+                }
+               /* .myEquipment::after{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 2;
+                    right:  46.2%;
+                    width: 9px;
                     height: 63px;
-                    border: none;
-                    border-radius: 0 23px 23px 0;
-                    transform: skew(-20deg);
-                    outline: none;
-                    a{
-                        display: inline-block;
-                        transform: skew(20deg);
+                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    
+                    transform: skew(-15deg);
+                }
+             
+                .buyEquipment::before{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    right:  45.6%;
+                    z-index: 2;
+                    
+                    width: 9px;
+                    height: 63px;
+                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    transform: skew(-15deg);
+                }*/
+             
+                 .buyEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 0 23px 23px 0;
+                        outline: none;
+                        //transform: skew(-20deg);
+                        
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -3562,26 +3636,26 @@ body a{
                         line-height: 21px;
                         
                         text-align: center;
-                        text-decoration:none;
+                        
                         color: #B1A99D;
-                      
                     }
-                }
-                button:hover{
+                 }
+                
+                   
+                   
+                    
+               
+                input[type="submit"]:hover{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    a{
-                        color: #DFAB5A;
-                    }
+                    color: #DFAB5A;
                 }
-                button:focus{
+                input[type="submit"]:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    a{
-                        color: #DFAB5A;
-                    }
+                    color: #DFAB5A;
                 }
-               }
+            }
         }
         .time{
             @include col();
@@ -4027,7 +4101,7 @@ body a{
                     justify-content: center;
                     margin:45% 0 ;
                     
-                       button{
+                       input{
                            
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
@@ -4108,74 +4182,188 @@ body a{
                 .button{
                    display: flex;
                    justify-content: space-between;
-                    .btn-content{
-                    
+                     .btn-content:nth-child(1){
+                display: flex;
+                .myEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 23px 0 0 23px;
+                        
+                        outline: none;
                        
-                        display: flex;
-                        justify-content: flex-end;
-                           .one{
-                               
-                               background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                               box-shadow: inset 0px 4px 4px #3E3E3F;
-                               width: 172.5px;
-                               height: 63px;
-                               border: none;
-                               border-radius: 23px 0 0 23px;
-                               transform: skew(-20deg);
-                               outline: none;
-                               
-                              a{
-                                font-family: Futura PT;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 16px;
-                                line-height: 21px;
-                                display: inline-block;
-                                transform: skew(20deg);
-                                text-align: center;
-                                text-decoration:none;
-                                color: #B1A99D;
-                              }
-                           }
-                           .two{
-                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                            box-shadow: inset 0px 4px 4px #3E3E3F;
-                            width: 172.5px;
-                            height: 63px;
-                            border: none;
-                            border-radius: 0 23px 23px 0;
-                            transform: skew(-20deg);
-                            outline: none;
-                            a{
-                                display: inline-block;
-                                transform: skew(20deg);
-                                font-family: Futura PT;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 16px;
-                                line-height: 21px;
-                                
-                                text-align: center;
-                                text-decoration:none;
-                                color: #B1A99D;
-                              
-                            }
-                        }
-                        button:hover{
-                            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                            a{
-                                color: #DFAB5A;
-                            }
-                        }
-                        button:focus{
-                            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                            a{
-                                color: #DFAB5A;
-                            }
-                        }
-                       }
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        
+                        text-align: center;
+                        
+                        color: #B1A99D;
+
+                    }
+                }
+              /*  .myEquipment::after{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 2;
+                    right:  52%;
+                    width: 9px;
+                    height: 63px;
+                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    
+                    transform: skew(-15deg);
+                }
+             
+                .buyEquipment::before{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                      right:  51.3%;
+                    z-index: 2;
+                    
+                    width: 9px;
+                    height: 63px;
+                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    transform: skew(-15deg);
+                }*/
+             
+                 .buyEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 0 23px 23px 0;
+                        outline: none;
+                        //transform: skew(-20deg);
+                        
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        
+                        text-align: center;
+                        
+                        color: #B1A99D;
+                    }
+                 }
+                
+                   
+                   
+                    
+               
+                input[type="submit"]:hover{
+                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    color: #DFAB5A;
+                }
+                input[type="submit"]:focus{
+                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    color: #DFAB5A;
+                }
+            }
+            .btn-content:nth-child(2){
+                display: flex;
+                .myEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 23px 0 0 23px;
+                        
+                        outline: none;
+                       
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        
+                        text-align: center;
+                        
+                        color: #B1A99D;
+
+                    }
+                }
+               /* .myEquipment::after{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    z-index: 2;
+                    right:  16.0%;
+                    width: 9px;
+                    height: 63px;
+                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    
+                    transform: skew(-15deg);
+                }
+             
+                .buyEquipment::before{
+                    content:"";
+                    display: inline-block;
+                    position: absolute;
+                    right:  15.4%;
+                    z-index: 2;
+                    
+                    width: 9px;
+                    height: 63px;
+                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                    box-shadow: inset 0px 4px 0px #3E3E3F;
+                    transform: skew(-15deg);
+                }*/
+             
+                 .buyEquipment{
+                    input{
+                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                        box-shadow: inset 0px 4px 0px #3E3E3F;
+                        width:171px;
+                        height: 63px;
+                        border: none;
+                        border-radius: 0 23px 23px 0;
+                        outline: none;
+                        //transform: skew(-20deg);
+                        
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 21px;
+                        
+                        text-align: center;
+                        
+                        color: #B1A99D;
+                    }
+                 }
+                
+                   
+                   
+                    
+               
+                input[type="submit"]:hover{
+                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    color: #DFAB5A;
+                }
+                input[type="submit"]:focus{
+                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    color: #DFAB5A;
+                }
+            }
                 }
                 .radio{
                     @include row-flex();
