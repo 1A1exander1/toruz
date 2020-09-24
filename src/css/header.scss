@@ -346,6 +346,100 @@ body a{
 .content{
     min-height: calc(100vh - 306px);
     .wrapper{
+        .accord{
+            @include col();
+            @include size(12);
+            margin-bottom: 20%;
+            .heading{
+                @include col();
+                @include size(4);
+                display: flex;
+                margin-top: 43px;
+                margin-left:23px ;
+                .text{
+                    align-self: center;
+                    margin-left: 14px;
+                    h3{
+                       
+
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 24px;
+                        /* or 133% */
+
+                       
+                        letter-spacing: 0.2px;
+                        text-transform: uppercase;
+
+                        color: #979085;
+                    }
+                }
+               
+            }
+            .contractHead{
+                @include col();
+                @include size(9);
+                margin-left:68px ;
+                margin-top: 41px;
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 15px;
+                    line-height: 28px;
+                    /* or 187% */
+                    
+                    letter-spacing: 0.2px;
+                    
+                    color: #979085;
+                }
+            }
+            .generalProvisions{
+                margin-left:68px ; 
+                margin-top: 31px;
+           
+              
+            }
+            .terms{
+                margin-left:68px ; 
+                margin-top: 31px; 
+            }
+            .head{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 28px;
+                /* or 187% */
+                
+                letter-spacing: 0.2px;
+                
+                color: #979085;
+            }
+            .list{
+                margin-top: 31px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 28px;
+                /* or 187% */
+                
+                letter-spacing: 0.2px;
+                
+                color: #979085;
+                .listTwo{
+                    margin-top: 31px;
+                }
+                .listThree{
+                    margin-top: 31px;
+                }
+            }
+        }
+    }
+    .wrapper{
         .blocks{
             @include row-flex();
             justify-content: center;
@@ -3656,8 +3750,7 @@ body a{
                     outline: none;
                     color:#DAD2C6;
                     option{
-                        position: relative;
-                        top:10px;
+                       
                         background: #191818; 
                         border: 0px; 
                         outline: 0px;
