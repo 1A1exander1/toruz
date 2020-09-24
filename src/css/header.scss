@@ -440,33 +440,449 @@ body a{
         }
     }
     .wrapper{
-        .user{
+        .userAdd{
             @include row-flex();
             .customization{
                 @include col();
-                @include size(4);
+                @include size(3);
                 background:#191818;
+                display: flex;
+                justify-content: center;
                 height: 580px;
-                margin:20px auto 20px auto;
+                margin:20px auto auto auto;
                 border-radius: 20px;
+                .client{
+                    width: 100%;
+                    
+                    .photo{
+                        margin: 25px auto;
+                        display: block;
+                        width: 126px;
+                        height: 126px;
+                        background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+                        border-radius: 20px;
+                        display: flex;
+                        
+                        .img{
+                            margin-left: 12px;
+                            margin-bottom:13px ;
+                            align-self:flex-end;
+                            width: 30px;
+                            height: 30px;
+                            background-image: url(../img/addImg.png);
+                            background-repeat: no-repeat;
+                            background-position: center
+                        }
+                    }
+                    .userName{
+                        margin-top: 21px;
+                      h4{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 23px;
+                        
+                        text-align: center;
+                        text-transform: capitalize;
+
+                        color: #DAD2C6;
+                      }
+                    }
+                    .name{
+                        margin-top: 21px;
+                        p{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 19px;
+                           
+                            text-align: center;
+                            letter-spacing: 0.1em;
+
+                            color: #DAD2C6;
+                        }
+                    }
+                    .bindTelegram{
+                        margin-top: 48px;
+                        display: flex;
+                        justify-content: center;
+                        width: 100%;
+                        height: 30px;
+                        background-image: url(../img/telegr.png);
+                        background-repeat: no-repeat;
+                        background-position-x:  20px;
+                        p{
+                            align-self: center;
+                            font-family: Futura PT;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* or 150% */
+                            padding-right:30px ;
+                           text-align: left;
+                            letter-spacing: 0.2px;
+
+                            color: #DFAB5A;
+                        }
+                    }
+                    .notification{
+                        margin-top: 33px;
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        background-image: url(../img/mess.png);
+                        background-repeat: no-repeat;
+                        background-position-x:  15px;
+                        p{
+                            align-self: center;
+                            font-family: Futura PT;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* or 150% */
+
+                           text-align: left;
+                            letter-spacing: 0.2px;
+
+                            color: #DFAB5A;
+                        }
+                    }
+                    .check{
+                        margin-top: 29px;
+                        display: flex;
+                        justify-content: center;
+                        input[type="checkbox"] {
+                            display: none;
+
+                          }
+                          label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 18px;
+                            /* or 150% */
+                            text-align: left;
+                            letter-spacing: 0.2px;
+                            margin-right:70px;
+                            position: relative;
+                            bottom:20px;
+                            color: #DAD2C6;
+                           
+                            span{
+                                margin-left:43px ;
+                            }
+                          }
+                          label::before {
+                            content: '';
+                            display: inline-block;
+                            width: 34px;
+                            height: 34px;
+                            background: linear-gradient(323.93deg, #191818 22.82%, #2B2929 93.85%);
+                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            margin-right: 3px;
+                            position: relative;
+                            top: 20px;
+                            right: 7px;
+                            border-radius: 50%;
+                            border: 3px solid #191818;
+                          }
+                          input[type="checkbox"]:checked + label::before {
+                            content: '';
+                           
+                            background: url(../img/Ellipse7.png) no-repeat;
+                            background-position: center;
+                          }
+                    }
+                    .checkTwo{
+                        margin-top: 29px;
+                        display: flex;
+                        justify-content: center;
+                        input[type="checkbox"] {
+                            display: none;
+
+                          }
+                          label {
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 12px;
+                            line-height: 18px;
+                            /* or 150% */
+                            text-align: left;
+                            letter-spacing: 0.2px;
+                            margin-right:70px;
+                            position: relative;
+                            bottom:20px;
+                            color: #DAD2C6;
+                           
+                            span{
+                                margin-left:43px ;
+                            }
+                          }
+                          label::before {
+                            content: '';
+                            display: inline-block;
+                            width: 34px;
+                            height: 34px;
+                            background: linear-gradient(323.93deg, #191818 22.82%, #2B2929 93.85%);
+                            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                            margin-right: 3px;
+                            position: relative;
+                            top: 20px;
+                            right: 7px;
+                            border-radius: 50%;
+                            border: 3px solid #191818;
+                          }
+                          input[type="checkbox"]:checked + label::before {
+                            content: '';
+                           
+                            background: url(../img/Ellipse7.png) no-repeat;
+                            background-position: center;
+                          }
+                    }
+                }
             }
             .personalInformation{
                 @include col();
                 @include size(4);
                 background:#191818;
                 height: 580px;
-                margin:20px auto 20px auto;
+                width: 35%;
+                margin:20px auto auto auto;
                 border-radius: 20px;
+                .personal{
+                    margin-top: 63px;
+                    margin-left: 47px;
+                    background-image: url(../img/INFO.png);
+                    background-repeat:no-repeat;
+                    height: 30px;
+                    display: flex;
+                    
+                    p{ margin-left: 40px;
+                        align-self: center;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 18px;
+                        /* or 120% */
+
+                        letter-spacing: 0.2px;
+                        text-transform: uppercase;
+
+                        color: #979085;
+                    }
+                }
+                .information{
+               
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center; 
+                    margin-top: 88px;  
+                    input{
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+                    /* or 143% */
+    
+                    display: flex;
+                    align-items: center;
+                    letter-spacing: 0.2px;
+    
+                    color: #979085;
+                        
+                        
+                    }
+                    .personalName{
+                        border-bottom: 2px solid #202020;
+                        width: 68%;
+                        height: 30px;
+                        input{
+                           margin-left: 10px; 
+                        }
+                    }
+                    .personalSurname{
+                        border-bottom: 2px solid #202020;
+                        width: 68%;
+                        height: 30px;
+                        margin-top: 61px;  
+                        input{
+                           margin-left: 10px; 
+                        }
+                    }
+                    .personalEmail{
+                        border-bottom: 2px solid #202020;
+                        width: 68%;
+                        height: 30px;
+                        margin-top: 62px;  
+                        input{
+                           margin-left: 10px; 
+                        }
+                    }
+                    .personalPhone{
+                        border-bottom: 2px solid #202020;
+                        width: 68%;
+                        height: 30px;
+                        margin-top: 68px;  
+                        input{
+                           margin-left: 10px; 
+                        }
+                    }
+                }
+            }
+
             }
             .changePassword{
                 @include col();
                 @include size(4);
                 background:#191818;
                 height: 580px;
-                margin:20px auto 20px auto;
+                width: 35%;
+                margin:20px auto auto auto;
                 border-radius: 20px;
+                .change{
+                    margin-top: 63px;
+                    margin-left: 47px;
+                    background-image: url(../img/pass.png);
+                    background-repeat:no-repeat;
+                    height: 30px;
+                    display: flex;
+                    
+                    p{ margin-left: 40px;
+                        align-self: center;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 15px;
+                        line-height: 18px;
+                        /* or 120% */
+
+                        letter-spacing: 0.2px;
+                        text-transform: uppercase;
+
+                        color: #979085;
+                    }
+                }
+                .password{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 74px;
+                    input{
+                        background: #202020;
+                        border-radius: 5px;
+                        border: none;
+                        max-width: 280px;
+                        width: 100%;
+                        height: 52px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* or 143% */
+                        padding-left: 19px;
+                       
+                        letter-spacing: 0.2px;
+                        cursor: pointer;
+                        color: #979085;
+                       
+                    }
+                    .oldPass{
+                        align-self: center;
+                        max-width: 299px;
+                        width: 100%;
+                        height: 52px;
+
+                    }
+                    .newPass{
+                        align-self: center;
+                        max-width: 299px;
+                        width: 100%;
+                        height: 52px;
+                        margin-top: 36px;
+                    }
+                    .repeatPass{
+                        align-self: center;
+                        max-width: 299px;
+                        width: 100%;
+                        height: 52px;
+                        margin-top: 37px;
+                    }
+                }
+                .text{
+                    text-align: center;
+                    margin-top: 23px;
+                    span{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* or 143% */
+
+                      
+                        letter-spacing: 0.2px;
+
+                        color: #D24418;
+                    }
+                    p{
+                        margin-top: 7px;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 20px;
+                        /* or 143% */
+
+                       
+                        letter-spacing: 0.2px;
+
+                        color: #338445;
+                    }
+                    
+                }
+                .btn{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 26px;
+                    input{
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 23px;
+                        cursor: pointer;
+                        text-align: center;
+                        background-color: transparent;
+                        border: 1px solid #DAD2C6;
+                        border-radius: 20px;
+                        color: #DAD2C6;
+                        width: 210px;
+                        height: 52px;
+                        outline: none;
+                    }
+                    input:hover{
+                        color: #DFAB5A;
+                        border: 1px solid #DFAB5A;
+                    }
+                    input:focus{
+                        color: #DFAB5A;
+                        border: 1px solid #DFAB5A;
+                    }
+                }
             }
-        }
+          
     }
     .wrapper{
         .blocks{
