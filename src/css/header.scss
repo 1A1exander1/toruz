@@ -440,6 +440,35 @@ body a{
         }
     }
     .wrapper{
+        .user{
+            @include row-flex();
+            .customization{
+                @include col();
+                @include size(4);
+                background:#191818;
+                height: 580px;
+                margin:20px auto 20px auto;
+                border-radius: 20px;
+            }
+            .personalInformation{
+                @include col();
+                @include size(4);
+                background:#191818;
+                height: 580px;
+                margin:20px auto 20px auto;
+                border-radius: 20px;
+            }
+            .changePassword{
+                @include col();
+                @include size(4);
+                background:#191818;
+                height: 580px;
+                margin:20px auto 20px auto;
+                border-radius: 20px;
+            }
+        }
+    }
+    .wrapper{
         .blocks{
             @include row-flex();
             justify-content: center;
