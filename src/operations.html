@@ -137,7 +137,7 @@
                             <p>Сумма</p>
                         </div>
                         <div class="copy">
-                            <p>12.300 </p>
+                            <input type="text" placeholder="12.300"> 
                         </div>
                         <div class="tx">
                             <p>Ваш BTC-кошелек </p>
@@ -157,7 +157,7 @@
                             <p>Сумма</p>
                         </div>
                         <div class="copy">
-                            <p>1.04537953 </p>
+                            <input type="text" placeholder="1.04537953">
                         </div>
                         <div class="tx">
                             <p>E-mail, указанный при регистрации</p>
@@ -199,10 +199,16 @@
                      </div>
                    <div class="time">
                        <div class="text">
-                           <p>Все время</p>
-                           <div class="img">
-                            <img src="img/Polygon1.png" alt="">
-                           </div>
+                           <select name="period" id="period" class="period">
+                               <option value="allTime">Все время</option>
+                               <option value="day">В день</option>
+                               <option value="week">В неделю</option>
+                               <option value="month">В месяц</option>
+                               <option value="quarter">В квартал</option>
+                               <option value="year">В год</option>
+                           </select>
+                           
+                        
                        </div>
                    </div>
                 </div>
