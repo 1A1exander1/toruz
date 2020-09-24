@@ -3651,12 +3651,16 @@ body a{
                     background:url(../img/Polygon1.png) no-repeat;
                     background-position: center right;
                     border: none;
-                    
+                    cursor: pointer;
                     background-color: transparent;
-                    
+                    outline: none;
                     color:#DAD2C6;
                     option{
-                        background-color: black;  
+                        position: relative;
+                        top:10px;
+                        background: #191818; 
+                        border: 0px; 
+                        outline: 0px;
                     }
                 }
          
