@@ -346,6 +346,644 @@ body a{
 .content{
     min-height: calc(100vh - 306px);
     .wrapper{
+        .support{
+            @include col();
+            @include size(12);
+            .topic{
+                background-image: url(../img/report.png);
+                background-repeat:no-repeat;
+                height: 30px;
+                display: flex;
+                margin-top: 71px;
+                margin-left: 23px;
+                h3{
+                    align-self: center;
+                    padding-left:40px ;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+
+                    color: #979085;   
+                }
+                h3::after{
+                    content: '';
+                    display: inline-block;
+                    margin-top: 15px;
+                    margin-left: 236px;
+                    
+                    position: absolute;
+                    
+                    
+                    z-index: 1;
+                    background: transparent;
+                   // border-right:1px  solid #404041;
+                   
+                    border-bottom: 1px solid #404041;
+                  
+                      box-sizing: border-box;
+                      width: 100%;
+                      max-width: 624px;
+                    
+                    z-index: 1;
+                   
+                }
+            }
+            .theme{
+                margin-top: 45px;
+                margin-left: 23px;
+                .chapter{
+                    max-width: 902px;
+                    width: 100%;
+                    height: 56px;
+                    border-radius:15px;
+                    background: #191818;
+                    display: flex;
+                    p{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 16px;
+                        /* or 100% */
+
+                        padding-left: 21px;
+                        align-self: center;
+                        letter-spacing: 0.2px;
+
+                        color: #DAD2C6;
+                    }
+                }
+                .textAppeal{
+                    margin-top: 13px;
+                    max-width: 902px;
+                    width: 100%;
+                    height: 191px;
+                    border-radius:15px;
+                    background: #191818;
+                    display: flex;
+                    p{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 16px;
+                        /* or 100% */
+                        
+                       
+                        
+                        color: #DAD2C6;
+                       
+                        padding-top: 18px;
+                        padding-left: 21px;
+                        align-self: flex-start;
+                        letter-spacing: 0.2px;
+
+                        
+                    }
+                }
+                .send{
+                    margin-top: 4px;
+                    max-width: 902px;
+                    width: 100%;
+                    height: 81px;
+                    border-radius:15px;
+                    background: #1E1E1E;
+                    display: flex;
+                    .btnAdd{
+                        margin-left: 11px;
+                        align-self: center;
+                        background-image: url(../img/btnAdd1.png);
+                        background-repeat:no-repeat;
+                        background-position: center;
+                        width: 52px;
+                        height: 52px;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    .btnAdd:hover{
+                        background-image: url(../img/btnAdd2.png);
+                        background-repeat:no-repeat;
+                        background-position: center;
+                       
+                        
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    .btnSend{
+                        margin-left: 24px;
+                        align-self: center;
+                        width: 210px;
+                        height: 52px;
+                        border-radius: 20px;
+                        background-color:transparent;
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 23px;
+                        border: 1px solid #DFAB5A;
+                        box-sizing: border-box;
+                        text-align: center;
+                        outline: none;
+                        color: #DFAB5A;
+                        cursor: pointer;
+                    }
+                    .btnSend:hover{
+                        color: #232323;
+                        background-color: #DFAB5A;
+                    }
+                    .btnSend:focus{
+                        color: #232323;
+                        background-color: #DFAB5A;
+                    }
+                }
+               
+            }
+            .myAppeals{
+                margin-top: 45px;
+                margin-left: 23px;
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 18px;
+                    /* or 100% */
+
+                    text-align: right;
+                    letter-spacing: 0.2px;
+
+                    color: #67625A;
+                }
+                .subjectOne{
+                    max-width: 902px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 2px solid #191818;
+                    padding-bottom: 18px;
+                    .heading{
+                        background-image: url(../img/Polyg0.png);
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        background-position-x: 60px;
+                        padding-left: 76px;
+                        p{
+                            padding-left: 30px;
+                        }
+                    }
+                    .text{
+                       
+                        p{
+                            padding-right: 20px;
+                        }
+
+                    }
+                }
+                .subjectTwo{
+                    max-width: 902px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    padding-top: 27px;
+                    margin-bottom: 18px;
+                    .heading{
+                        background-image: url(../img/Polyg0.png);
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        background-position-x: 60px;
+                        padding-left: 76px;
+                        p{
+                            padding-left: 30px;
+                        }
+                    }
+                    .text{
+                       
+                        p{
+                            padding-right: 20px;
+                        }
+
+                    }
+                }
+                .subjectThree{
+                    max-width: 902px;
+                    width: 100%;
+                    height: 72px;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #191818;
+                    padding-bottom: 18px;
+                    .heading{
+                        align-self: center;
+                        background-image: url(../img/Polyg1.png);
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        background-position-x: 60px;
+                        padding-left: 76px;
+                        p{
+                            padding-left: 30px;
+                        }
+                    }
+                    .text{
+                        align-self: center;
+                        p{
+                            padding-right: 20px;
+                        }
+
+                    }
+                  
+                }
+                .correspondence{
+                    height: 392.0000305175781px;
+                   max-width: 902px;
+                    width: 100%;
+                    border-radius: 0px;
+                    background: #191818;
+                    margin-top: 4px;
+                    .messageOne{
+                        width: 100%;
+                        height: 90px;
+                       
+                        display: flex;
+                        justify-content: flex-end;
+                        
+                        .blockMes{
+                            align-self: flex-end;
+                            width: 470px;
+                            height: 66px;
+                            margin-right: 24px;
+
+                            background: #8A8276;
+                            border-radius: 100px;
+                            display: flex;
+                            .img{
+                                padding-top:13px ;
+                                padding-left:16px ;
+                                img{
+                                    display: block;
+                                }
+                            }
+                            .textMess{
+                                width: 362px;
+                                margin-left: 22px;
+                                margin-top: 8px;
+                                p{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    /* or 160% */
+
+                                    text-align: left;
+                                    letter-spacing: 0.2px;
+
+                                    color: #191818;
+                                }
+                            }
+                           
+                        }
+                    
+                    }
+                    .blockPeriodOne{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-end;
+                        
+                        .time{
+                            margin-right: 30px;
+                            background-image: url(../img/daw.png);
+                            background-repeat: no-repeat;
+                            background-position-y: center;
+                            max-width: 134px;
+                            height: 17px;
+                            display: flex;
+                            
+                            span{
+                                align-self: center;
+                                font-family: Roboto;
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 24px;
+                                /* or 200% */
+    
+                              
+                                letter-spacing: 0.2px;
+    
+                                color: #DAD2C6;
+                            }
+                          }  
+                    }
+                    .messageTwo{
+                        width: 100%;
+                        height: 100px;
+                       
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                        .blockMes{
+                            align-self: flex-end;
+                            width: 619px;
+                            height: 91px;
+                            margin-left: 24px;
+
+                            background: #D3CCC0;
+                            border-radius: 100px;
+                            display: flex;
+                            .img{
+                                padding-top:25px ;
+                                padding-left:16px ;
+                                img{
+                                    display: block;
+                                }
+                            }
+                            .textMess{
+                                width: 499px;
+                                margin-left: 22px;
+                                margin-top: 8px;
+                               
+                                p{
+                                    
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    /* or 160% */
+                                    
+                                   text-align: left;
+                                    letter-spacing: 0.2px;
+                                    
+                                    color: #191818;
+                                }
+                            }
+                           
+                        }
+                    
+                    }
+                    .blockPeriodTwo{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                        .time{
+                            margin-left: 50px;
+                            background-image: url(../img/daw.png);
+                            background-repeat: no-repeat;
+                            background-position-y: center;
+                            max-width: 134px;
+                            height: 17px;
+                            display: flex;
+                            
+                            span{
+                                align-self: center;
+                                font-family: Roboto;
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 24px;
+                                /* or 200% */
+    
+                              
+                                letter-spacing: 0.2px;
+    
+                                color: #DAD2C6;
+                            }
+                          }  
+                    }
+                    .messageThree{
+                        width: 100%;
+                        height: 80px;
+                       
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                        .blockMes{
+                            align-self: flex-end;
+                            width: 471px;
+                            height: 65px;
+                            margin-left: 24px;
+
+                            background: #D3CCC0;
+                            border-radius: 100px;
+                            display: flex;
+                            .img{
+                                padding-top:16px ;
+                                padding-left:16px ;
+                                img{
+                                    display: block;
+                                }
+                            }
+                            .textMess{
+                                width: 499px;
+                                margin-left: 22px;
+                                margin-top: 20px;
+                               
+                                p{
+                                    
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 24px;
+                                    /* or 160% */
+                                    
+                                   text-align: left;
+                                    letter-spacing: 0.2px;
+                                    
+                                    color: #191818;
+                                }
+                            }
+                           
+                        }
+                    
+                    }
+                    .blockPeriodThree{
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        
+                        .time{
+                            margin-left: 50px;
+                            background-image: url(../img/daw.png);
+                            background-repeat: no-repeat;
+                            background-position-y: center;
+                            max-width: 134px;
+                            height: 17px;
+                            display: flex;
+                            
+                            span{
+                                align-self: center;
+                                font-family: Roboto;
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 24px;
+                                /* or 200% */
+    
+                              
+                                letter-spacing: 0.2px;
+    
+                                color: #DAD2C6;
+                            }
+                          }  
+                    }
+                }
+                .sendTwo{
+                    margin-top: 4px;
+                    max-width: 902px;
+                    width: 100%;
+                    height: 81px;
+                    border-radius:15px;
+                    background: #1E1E1E;
+                    display: flex;
+                    .btnAdd{
+                        margin-left: 11px;
+                        align-self: center;
+                        background-image: url(../img/btnAdd13.png);
+                        background-repeat:no-repeat;
+                        background-position: center;
+                        width: 52px;
+                        height: 52px;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    .textMes{
+                        align-self: center;
+                        width: 545px;
+                        height: 52px;
+                        background: #191818;
+                        border-radius: 30px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        padding-left: 13px;
+                        margin-left: 10px;
+                    }
+                
+                    .btnSend{
+                        margin-left: 24px;
+                        align-self: center;
+                        width: 210px;
+                        height: 52px;
+                        border-radius: 20px;
+                        background-color:transparent;
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 23px;
+                        border: 1px solid #DFAB5A;
+                        box-sizing: border-box;
+                        text-align: center;
+                        outline: none;
+                        color: #DFAB5A;
+                        cursor: pointer;
+                    }
+                    .btnSend:hover{
+                        color: #232323;
+                        background-color: #DFAB5A;
+                    }
+                    .btnSend:focus{
+                        color: #232323;
+                        background-color: #DFAB5A;
+                    }
+                }
+               
+            }
+            .topicTwo{
+                background-image: url(../img/question.png);
+                background-repeat:no-repeat;
+                height: 30px;
+                display: flex;
+                margin-top: 71px;
+                margin-left: 23px;
+            
+                h3{
+                    align-self: center;
+                    padding-left:40px ;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 18px;
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    text-transform: uppercase;
+
+                    color: #979085;   
+                }
+                h3::after{
+                    content: '';
+                    display: inline-block;
+                    margin-top: 15px;
+                    margin-left: 236px;
+                    
+                    position: absolute;
+                    
+                    
+                    z-index: 1;
+                    background: transparent;
+                   // border-right:1px  solid #404041;
+                   
+                    border-bottom: 1px solid #404041;
+                  
+                      box-sizing: border-box;
+                      width: 100%;
+                      max-width: 624px;
+                    
+                    z-index: 1;
+                   
+                }
+            }
+            .questions{
+                margin-top: 51px;
+                margin-bottom: 110px;
+                .frequent{
+                    max-width: 902px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 37px;
+                    margin-left: 20px;
+                    padding-bottom: 18px;
+                    .heading{
+                        background-image: url(../img/Polyg0.png);
+                        background-repeat: no-repeat;
+                        background-position-y: center;
+                        background-position-x: 60px;
+                        padding-left: 76px;
+                        p{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 18px;
+                            line-height: 18px;
+                            /* or 100% */
+
+                            letter-spacing: 0.2px;
+
+                            color: #979085;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrapper{
         .accord{
             @include col();
             @include size(12);
