@@ -965,7 +965,7 @@ body a{
                             height: 50px;
                             padding-top:10px ;
                             .info{
-                                
+                                display: flex;
                                     .img{
                                         align-self: center;
                                         margin-right: 10px;
@@ -3533,48 +3533,29 @@ body a{
                                     color: #DAD2C6;
                                 }
                             }
-                            input[type="text"]{
+                            p{
                                 align-self:center;
                                 font-weight: 300;
-                                font-size: 36px;
+                                font-size: 24px;
                                 line-height: 28px;
-                               
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
                                 
-                                text-align: center;
-                                background: none;
-                                border: none;
-                                outline: none;
-                                cursor: pointer;
+
                                 color: #C4C4C4;
-                             
+                                span{
+                                    font-size: 14px;
+                                    padding-top: 6px;
+                                    padding-left: 6px;
+                                }
                             }
                         }
                   
                     }
-                    .form:nth-child(2){
-                        .client{
-                            input[type="text"]{
-                                background-image: url(../img/Ƀ.png);
-                                background-repeat:no-repeat;
-                                background-position-y:  23px;
-                                background-position-x: 65%;
-                               
-                            }
-                        }
-
-                    }
-                   
                     .form:nth-child(4){
                         .client{
                             border:none;
-                            input[type="text"]{
-                                background-image: url(../img/dollar.png);
-                                background-repeat:no-repeat;
-                                background-position-y:  15px;
-                                background-position-x: 65%;
-                               
-                               
-                            }
                         }
 
                     }
@@ -3711,6 +3692,9 @@ body a{
                 .heading{
                     display: flex;
                     margin: 15% 10% ;
+                    background-image: url(../img/d210.png);
+                    background-repeat: no-repeat;
+                    background-position: right;
                   
                     p{
                         font-family: Roboto;
@@ -3730,6 +3714,7 @@ body a{
                 .text{
                     display: flex;
                     margin: 0 10% ;
+                    justify-content: center;
                     p{
                         
                         font-family: Futura PT;
@@ -3775,24 +3760,28 @@ body a{
                     margin:0 ;
                     display: flex;
                     justify-content: center;
-                    p{
+              
+                    input{
                         font-family: Roboto Condensed;
                         font-style: normal;
                         font-weight: 300;
                         font-size: 12px;
                         line-height: 18px;
-                        /* or 150% */
+                        padding:20px 0 ;
+                        border-bottom: 1px solid #404041;
+                        margin:0 auto ;
+                      width: 99%;
+                      background: transparent;
+                      border-left: none;
+                      border-right: none;
+                      border-top: none;
+                      width: 90%;
+                        display: flex;
+                      outline: none;
                         text-align: center;
                         letter-spacing: 0.2px;
-                        border-bottom: 1px solid #404041;
-                        color: #7E786F;
-                        padding:20px 0 ;
-                        display: flex;
-                        justify-content: center;
-                        width: 90%;
-                        
 
-                        
+                        color: #EDEDED;
                     }
                 }
                 .btn-content{
@@ -3831,6 +3820,9 @@ body a{
                 .heading{
                     display: flex;
                     margin: 13% 10% ;
+                    background-image: url(../img/B10.png);
+                    background-repeat: no-repeat;
+                    background-position: right;
                     p{
                         margin-top:5px ;
                         font-family: Roboto;
@@ -3846,21 +3838,7 @@ body a{
 
                         color: #979085;
                     }
-                    span{
-                        padding:9px 5px ;
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 10px;
-                        line-height: 14px;
-                        /* or 140% */
-                        
-                        display: flex;
-                        align-items: center;
-                        letter-spacing: 0.2px;
-                        
-                        color: #979085; 
-                    }
+                  
                     .arrow{
                         font-size: 24px ;
                         color: #4C4944;
@@ -3871,6 +3849,7 @@ body a{
                 .text{
                     display: flex;
                     margin: 0 10% ;
+                    justify-content: center;
                     p{
                         
                         font-family: Futura PT;
@@ -3917,25 +3896,27 @@ body a{
                     margin:0 ;
                     display: flex;
                     justify-content: center;
-                    p{
+                    input{
                         font-family: Roboto Condensed;
                         font-style: normal;
                         font-weight: 300;
                         font-size: 12px;
                         line-height: 18px;
-                        /* or 150% */
+                        padding:20px 0 ;
+                        border-bottom: 1px solid #404041;
+                        margin:0 auto ;
+                      width: 99%;
+                      background: transparent;
+                      border-left: none;
+                      border-right: none;
+                      border-top: none;
+                      width: 90%;
+                        display: flex;
+                      outline: none;
                         text-align: center;
                         letter-spacing: 0.2px;
-                        border-bottom: 1px solid #404041;
-                        color: #7E786F;
-                        padding:20px 0 ;
-                       
-                        width: 90%;
-                        display: flex;
-                        justify-content: center;
-                        
 
-                        
+                        color: #EDEDED;
                     }
                 }
                 .btn-content{
