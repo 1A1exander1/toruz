@@ -6,7 +6,14 @@
 }
 body a{
     text-decoration: none;
+ 
    
+}
+body{
+    @include ssm-block(){
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 .btn-content .button:hover button {
   cursor: pointer;
@@ -240,10 +247,79 @@ body a{
    margin-right:0!important;
    position: relative;
    @include row-flex();
-
+.mob{
+    display: none;
+}
 @include col();
 @include size(12);
+@include size-ssm(12);
+@include sm-block(){
+    .wrapper{
+        padding: 0;
+        margin-top: 14px;
+        width: 100%!important;
+        .mob{
+            display: block;
+           
+            .mobHeader{
+                display: flex;
+                justify-content: center;
+                width: 100vw;
+                height: 73px;
+                background-color:#504E4E;
+                .menu{
+                    margin-bottom:6px ;
+                    display: flex;
+                    .nav{
+                       align-self:flex-end;
+                       height: 40px;
+                       display: flex;
+                    }
+                    .nav.home{
+                        background-image: url(../img/home.png);
+                        background-repeat:no-repeat;
+                        background-position-x: center;
+                        a{
+                            color: #DFAB5A;
+                        }
+                    }
+                    .nav.mining{
+                        background-image: url(../img/min.png);
+                        background-repeat:no-repeat;
+                        background-position-x: center;
+                    }
+                    .nav.operations{
+                        background-image: url(../img/oper.png);
+                        background-repeat:no-repeat;
+                        background-position-x: center;
+                    }
+                    .nav.structure{
+                        background-image: url(../img/struc.png);
+                        background-repeat:no-repeat;
+                        background-position-x: center;
+                       
+                    }
+                    a{
+                        align-self:flex-end;
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 18px;
+                        padding: 0 10px;
+                        text-align: center;
+                        color: #E5E5E5;
+                        
+                    }
+                }
+            }
+        }
+    }
+};
 .items{
+    @include sm-block(){
+        display: none;
+    };
     background: rgb(25,24,24);
     background: linear-gradient(90deg, rgba(25,24,24,1) 100%, rgba(35,35,35,1) 100%);
     position: relative;
@@ -1526,9 +1602,16 @@ body a{
         .blocks{
             @include row-flex();
             justify-content: center;
+            @include ssm-block(){
+                margin:0;
+                width: 100%; 
+            }
             .structure{
                 @include col();
                 @include size(4);
+                @include sm-block(){
+                    display: none;
+                };
                 background:#191818;
                 height: 580px;
                 margin:20px auto 20px auto;
@@ -1665,6 +1748,9 @@ body a{
                     display: flex;
                     justify-content: center;
                     margin: 15% 0 ;
+                    @include ssm-block(){
+                        display: none;
+                     }
                     
                        input{
                            
@@ -1689,10 +1775,164 @@ body a{
             .mining{
                 @include col();
                 @include size(4);
+                @include size-ssm(11);
                 background:#191818;
                 height: 580px;
                 margin:20px auto 20px auto;
                 border-radius: 20px;
+                @include ssm-block(){
+                    margin:20px 0 20px 0; 
+                    height: 204px;
+                    .mob{
+                        display: block;
+                        .rubric{
+                            padding: 0 10px 0 20px;
+                            display:  flex;
+                            justify-content: space-between;
+                            
+
+                            .head{
+                                align-self: center;
+                                h3{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    display: flex;
+                                    align-items: center;
+                                    letter-spacing: 0.1em;
+                                    text-transform: uppercase;
+
+                                    color: #979085;
+                                }
+                            }
+                            .time{
+                                align-self: center;
+                                .text{
+                                    @include row-flex();
+                                    justify-content: space-between;
+                                    
+                                    border:0px!important;
+                                    padding-bottom: 15px;
+                                    
+                                    .period{
+                                        width: 95px;
+                                        appearance: none;
+                                        font-family: Futura PT;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 23px;
+                                        
+                                        background:url(../img/Polygon1.png) no-repeat;
+                                        background-position: center right;
+                                        border: none;
+                                        cursor: pointer;
+                                        background-color: transparent;
+                                        outline: none;
+                                        color:#DAD2C6;
+                                        .allTime{
+                                            padding: 30px;
+                                        }
+                                        option{
+                                           
+                                            background: #191818; 
+                                            border: 0px; 
+                                            outline: 0px;
+                                        }
+                                    }
+                             
+                                }
+                            }
+                        }
+                        .computation{
+                            p{
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 18px;
+                                line-height: 21px;
+                                display: flex;
+                                align-items: center;
+                                text-align: right;
+                                text-transform: uppercase;
+
+                                color: #EDEDED;
+                            }
+                            .textMiningMobOne{
+                                display: flex;
+                                justify-content: space-between;
+                                border-bottom: 1px solid #404041;
+                                height: 30px;
+                                
+                                
+                                margin: 30px 20px;
+                                .text{
+                                    background-image: url(../img/Vector.png);
+                                    background-repeat:no-repeat;
+                                    display: flex;
+                                    p{
+                                        align-self: center;
+                                        padding-left: 25px;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                       
+                                        
+                                        color: #DAD2C6;  
+                                    }
+                                }
+                               .numb{
+                                display: flex;
+                                p{
+                                    align-self: center;
+                                }
+                               }
+                            }
+                            .textMiningMobTwo{
+                                display: flex;
+                                justify-content: space-between;
+                                height: 30px;
+                                
+                                
+                                margin: 30px 20px;
+                                .text{
+                                    background-image: url("../img/Vector(1).png");
+                                    background-repeat:no-repeat;
+                                    background-position-y: center;
+                                    display: flex;
+                                    p{
+                                        align-self: center;
+                                        padding-left: 25px;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                      
+                                        
+                                        color: #DAD2C6;  
+                                    }
+                                }
+                                .numb{
+                                    display: flex;
+                                    p{
+                                        align-self: center;
+                                        
+                                    }
+                                    span{
+                                        font-size: 14px;
+                                        padding-left: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                   .dest{
+                       display: none;
+                   }
+                }
+                .mob{
+                    display: none;
+                }
+             
                 .heading{
                     font-family: Roboto;
                     display: flex;
@@ -1703,6 +1943,7 @@ body a{
                         margin-top: 5px;
                     }
                     h3{
+                        
                         margin:0;
                         font-weight: 300;
                         font-size: 18px;
@@ -1713,7 +1954,9 @@ body a{
                         color: #979085;
                     }
                 }
+               
                 .number{
+                
                     font-family: Roboto;
                     font-style: normal;
                     font-weight: 300;
@@ -1727,7 +1970,9 @@ body a{
                     border-bottom: 1px solid #404041;
                     color: #EDEDED;
                     p{
-                        margin: 30px auto 30px auto;
+                        margin: auto;
+                        text-align: center;
+                        width: 100%;
                         span{
                             font-size: 18px;
                         }
@@ -1778,7 +2023,9 @@ body a{
                     display: flex;
                     justify-content: center;
                     margin: 20% 0 ;
-                   
+                    @include ssm-block(){
+                        display: none;
+                     }
                     
                        input{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
@@ -1802,10 +2049,123 @@ body a{
               .operations{
                 @include col();
                 @include size(4);
+                @include size-ssm(11);
                 background:#191818;
                 height: 580px;
                 margin:20px auto 20px auto;
                 border-radius: 20px;
+                .mob{
+                    display: none;
+                }
+                @include ssm-block(){
+                    margin:20px 0 20px 0; 
+                    height: 274px;
+                    .mob{
+                        display: block;
+                       .structureMob{
+                         
+                        .patt{
+                            
+                            font-family: Roboto;
+                            margin-left: 20px;
+                            position: relative;
+                            bottom: 10px;
+                            
+                            .heading{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: flex-start;
+                                h3{
+                                    margin:0;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                    line-height: 21px;
+                                   
+                                    text-transform: uppercase;
+                                    color: #979085;
+                                }
+                            }
+                            .form{
+                                color:white;
+                                width: 90%;
+                                margin-top:20px ;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                position: relative;
+                                .client{
+                                    
+                                    display: flex;
+                                    justify-content: space-between;
+                                    border-bottom: 1px solid #404041;
+                                    height: 50px;
+                                    padding-top:10px ;
+                                    .info{
+                                        display: flex;
+                                            .img{
+                                                align-self: center;
+                                                margin-right: 10px;
+                                            }
+                                          
+                                        p{
+                                            margin:0;
+                                            
+                                            font-family: Roboto;
+                                            font-style: normal;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            line-height: 18px;
+                                            display: flex;
+                                            align-items: center;
+            
+                                            color: #DAD2C6;
+                                        }
+                                    }
+                                    p{
+                                        align-self:center;
+                                        font-weight: 300;
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        display: flex;
+                                        align-items: center;
+                                        text-align: right;
+                                        
+        
+                                        color: #C4C4C4;
+                                        span{
+                                            font-size: 14px;
+                                            padding-top: 6px;
+                                            padding-left: 6px;
+                                        }
+                                    }
+                                }
+                                .client:nth-child(2){
+                                    .info{
+                                        .img{
+                                            
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                }
+                                .client:nth-child(3){
+                                   border: none;
+                                    .info{
+                                        .img{
+                                            
+                                            margin-right: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                           
+                        }
+                       }
+                    }
+                    .dest{
+                        display: none;
+                    }
+                }
                 .heading{
                     display: flex;
                     justify-content: center;
@@ -1839,7 +2199,9 @@ body a{
                     border-bottom: 1px solid #404041;
                     color: #EDEDED;
                     p{
-                        margin: 30px auto 30px auto;
+                        margin: auto;
+                        text-align: center;
+                        width: 100%;
                         span{
                            font-size:  18px;
                         }
@@ -1877,6 +2239,9 @@ body a{
                     display: flex;
                     justify-content: center;
                     margin: 20% 0 ;
+                    @include ssm-block(){
+                       display: none;
+                    }
                     
                        input{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
@@ -1900,20 +2265,35 @@ body a{
         }
     }
     .wrapper{
+        padding: 0;
         .block{
             @include row-flex();
             justify-content: center;
+            @include ssm-block(){
+                margin:0;
+               
+            }
             .news{
                 @include col();
                 @include size(12);
                 @include row-flex();
+                @include size-sm(11);
+                @include ssm-block(){
+                    height: 265px;
+
+                    .text{
+                        display: none;
+                     
+                    }
+                }
                 background:#191818;
                 height: 292px;
-                            
+                justify-content: center;;            
                 border-radius: 20px;
                 .left{
                     @include col();
                     @include size(5);
+                    @include size-sm(12);
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -1921,7 +2301,12 @@ body a{
                         margin-left:31px ;
                         margin-top:24px ;
                         display: inline-flex;
+                        @include ssm-block(){
+                            margin-left:15px ;
+                            margin-bottom: 10px;
+                        }
                         span{
+                         
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: 300;
@@ -1933,11 +2318,32 @@ body a{
                             color: #979085;
                         }
                     }
+                    .img{
+                        margin-right:5px ;
+                       display: none;
+                       @include ssm-block(){
+                        display: block;
+                        max-width: 290px;
+                        width: 100%;
+                        margin: 10px auto;
+                        img{
+                          border-radius: 20px
+                        }
+
+                    };
+                    }
                     .headingNews{
                         margin-left:31px ;
-                        margin-top:31px ;
-                        
+                        @include ssm-block(){
+                            margin-left:15px ;
+                        }
+                     
                         h3{
+                            @include ssm-block(){
+                                font-size: 18px;
+                                line-height: 34px;
+                                font-weight: 500;
+                            };
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
@@ -1968,6 +2374,10 @@ body a{
                         margin-left:31px ;
                         position: relative;
                         bottom:  2%;
+                        @include ssm-block(){
+                          margin-top: 10px; 
+                          margin-left:15px ;
+                        };
                         span{
                             
                         font-family: Roboto;
@@ -1984,12 +2394,15 @@ body a{
                     align-self: center;
                     @include col();
                     @include size(7);
+                    @include size-sm(12);
                     
                     
                     .img{
                         margin-right:5px ;
                         img{
-                         
+                            @include sm-block(){
+                                display: none;
+                            };
                             height: 272px;
                            }
                     }
@@ -5563,24 +5976,237 @@ body a{
 .footer{
     margin-top:30px ;
     max-width: 100%;
+    @include ssm-block(){
+        background: none;
+       background-color:none;
+      
+    }
     background: url(../img/roup2.png) no-repeat;
     background-color:black;
     background-position: right;
-   
+    @include size-ssm(12);
+    @include ssm-block(){
+        max-width: 100%;
+        width: 100%;         
+        margin:0 ;       
+    }
     .wrapper{
+        @include ssm-block(){
+            background: url(../img/mobHedfon.png) no-repeat;
+            background-size: 100%;
+            max-width: 375px!important;
+            width: 100%;  
+        }
+        width: 100%;
+        padding: 0;
         .information{
             @include row-flex();
+          
+            .userMob{
+                display: none;
+            
+            }
+            .score{
+                display: none;
+
+            }
+            @include ssm-block(){
+
+                margin: 0;
+                .userMob{
+                    display: block;
+                }
+                .score{
+                    transform: translate(30%, 80%);
+                    display: block;
+                    .dol{
+                        background-image: url("../img/$.png");
+                        background-repeat:no-repeat;
+                        margin-top: 10px;
+                        
+                    }
+                    .bit{
+                        background-image: url("../img/Ƀ.png");
+                        background-repeat:no-repeat;
+                        border-bottom: 1px solid #404041;
+                        
+                        
+                    }
+                    p{
+                        padding-left: 20px;
+                        height: 25px;
+                        font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    /* identical to box height */
+    
+                  
+                    text-transform: uppercase;
+    
+                    color: #EDEDED;
+                    }
+
+                }
+                .userMob{
+                    position: absolute;
+                    transform: translate(60%, 70%);
+                   .img{
+                       display: flex;
+                       justify-content: center;
+                       margin-bottom: 10px;
+                   }
+                   p{
+                       font-family: Roboto;
+                       font-style: normal;
+                       font-weight: 500;
+                       font-size: 16px;
+                       line-height: 19px;
+                       display: flex;
+                       justify-content: center;
+                       text-transform: capitalize;
+                       
+                       color: #DAD2C6;
+                   }
+                   span{
+                       padding-top:10px ;
+                       font-family: Roboto;
+                       font-style: normal;
+                       font-weight: 300;
+                       font-size: 14px;
+                       line-height: 16px;
+                       display: flex;
+                       justify-content: center;
+                       letter-spacing: 0.1em;
+       
+                       color: #DAD2C6;
+                   }
+               }
+             
+            }
+            .burger{
+                display: none;
+                margin-left: 10px;
+                margin-top: 5px;
+                .burgerButton{
+                    position: fixed;
+                    z-index: 30;
+                    left:  79%;
+                    top: 10%
+                }
+              
+                @include ssm-block(){
+                  
+                   // display: block; 
+                }
+                .burgerContent{
+                    position: fixed;
+                    z-index: 20;
+                    display: flex;
+                    flex-flow: column;
+                   
+                    
+                    
+                    .burgerName{
+                     font-family: Roboto;
+                     font-style: normal;
+                     font-weight: 500;
+                     font-size: 16px;
+                     line-height: 19px;
+                     display: flex;
+                     align-items: center;
+                     text-transform: capitalize;
+                     
+                     color: #DAD2C6;
+                 }
+                 .burgerText{
+                     padding-top:10px ;
+                     font-family: Roboto;
+                     font-style: normal;
+                     font-weight: 300;
+                     font-size: 14px;
+                     line-height: 16px;
+                     display: flex;
+                     align-items: center;
+                     letter-spacing: 0.1em;
+     
+                     color: #DAD2C6;
+                 }
+                    .notifications{
+                        margin-top: 20px;
+                        background: url(../img/Notifications.png) no-repeat;
+                        padding-left: 40px;
+                        display: flex;
+                        border-bottom: 1px solid #404041;
+                        margin-bottom: 20px;
+                        a{
+                           align-self: center;
+                        }
+                                               
+                    }
+                    .settings{
+                        background: url(../img/1.png) no-repeat;
+                        padding-left: 40px;
+                        display: flex;
+                        border-bottom: 1px solid #404041;
+                        margin-bottom: 20px;
+                        a{
+                           align-self: center;
+                        }
+                       
+                    }
+                    .technical{
+                        background: url(../img/3.png) no-repeat;
+                        padding-left: 40px;
+                        display: flex;
+                        border-bottom: 1px solid #404041;
+                        margin-bottom: 20px;
+                        a{
+                           align-self: center;
+                        }
+                    }
+                    .out{
+                        background: url(../img/exit.png) no-repeat; 
+                        padding-left: 40px;
+                        display: flex;
+                        
+                        margin-bottom: 20px;
+                        a{
+                           align-self: center;
+                        }
+                    }
+                    a{
+                     font-family: Futura PT;
+                     font-style: normal;
+                     font-weight: normal;
+                     font-size: 16px;
+                     line-height: 21px;
+                        
+                     height: 40px;
+                     color: #E5E5E5;
+                    }
+                }
+            }
             .customization{
                 @include col();
                 @include size(12);
                 @include row-flex();
+                @include ssm-block(){
+                    height: 180px;
+                    
+                    width: 100%; 
+                }
                 margin:0 auto;
                // background: url(../img/roup2.png) no-repeat;
-               
+               width: 100%;
               //  background-color: blue;
                 height: 306px;
-                
+              
                 .left{
+                    @include ssm-block(){
+                        display: none;
+                    }
                     @include col();
                     @include size(6);
                     .technical{
@@ -5677,6 +6303,9 @@ body a{
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
+                    @include ssm-block(){
+                        display: none;
+                    }
                   .copyright{
                       align-self: flex-end;
                       margin-bottom:40px ;

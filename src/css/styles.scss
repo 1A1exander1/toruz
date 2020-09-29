@@ -13,5 +13,7 @@ body{
   background: #232323;
   margin:0;
   padding:0;
-  
+  @include ssm-block(){
+    width: 100vw;
+  } 
 }

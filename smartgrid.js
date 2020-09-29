@@ -5,7 +5,7 @@ module.exports = {
 	
 	container: {
         maxWidth: "1200px",
-        minWidth: "500px",  
+        minWidth: "200px",  
         fields: "30px"
     },
 	breakPoints: {
@@ -24,7 +24,9 @@ module.exports = {
         sm: {
             width: "576px"
         },
-
+        ssm: {
+            width: "320px"
+        },
 	},
 
 };
