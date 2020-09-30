@@ -336,7 +336,7 @@ body{
         @include size(12);
      .logo{
         @include col();
-        @include size(5);
+        @include size(4);
         display: flex;
         align-self:center;
         margin-left:80px  ;
@@ -373,9 +373,11 @@ body{
         position: relative;
         z-index: 2;
         @include col();
-        @include size(6);
+        @include size(7);
         .nav{
+            display: flex;
             a{
+                align-self: center;
                 font-family: Futura PT;
                 font-style: normal;
                 font-weight: normal;
@@ -385,6 +387,9 @@ body{
                 text-decoration:none ;
                 color: #E5E5E5; 
                 padding:0 24px ; 
+                img{
+                    height: 60px;
+                }
             }
             a:hover{
                 color:#DFAB5A;;
@@ -1744,7 +1749,7 @@ body{
                     
                    
                 }
-                .btn-content{
+                .link{
                     display: flex;
                     justify-content: center;
                     margin: 15% 0 ;
@@ -1752,12 +1757,12 @@ body{
                         display: none;
                      }
                     
-                       input{
-                           
+                       a{
+                           padding: 20px 0;
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
-                           height: 63px;
+                           
                            border: none;
                            border-radius: 23px;
                            font-style: normal;
@@ -2019,7 +2024,7 @@ body{
                         }
                     }
                 }
-                .btn-content{
+                .link{
                     display: flex;
                     justify-content: center;
                     margin: 20% 0 ;
@@ -2027,11 +2032,12 @@ body{
                         display: none;
                      }
                     
-                       input{
+                       a{
+                           padding: 20px 0;
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
-                           height: 63px;
+                           
                            border: none;
                            border-radius: 23px;
                            font-style: normal;
@@ -2235,19 +2241,20 @@ body{
                     }
                   
                 }
-                .btn-content{
+                .link{
                     display: flex;
                     justify-content: center;
                     margin: 20% 0 ;
                     @include ssm-block(){
-                       display: none;
-                    }
+                        display: none;
+                     }
                     
-                       input{
+                       a{
+                           padding: 20px 0;
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
-                           height: 63px;
+                           
                            border: none;
                            border-radius: 23px;
                            font-style: normal;
@@ -2857,157 +2864,161 @@ body{
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
                 }
-                .radio{
-                    @include row-flex();
-                    width: 100%;
-                    display: flex;
-                    margin-bottom: 30px;
-                    .textRadio{
-                        margin-top: 30px;
-                        position: relative;
-                        right: 20px;
-                        width: 235px;
+                .radioForm{
+                    
+                    .radio{
+                        @include row-flex();
+                        width: 100%;
+                        
                         display: flex;
-                        justify-content: space-between;
-                       
-                        
-                        
-                        p{
-                            padding:0 20px ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
+                        margin-bottom: 30px;
+                        .textRadio{
+                            margin-top: 30px;
+                            position: relative;
+                            right: 20px;
+                            width: 235px;
                             display: flex;
-                            align-items: center;
-                            text-align: center;
-
-                            color: #DFAB5A;
-                            span{
+                            justify-content: space-between;
+                           
+                            
+                            
+                            p{
+                                padding:0 20px ;
                                 font-family: Roboto;
                                 font-style: normal;
-                                font-weight: 300;
-                                font-size: 12px;
-                                line-height: 14px;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 21px;
                                 display: flex;
                                 align-items: center;
-
+                                text-align: center;
+    
                                 color: #DFAB5A;
+                                span{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    display: flex;
+                                    align-items: center;
+    
+                                    color: #DFAB5A;
+                                }
                             }
                         }
-                    }
-                    margin-top:20px ;
-                    .form{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
-                    }
-                    .form2{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
-                    }
-                    .form3{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
+                        margin-top:20px ;
+                        .form{
+                            @include col();
+                            @include size(4); 
+                            input[type="checkbox"] {
+                                display: none;
+    
+                              }
+                              label {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 21px;
+                                display: flex;
+                                align-items: center;
+                                text-transform: uppercase;
+    
+                                color: #A7A4A0;
+                              }
+                              label::after {
+                                content: '';
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                vertical-align: middle;
+                                margin-left: 10px;
+                                margin-right: 20px;
+                                border-radius: 50%;
+                                border: 3px solid #191818;
+                              }
+                              input[type="checkbox"]:checked + label::after {
+                                content: '';
+                                background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                              }
+                        }
+                        .form2{
+                            @include col();
+                            @include size(4); 
+                            input[type="checkbox"] {
+                                display: none;
+    
+                              }
+                              label {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 21px;
+                                display: flex;
+                                align-items: center;
+                                text-transform: uppercase;
+    
+                                color: #A7A4A0;
+                              }
+                              label::after {
+                                content: '';
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                vertical-align: middle;
+                                margin-left: 10px;
+                                margin-right: 20px;
+                                border-radius: 50%;
+                                border: 3px solid #191818;
+                              }
+                              input[type="checkbox"]:checked + label::after {
+                                content: '';
+                                background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                              }
+                        }
+                        .form3{
+                            @include col();
+                            @include size(4); 
+                            input[type="checkbox"] {
+                                display: none;
+    
+                              }
+                              label {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 18px;
+                                line-height: 21px;
+                                display: flex;
+                                align-items: center;
+                                text-transform: uppercase;
+    
+                                color: #A7A4A0;
+                              }
+                              label::after {
+                                content: '';
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                vertical-align: middle;
+                                margin-left: 10px;
+                                margin-right: 20px;
+                                border-radius: 50%;
+                                border: 3px solid #191818;
+                              }
+                              input[type="checkbox"]:checked + label::after {
+                                content: '';
+                                background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                              }
+                        }
                     }
                 }
             }
         }
         .tableEquipment{
-           
+           display: none;
             #listСhoice{
                
                 .heading{
@@ -3134,6 +3145,7 @@ body{
         }
         
         .calculator{
+           
             #calculatorСhoice{
               
                 .slidecontainer{
@@ -3384,7 +3396,7 @@ body{
                    
                     align-items: flex-start;
                     background: #191818;
-                
+                    display: none;
                   }
                 
                   .slider {
@@ -3658,6 +3670,7 @@ body{
                     .blockInfo{
                         @include col();
                         @include size(2);
+                        display: none;
                             padding: 20px 0;
                         .img{
                             padding:20px 0 ;
@@ -4998,6 +5011,12 @@ body{
         }
     }
     .wrapper{
+        @include ssm-block(){
+            .history{
+                
+               display: none;
+            }  
+        }
         .history{
             display: flex;
             p{
@@ -5426,14 +5445,25 @@ body{
         .central{
             @include row-flex();
             justify-content: center;
+            @include ssm-block(){
+                margin:20px 0 20px 0;
+            }
             .structure{
                 @include col();
                 @include size(4);
+                @include size-ssm(11);
                 background:#191818;
                 height: 986px;
                 margin:20px auto 20px auto;
                 border-radius: 20px;
+                @include ssm-block(){
+                    margin:20px 0 20px 0;
+                    background:transparent;
+                }
                 .user{
+                    @include ssm-block(){
+                        display: none;
+                    }
                     display: flex;
                     justify-content: flex-start;
                     
@@ -5468,14 +5498,241 @@ body{
                         }
                     }
                 }
+                .mobPattern{
+                    @include ssm-block(){
+                        background:#191818;
+                        height: 273px;
+                        border-radius:20px;
+                    }
+                }
+                .mobPersonal{
+                    display: none;
+                    @include ssm-block(){
+                        display: block;
+                        .mobPersonalStructure{
+                            display: flex;
+                            height: 60px;
+                            justify-content: space-between;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                            .text{
+                                align-self: center;
+                                p{
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    display: flex;
+                                    align-items: center;
+                                    text-transform: uppercase;
+                                    color: #979085;
+                                }
+                            }
+                            .mobTime{
+                                align-self: center;
+                                .text{
+                                    @include row-flex();
+                                    justify-content: space-between;
+                                    
+                                 
+                                    
+                                    
+                                    .period{
+                                        width: 82px;
+                                        appearance: none;
+                                        font-family: Futura PT;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 16px;
+                                        line-height: 21px;
+                                        
+                                        background:url(../img/Polygon1.png) no-repeat;
+                                        background-position: center right;
+                                        border: none;
+                                        cursor: pointer;
+                                        background-color: transparent;
+                                        outline: none;
+                                        color:#DAD2C6;
+                                        .allTime{
+                                            padding: 20px;
+                                        }
+                                        option{
+                                           
+                                            background: #191818; 
+                                            border: 0px; 
+                                            outline: 0px;
+                                        }
+                                    }
+                             
+                                }
+                            }
+                        }
+                    }
+                }
+                .mobButton{
+                    display: none;
+                    @include ssm-block(){
+                        display: block;
+                        margin-top: 20px;
+                        .btn{
+                            display: flex;
+                            .btnDiagram{
+                                input{
+                                    border-radius: 23px 0 0 23px;
+                                }
+                            }
+                            .btnTable{
+                                input{
+                                    border-radius: 0 23px 23px 0;
+                                }
+                            }
+                            input{
+                                background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+                                box-shadow: inset 0px 4px 0px #3E3E3F;
+                                width:141px;
+                                height: 63px;
+                                border: none;
+                               
+                                outline: none;
+                                //transform: skew(-20deg);
+                                
+                                font-family: Futura PT;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 21px;
+                                
+                                text-align: center;
+                                
+                                color: #B1A99D;
+                            }
+                            input[type="submit"]:hover{
+                                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                color: #DFAB5A;
+                            }
+                            input[type="submit"]:focus{
+                                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                color: #DFAB5A;
+                            }
+                        }
+                    }  
+                }
+                .mobVolume{
+                    display: none;
+                    @include ssm-block(){
+                        display: block;
+                       margin: 47px 10px;
+                        .volume{
+                            display: flex;
+                            justify-content: space-between;
+                            .textVolume{
+                               a{
+                                    font-family: Futura PT;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    text-decoration-line: underline;
+                                    
+                                    color: #B1A99D; 
+                                }
+                                a:hover{
+                                    color: #DFAB5A;
+                                }
+                                a:hover{
+                                    color: #DFAB5A;
+                                }
+                            }
+                        }
+                    }
+                }
+                .mobMaterials{
+                    @include ssm-block(){
+                        background:#191818;
+                        height: 423px;
+                        border-radius:20px;
+                    }
+                }
+                .mobCircle{
+                    display: none;
+                    @include ssm-block(){
+                        display: none;
+                        .figure{
+                            background:#191818;
+                            width: 100%;
+                            
+                            height: 348px;
+                            margin:35px auto 20px auto;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+                .mobRadioBox{
+                    display: none;
+                    @include ssm-block(){
+                        display: block;
+                        margin-left:10px ;
+                        margin-bottom: 35px;
+                        .form{
+                           display: flex;
+                           
+                           margin: 0 auto;
+                            input[type="checkbox"] {
+                                display: none;
+    
+                              }
+                              label {
+                               
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 16px;
+                                
+
+                                color: #C4C4C4;
+                              }
+                              label::before {
+                                content: '';
+                                display: inline-block;
+                                width: 30px;
+                                height: 30px;
+                                vertical-align: middle;
+                                
+                                margin-right: 10px;
+                                border-radius: 50%;
+                                border: 3px solid #191818;
+                              }
+                              input[type="checkbox"]:checked + label::before {
+                                content: '';
+                                background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                              }
+                        }
+                    }
+                }
                 .pattern{
                     font-family: Roboto;
                     margin-left: 35px;
-                    
+                    @include ssm-block(){
+                        margin-left: 15px;
+                        margin-right: 15px;
+                    }
                     .heading{
                         display: flex;
                         flex-wrap: wrap;
+                        @include ssm-block(){
+                          padding-top: 22px;
+                        }
                         .img{
+                            @include ssm-block(){
+                                display: none;
+                            }
                             margin-right:10px ;
                         }
                         h3{
@@ -5494,6 +5751,10 @@ body{
                         color:white;
                         width: 90%;
                         margin-top:20px ;
+                        @include ssm-block(){
+                            width: 100%;
+                            margin-top:0 ;
+                        }
                         
                         .client{
                             display: flex;
@@ -5509,6 +5770,9 @@ body{
                                     }
                                   
                                 p{
+                                    @include ssm-block(){
+                                        font-size: 14px;
+                                    }
                                     margin:0;
                                     
                                     font-family: Roboto;
@@ -5523,6 +5787,9 @@ body{
                                 }
                             }
                             p{
+                                @include ssm-block(){
+                                    font-size: 18px;
+                                }
                                 align-self:center;
                                 font-weight: 300;
                                 font-size: 24px;
@@ -5540,8 +5807,29 @@ body{
                                 }
                             }
                         }
+                        .client:nth-child(1){
+                            .info{
+                                @include ssm-block(){
+                                    background-image: url("../img/Subtract.png");
+                                    background-repeat: no-repeat;
+                                    background-position-y: center ;
+                                    p{
+                                        padding-left: 30px;
+                                    }
+                                }
+                                
+                            }
+                        }
                         .client:nth-child(2){
                             .info{
+                                @include ssm-block(){
+                                    background-image: url("../img/$.png");
+                                    background-repeat: no-repeat;
+                                    background-position-y: center ;
+                                    p{
+                                        padding-left: 30px;
+                                    }
+                                }
                                 .img{
                                     
                                     margin-right: 20px;
@@ -5550,10 +5838,21 @@ body{
                         }
                         .client:nth-child(3){
                             .info{
+                                @include ssm-block(){
+                                    background-image: url("../img/Ƀ.png");
+                                    background-repeat: no-repeat;
+                                    background-position-y: center ;
+                                    p{
+                                        padding-left: 30px;
+                                    }
+                                }
                                 .img{
                                     
                                     margin-right: 20px;
                                 }
+                            }
+                            @include ssm-block(){
+                               border: none;
                             }
                         }
                     }
@@ -5565,11 +5864,18 @@ body{
                     margin-left: 35px;
                     position: relative;
                     top: 7%;
+                    @include ssm-block(){
+                        margin-left: 15px;
+                        margin-right: 15px;
+                      }
                     .heading{
                         display: flex;
                         flex-wrap: wrap;
                         .img{
                             margin-right:10px ;
+                            @include ssm-block(){
+                               display: none;
+                            }
                         }
                         h3{
                             margin:0;
@@ -5587,7 +5893,10 @@ body{
                         color:white;
                         width: 90%;
                         margin-top:20px ;
-                        
+                        @include ssm-block(){
+                            width: 100%;
+                            margin-top:52px ;
+                          }
                         .client{
                             display: flex;
                             justify-content: space-between;
@@ -5597,6 +5906,7 @@ body{
                             background: url(../img/download.png) no-repeat;
                             background-position: right 5px bottom 20px;
                             .info{
+                               
                                 display: flex;
                                     .img{
                                         align-self: center;
@@ -5650,6 +5960,9 @@ body{
                    
                 }
                 .btn-content{
+                    @include ssm-block(){
+                       display: none;
+                      }
                     display: flex;
                     justify-content: center;
                     margin:45% 0 ;
@@ -5677,7 +5990,9 @@ body{
             .con{
                 @include col();
                 @include size(8); 
-               
+                @include ssm-block(){
+                    display: none;
+                }
                 .pers{
                     
                  
@@ -5737,6 +6052,9 @@ body{
                    justify-content: space-between;
                      .btn-content:nth-child(1){
                 display: flex;
+                @include ssm-block(){
+                    display: none;
+                }
                 .myEquipment{
                     input{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
@@ -5828,6 +6146,9 @@ body{
             }
             .btn-content:nth-child(2){
                 display: flex;
+                @include ssm-block(){
+                    display: none;
+                }
                 .myEquipment{
                     input{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
@@ -5924,6 +6245,9 @@ body{
                     justify-content: flex-end;
                     margin-top:20px ;
                     .form{
+                        @include ssm-block(){
+                            display: none;
+                        }
                         @include col();
                         @include size(5); 
                         input[type="checkbox"] {
@@ -5961,8 +6285,12 @@ body{
                 }
                 .circle{
                     .figure{
+                        @include ssm-block(){
+                            display: none;
+                        }
                         background:#191818;
-                        width: 716px;
+                        width: 100%;
+                        
                         height: 716px;
                         margin:35px auto 20px auto;
                         border-radius: 50%;
