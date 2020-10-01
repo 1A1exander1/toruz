@@ -2983,7 +2983,7 @@ body{
                                 padding:0 20px ;
                                 font-family: Roboto;
                                 font-style: normal;
-                                font-weight: normal;
+                                font-weight: 400;
                                 font-size: 18px;
                                 line-height: 21px;
                                 display: flex;
@@ -2999,7 +2999,7 @@ body{
                                     line-height: 14px;
                                     display: flex;
                                     align-items: center;
-    
+                                    margin-right: 10px;
                                     color: #DFAB5A;
                                 }
                             }
@@ -3027,8 +3027,8 @@ body{
                               label::after {
                                 content: '';
                                 display: inline-block;
-                                width: 15px;
-                                height: 15px;
+                                width: 30px;
+                                height: 30px;
                                 vertical-align: middle;
                                 margin-left: 10px;
                                 margin-right: 20px;
@@ -3535,7 +3535,9 @@ body{
                     width: 1200px;
                     height: 486px;
                     @include row-flex();
-                   
+                    @include ssm-block(){
+                        display: none;
+                    }
                     align-items: flex-start;
                     background: #191818;
                     display: block;
