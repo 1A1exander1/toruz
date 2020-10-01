@@ -3297,8 +3297,47 @@ body{
                             border-bottom: 1px solid #404041;
                             margin-right:50px ;
                             li{
-                                
-                                
+                                align-self: center;
+                                height: 30px;
+                                .timeCalculator{
+                                   width: 95px;
+                                   margin-right: 47px;
+                                   margin-top: 40px;
+                                    .text{
+                                      
+                                       
+                                        border:0px!important;
+                                        
+                                        
+                                        .period{
+                                            width: 95px;
+                                            appearance: none;
+                                            font-family: Futura PT;
+                                            font-style: normal;
+                                            font-weight: normal;
+                                            font-size: 16px;
+                                            line-height: 23px;
+                                            
+                                            background:url(../img/Polygon1.png) no-repeat;
+                                            background-position: center right;
+                                            border: none;
+                                            cursor: pointer;
+                                            background-color: transparent;
+                                            outline: none;
+                                            color:#DAD2C6;
+                                            .allTime{
+                                                padding: 30px;
+                                            }
+                                            option{
+                                               
+                                                background: #191818; 
+                                                border: 0px; 
+                                                outline: 0px;
+                                            }
+                                        }
+                                 
+                                    }
+                                }  
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
@@ -3499,7 +3538,7 @@ body{
                    
                     align-items: flex-start;
                     background: #191818;
-                    display: none;
+                    display: block;
                   }
                 
                   .slider {
