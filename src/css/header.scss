@@ -2476,22 +2476,43 @@ body{
                     }
                     .right{
                         display: flex;
-                        .img{
+                        .timeEquipment{
                             align-self: center;
-                        }
-                        span{
-                            font-family: Futura PT;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-align: center;
-                            align-self: center;
-                            color: #DAD2C6;
-                            margin-right:17px ;
-                        }
+                            .text{
+                              
+                               
+                                border:0px!important;
+                                
+                                
+                                .period{
+                                    width: 95px;
+                                    appearance: none;
+                                    font-family: Futura PT;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 16px;
+                                    line-height: 23px;
+                                    
+                                    background:url(../img/Polygon1.png) no-repeat;
+                                    background-position: center right;
+                                    border: none;
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                    outline: none;
+                                    color:#DAD2C6;
+                                    .allTime{
+                                        padding: 30px;
+                                    }
+                                    option{
+                                       
+                                        background: #191818; 
+                                        border: 0px; 
+                                        outline: 0px;
+                                    }
+                                }
+                         
+                            }
+                        } 
                     }
                 }
                 .numb{
@@ -4617,13 +4638,17 @@ body{
             .structure{
                 @include col();
                 @include size(4);
-                background:#191818;
                 
+                @include ssm-block(){
+                    display: none;
+                }
+                background:#191818;
                 height: 350px;
                 margin:20px auto 20px auto;
                 border-radius: 20px;
              
                 .pattern{
+                   
                     font-family: Roboto;
                     margin-left: 35px;
                   
@@ -5345,6 +5370,9 @@ body{
     .wrapper{
         
         .table{
+            @include ssm-block(){
+                display: none;
+            }
                 
                 height: 100%;
              width: 100%;

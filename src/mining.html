@@ -100,9 +100,19 @@
                                 <span>доход</span>
                             </div>
                             <div class="right">
-                                <span>Все ном</span>
-                                <div class="img">
-                                    <img src="/<?php echo drupal_get_path('theme', 'clean'); ?>/img/Polygon1.png" alt="">
+                                <div class="timeEquipment">
+                                    <div class="text">
+                                        <select name="period" id="period" class="period">
+                                            <option value="allTime">Все время</option>
+                                            <option value="day">В день</option>
+                                            <option value="week">В неделю</option>
+                                            <option value="month">В месяц</option>
+                                            <option value="quarter">В квартал</option>
+                                            <option value="year">В год</option>
+                                        </select>
+                                        
+                                     
+                                    </div>
                                 </div>
         
                             </div>
