@@ -383,7 +383,7 @@ body{
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 23px;
-               
+                cursor: pointer;
                 text-decoration:none ;
                 color: #E5E5E5; 
                 padding:0 24px ; 
@@ -392,7 +392,8 @@ body{
                 }
             }
             a:hover{
-                color:#DFAB5A;;
+                color:#DFAB5A;
+                cursor: pointer;
             }
         }
     }
@@ -580,10 +581,12 @@ body{
                     .btnSend:hover{
                         color: #232323;
                         background-color: #DFAB5A;
+                        cursor: pointer;
                     }
                     .btnSend:focus{
                         color: #232323;
                         background-color: #DFAB5A;
+                        cursor: pointer;
                     }
                 }
                
@@ -976,10 +979,12 @@ body{
                     .btnSend:hover{
                         color: #232323;
                         background-color: #DFAB5A;
+                        cursor: pointer;
                     }
                     .btnSend:focus{
                         color: #232323;
                         background-color: #DFAB5A;
+                        cursor: pointer;
                     }
                 }
                
@@ -1310,10 +1315,11 @@ body{
                             right: 7px;
                             border-radius: 50%;
                             border: 3px solid #191818;
+                            cursor: pointer;
                           }
                           input[type="checkbox"]:checked + label::before {
                             content: '';
-                           
+                            cursor: pointer;
                             background: url(../img/Ellipse7.png) no-repeat;
                             background-position: center;
                           }
@@ -1357,10 +1363,11 @@ body{
                             right: 7px;
                             border-radius: 50%;
                             border: 3px solid #191818;
+                            cursor: pointer;
                           }
                           input[type="checkbox"]:checked + label::before {
                             content: '';
-                           
+                            cursor: pointer;
                             background: url(../img/Ellipse7.png) no-repeat;
                             background-position: center;
                           }
@@ -1594,10 +1601,12 @@ body{
                     input:hover{
                         color: #DFAB5A;
                         border: 1px solid #DFAB5A;
+                        cursor: pointer;
                     }
                     input:focus{
                         color: #DFAB5A;
                         border: 1px solid #DFAB5A;
+                        cursor: pointer;
                     }
                 }
             }
@@ -2254,7 +2263,7 @@ body{
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:314px;
-                           
+                           cursor: pointer;
                            border: none;
                            border-radius: 23px;
                            font-style: normal;
@@ -2517,7 +2526,7 @@ body{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-
+                           cursor: pointer;
                            color: #DFAB5A;
                        }
                    }
@@ -2546,6 +2555,7 @@ body{
                             text-transform: capitalize;
                             text-decoration: none;
                             color: #DAD2C6;
+                            cursor: pointer;
                             
                         }
                         .rig{
@@ -2555,6 +2565,7 @@ body{
                         .rig:hover{
                             background:url(../img/equip.png) no-repeat ;
                             color: #DFAB5A;
+                            cursor: pointer;
                         }
                         .contracts{
                             background:url(../img/contract.png) no-repeat ;
@@ -2562,6 +2573,7 @@ body{
                         .contracts:hover{
                             background:url(../img/contract1.png) no-repeat ;
                             color: #DFAB5A;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -2792,6 +2804,7 @@ body{
                                position:relative;
                                color: #DFAB5A;
                                display: inline-block;
+                               cursor: pointer;
                               // transform: skew(20deg);
     
                         }
@@ -2845,6 +2858,7 @@ body{
                                 letter-spacing: 0.1em;
                                 position:relative;
                                 color: #DFAB5A;
+                                cursor: pointer;
                                 display: inline-block;
                                // transform: skew(20deg);
                                 outline: none;
@@ -2858,10 +2872,12 @@ body{
                     input[type="submit"]:hover{
                         background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        cursor: pointer;
                     }
                     input[type="submit"]:focus{
                         background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                         box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        cursor: pointer;
                     }
                 }
                 .radioForm{
@@ -2937,10 +2953,12 @@ body{
                                 margin-right: 20px;
                                 border-radius: 50%;
                                 border: 3px solid #191818;
+                                cursor: pointer;
                               }
                               input[type="checkbox"]:checked + label::after {
                                 content: '';
                                 background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                                cursor: pointer;
                               }
                         }
                         .form2{
@@ -2972,10 +2990,12 @@ body{
                                 margin-right: 20px;
                                 border-radius: 50%;
                                 border: 3px solid #191818;
+                                cursor: pointer;
                               }
                               input[type="checkbox"]:checked + label::after {
                                 content: '';
                                 background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                                cursor: pointer;
                               }
                         }
                         .form3{
@@ -3007,10 +3027,12 @@ body{
                                 margin-right: 20px;
                                 border-radius: 50%;
                                 border: 3px solid #191818;
+                                cursor: pointer;
                               }
                               input[type="checkbox"]:checked + label::after {
                                 content: '';
                                 background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                                cursor: pointer;
                               }
                         }
                     }
@@ -4600,7 +4622,7 @@ body{
                             p{
                                 align-self:center;
                                 font-weight: 300;
-                                font-size: 24px;
+                                font-size: 36px;
                                 line-height: 28px;
                                 display: flex;
                                 align-items: center;
@@ -4728,7 +4750,7 @@ body{
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            
                            background-repeat:no-repeat;
-                          
+                           outline: none;
                            width:220px;
                            height: 63px;
                            border: none;
@@ -4740,7 +4762,7 @@ body{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-                           
+                           cursor: pointer;
                            color: #DFAB5A;
                        }
                    }
@@ -4854,7 +4876,7 @@ body{
                     margin: 15% 0 ;
                     
                        input{
-                           
+                        outline: none;
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:220px;
@@ -4868,7 +4890,7 @@ body{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-
+                           cursor: pointer;
                            color: #DFAB5A;
                        }
                    }
@@ -4989,7 +5011,7 @@ body{
                     margin: 15% 0 ;
                     
                        input{
-                           
+                        cursor: pointer;
                            background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                            box-shadow: inset 0px 4px 4px #3E3E3F;
                            width:220px;
@@ -5003,7 +5025,7 @@ body{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-
+                           outline: none;
                            color: #DFAB5A;
                        }
                    }
@@ -5078,7 +5100,7 @@ body{
                         padding:2px 50px ;
                         text-align: center;
                         text-transform: capitalize;
-
+                        cursor: pointer;
                         color: #DAD2C6;
 
                     }
@@ -5086,6 +5108,7 @@ body{
                 .personal:hover{
                    
                     a{
+                        cursor: pointer;
                         background:url(../img/Frame14.png) no-repeat;
                         color:#DFAB5A;
                     }
@@ -5104,7 +5127,7 @@ body{
                         line-height: 31px;
                         padding:0 50px ;
                         text-align: center;
-                        
+                        cursor: pointer;
                         text-transform: capitalize;
 
                         color: #DAD2C6;
@@ -5114,6 +5137,7 @@ body{
                 .structure:hover{
                    
                     a{
+                        cursor: pointer;
                         background:url(../img/Vector121.png) no-repeat;
                         color:#DFAB5A;
                     }
@@ -5132,7 +5156,7 @@ body{
                         height: 63px;
                         border: none;
                         border-radius: 23px 0 0 23px;
-                        
+                        cursor: pointer;
                         outline: none;
                        
                         font-family: Futura PT;
@@ -5185,7 +5209,7 @@ body{
                         border-radius: 0 23px 23px 0;
                         outline: none;
                         //transform: skew(-20deg);
-                        
+                        cursor: pointer;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -5206,11 +5230,13 @@ body{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
                 input[type="submit"]:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
             }
         }
@@ -5260,7 +5286,7 @@ body{
         
         .table{
                 
-                height: 500px;
+                height: 100%;
              width: 100%;
             
             table{
@@ -5593,7 +5619,7 @@ body{
                                 width:141px;
                                 height: 63px;
                                 border: none;
-                               
+                                cursor: pointer;
                                 outline: none;
                                 //transform: skew(-20deg);
                                 
@@ -5611,11 +5637,13 @@ body{
                                 background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                                 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                                 color: #DFAB5A;
+                                cursor: pointer
                             }
                             input[type="submit"]:focus{
                                 background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                                 box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                                 color: #DFAB5A;
+                                cursor: pointer
                             }
                         }
                     }  
@@ -5639,14 +5667,16 @@ body{
                                     align-items: center;
                                     text-align: center;
                                     text-decoration-line: underline;
-                                    
+                                    cursor: pointer;
                                     color: #B1A99D; 
                                 }
                                 a:hover{
                                     color: #DFAB5A;
+                                    cursor: pointer;
                                 }
                                 a:hover{
                                     color: #DFAB5A;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -5708,10 +5738,12 @@ body{
                                 margin-right: 10px;
                                 border-radius: 50%;
                                 border: 3px solid #191818;
+                                cursor: pointer;
                               }
                               input[type="checkbox"]:checked + label::before {
                                 content: '';
                                 background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
+                                cursor: pointer;
                               }
                         }
                     }
@@ -5862,6 +5894,7 @@ body{
                 .materials{
                     font-family: Roboto;
                     margin-left: 35px;
+                    margin-top: 59px;
                     position: relative;
                     top: 7%;
                     @include ssm-block(){
@@ -5905,6 +5938,7 @@ body{
                             padding-top:10px ;
                             background: url(../img/download.png) no-repeat;
                             background-position: right 5px bottom 20px;
+                            cursor: pointer;
                             .info{
                                
                                 display: flex;
@@ -5948,9 +5982,11 @@ body{
                         .client:hover{
                             background: url(../img/download1.png) no-repeat;
                             background-position: right 5px bottom 20px;
+                            cursor: pointer;
                             .info{
                                 p{
                                     color: #DFAB5A;
+                                    cursor: pointer;
                                 }
                             }
                         }
@@ -5965,7 +6001,7 @@ body{
                       }
                     display: flex;
                     justify-content: center;
-                    margin:45% 0 ;
+                    margin:25% 0 ;
                     
                        input{
                            
@@ -5982,7 +6018,7 @@ body{
                            font-family: Futura PT;
                            text-align: center;
                            letter-spacing: 0.1em;
-
+                           cursor: pointer;
                            color: #DFAB5A;
                        }
                    }
@@ -6063,7 +6099,7 @@ body{
                         height: 63px;
                         border: none;
                         border-radius: 23px 0 0 23px;
-                        
+                        cursor: pointer;
                         outline: none;
                        
                         font-family: Futura PT;
@@ -6116,7 +6152,7 @@ body{
                         border-radius: 0 23px 23px 0;
                         outline: none;
                         //transform: skew(-20deg);
-                        
+                        cursor: pointer;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -6137,11 +6173,13 @@ body{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
                 input[type="submit"]:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
             }
             .btn-content:nth-child(2){
@@ -6167,7 +6205,7 @@ body{
                         line-height: 21px;
                         
                         text-align: center;
-                        
+                        cursor: pointer;
                         color: #B1A99D;
 
                     }
@@ -6210,7 +6248,7 @@ body{
                         border-radius: 0 23px 23px 0;
                         outline: none;
                         //transform: skew(-20deg);
-                        
+                        cursor: pointer;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -6231,11 +6269,13 @@ body{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
                 input[type="submit"]:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
+                    cursor: pointer;
                 }
             }
                 }
@@ -6606,11 +6646,12 @@ body{
                             font-weight: normal;
                             font-size: 16px;
                             line-height: 21px;
-                           
+                            cursor: pointer;
                             color: #E5E5E5;  
                          }
                          a:hover{
                              color: #DFAB5A;
+                             cursor: pointer;
                          }
                         }
                     }
