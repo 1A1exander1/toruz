@@ -18,12 +18,16 @@ body{
 .btn-content .button:hover button {
   cursor: pointer;
 }
+
 .content .wrapper .blocks .structure .user .img img{
   max-width: 60px;
   height: auto;
   border-radius: 50%;
   border: 2px solid #404041;
 }
+a button {
+    cursor: pointer;
+  }
 .telegram .wrapper,
 .e-mail .wrapper{
   opacity: 1!important;
@@ -66,6 +70,130 @@ body{
   text-transform: uppercase;
   color: #979085;
 }
+.content .user .img img, .header .items .menu .nav a img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid #404041;
+  }
+  
+  .telegram .wrapper, .e-mail .wrapper {
+    opacity: 1!important;
+    background: rgba(25, 24, 24, .5);
+  }
+  
+  .e-mail .wrapper .item .btnAut input {
+    max-width: 314px;
+    width: 100%;
+    height: 63px;
+    -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .25));
+    background: -webkit-linear-gradient(261.8deg, #2e2e2e 25.12%, #1e1d1d 95.07%);
+    background: linear-gradient(188.2deg, #2e2e2e 25.12%, #1e1d1d 95.07%);
+    box-shadow: inset 0 4px 4px #3e3e3f;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: .1em;
+    color: #dfab5a;
+  }
+  
+  .content .wrapper .blocks .operations .heading h3 {
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #979085;
+  }
+  
+  .form-item, .form-actions {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  #better-messages-default .content {
+    height: auto!important;
+  }
+  
+  #better-messages-default .content {
+    min-height: auto!important;
+    font-family: Roboto;
+    border-radius: 5px;
+  }
+  
+  #better-messages-default .messages {
+    background: transparent!important;
+    border: none!important;
+    padding: 5px;
+  }
+  
+  #better-messages-default .footer {
+    background: transparent;
+  }
+  
+  #better-messages-default .messages-label {
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 3px;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+  
+  #better-messages-default h2 {
+    background-color: transparent!important;
+  }
+  
+  #better-messages-default div.error, #better-messages-default .error {
+    color: #777;
+  }
+  
+  tr.even, tr.odd {
+    background-color: transparent;
+    border-bottom: none;
+    padding: 0;
+  }
+  
+  .content .wrapper .table {
+    height: auto;
+    width: 100%;
+  }
+  
+  .content .wrapper .central .structure .btn-content .link, .content .wrapper .equipment .income .btn-content .link {
+    background: -webkit-linear-gradient(261.8deg, #2e2e2e 25.12%, #1e1d1d 95.07%);
+    background: linear-gradient(188.2deg, #2e2e2e 25.12%, #1e1d1d 95.07%);
+    box-shadow: inset 0 4px 4px #3e3e3f;
+    width: 314px;
+    height: 63px;
+    border: none;
+    border-radius: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: Futura PT;
+    text-align: center;
+    letter-spacing: .1em;
+    cursor: pointer;
+    color: #dfab5a;
+    line-height: 63px;
+  }
 .telegram{
     width: 100%;
     
