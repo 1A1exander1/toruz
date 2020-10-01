@@ -3100,7 +3100,7 @@ body{
             }
         }
         .tableEquipment{
-           display: block;
+           display: none;
             #listСhoice{
                
                 .heading{
@@ -5860,8 +5860,7 @@ body{
                     font-family: Roboto;
                     margin-left: 35px;
                     margin-top: 59px;
-                    position: relative;
-                    top: 7%;
+                   
                     @include ssm-block(){
                         margin-left: 15px;
                         margin-right: 15px;
@@ -5966,7 +5965,7 @@ body{
                       }
                     display: flex;
                     justify-content: center;
-                    margin:45% 0 ;
+                    margin:107px 0 ;
                     
                        input{
                            
@@ -6005,7 +6004,7 @@ body{
                     justify-content: space-between;
                     .heading{
                         display: flex;
-                        margin-top: 20px ;
+                        align-self: center;
                         p{
                             font-family: Roboto;
                             font-style: normal;
@@ -6025,42 +6024,60 @@ body{
                         }
     
                     }
-                    .text{
-                       
-                        display: flex;
-                        margin-top: 20px ;
-                        .img{
-                            align-self: center;
-                            margin:0 60px  0 30px;
-                        }
-                        p{
+                    .timeStructure{
+                        align-self: center;
+                        .text{
+                          
+                            margin-right: 30px;
+                            border:0px!important;
                             
-                            font-family: Futura PT;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-align: center;
-    
-                            color: #DAD2C6;
+                            
+                            .period{
+                                width: 95px;
+                                appearance: none;
+                                font-family: Futura PT;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 16px;
+                                line-height: 23px;
+                                
+                                background:url(../img/Polygon1.png) no-repeat;
+                                background-position: center right;
+                                border: none;
+                                cursor: pointer;
+                                background-color: transparent;
+                                outline: none;
+                                color:#DAD2C6;
+                                .allTime{
+                                    padding: 30px;
+                                }
+                                option{
+                                   
+                                    background: #191818; 
+                                    border: 0px; 
+                                    outline: 0px;
+                                }
+                            }
+                     
                         }
-                    }
+                    } 
                 }
                 .button{
                    display: flex;
                    justify-content: space-between;
+                   
                      .btn-content:nth-child(1){
+                        margin-top: 20px;
                 display: flex;
                 @include ssm-block(){
                     display: none;
                 }
                 .myEquipment{
-                    input{
+                    align-self: center;
+                    a{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                         box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
+                        padding: 21px 60px;
                         height: 63px;
                         border: none;
                         border-radius: 23px 0 0 23px;
@@ -6108,10 +6125,11 @@ body{
                 }*/
              
                  .buyEquipment{
-                    input{
+                    align-self: center;
+                    a{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                         box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
+                        padding: 21px 60px;
                         height: 63px;
                         border: none;
                         border-radius: 0 23px 23px 0;
@@ -6134,13 +6152,13 @@ body{
                    
                     
                
-                input[type="submit"]:hover{
+                a:hover{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
                     cursor: pointer;
                 }
-                input[type="submit"]:focus{
+                a:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
@@ -6148,21 +6166,23 @@ body{
                 }
             }
             .btn-content:nth-child(2){
+                margin-top: 20px;
                 display: flex;
                 @include ssm-block(){
                     display: none;
                 }
                 .myEquipment{
-                    input{
+                    align-self: center;
+                    a{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                         box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
-                        height: 63px;
+                        
+                       
                         border: none;
                         border-radius: 23px 0 0 23px;
-                        
-                        outline: none;
                        
+                        outline: none;
+                        padding: 21px 40px;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -6204,10 +6224,11 @@ body{
                 }*/
              
                  .buyEquipment{
-                    input{
+                     align-self: center;
+                    a{
                         background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
                         box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
+                        
                         height: 63px;
                         border: none;
                         border-radius: 0 23px 23px 0;
@@ -6219,6 +6240,7 @@ body{
                         font-weight: normal;
                         font-size: 16px;
                         line-height: 21px;
+                        padding: 21px 30px;
                         
                         text-align: center;
                         
@@ -6230,13 +6252,13 @@ body{
                    
                     
                
-                input[type="submit"]:hover{
+                a:hover{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
                     cursor: pointer;
                 }
-                input[type="submit"]:focus{
+                a:focus{
                     background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
                     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
                     color: #DFAB5A;
@@ -6248,7 +6270,7 @@ body{
                     @include row-flex();
                     width: 100%;
                     justify-content: flex-end;
-                    margin-top:20px ;
+                    margin-top:40px ;
                     .form{
                         @include ssm-block(){
                             display: none;
