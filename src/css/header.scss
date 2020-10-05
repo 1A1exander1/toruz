@@ -194,18 +194,19 @@ a button {
     color: #dfab5a;
     line-height: 63px;
   }
-  .kit{
-      margin: 60px 60px ;
+ 
+     
     .buttonShadow{
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        max-width: 314px;
-            width: 100%;
-        a{
+        
+        
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+       
             display: block;
             background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
             box-shadow: inset 0px 4px 4px #3E3E3F; 
             padding: 20px 0;
-           
+            max-width: 314px;
+            width: 100%;
             border-radius: 20px; 
             font-family: Futura PT;
             font-style: normal;
@@ -217,22 +218,22 @@ a button {
             letter-spacing: 0.1em;
             margin: 0;
             color: #DFAB5A;
-        }
-        a:hover{
-            background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
-            box-shadow: inset 0px -4px 4px #2A2A2B, inset 0px 8px 4px rgba(0, 0, 0, 0.35);
-            cursor: pointer;
-        } 
-        a:focus{
-            background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
-            box-shadow: inset 0px -4px 4px #2A2A2B, inset 0px 8px 4px rgba(0, 0, 0, 0.35);
-            cursor: pointer;
-        } 
     }
+        .buttonShadow:hover{
+            background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
+            box-shadow: inset 0px -4px 4px #2A2A2B, inset 0px 8px 4px rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+        } 
+        .buttonShadow:focus{
+            background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
+            box-shadow: inset 0px -4px 4px #2A2A2B, inset 0px 8px 4px rgba(0, 0, 0, 0.35);
+            cursor: pointer;
+        } 
+    
     .buttonBorder{
         max-width: 210px;
         
-        input{
+       
             padding: 14px 0;
             width: 100%;
             border-radius: 20px;
@@ -250,19 +251,19 @@ a button {
 
             color: #DAD2C6;
         }
-        input:hover{
+        .buttonBorder:hover{
             color: #DFAB5A;
             border: 1px solid #DFAB5A;
         }
-        input:focus{
+        .buttonBorder:focus{
             color: #DFAB5A;
             border: 1px solid #DFAB5A;
         }
-    }
+    
     .buttonBackground{
         max-width: 210px;
         
-        input{
+        
             padding: 14px 0;
             width: 100%;
             border-radius: 20px;
@@ -280,16 +281,16 @@ a button {
 
             color: #DFAB5A;
         }
-        input:hover{
+        .buttonBackground:hover{
             color: #232323;
             background-color:  #DFAB5A;
            
         }
-        input:focus{
+        .buttonBackground:focus{
             color: #232323;
             background-color:  #DFAB5A;
         }
-    }
+    
     .buttonDoubleBig{
         display: flex;
          input{
@@ -375,9 +376,9 @@ a button {
         }
     }
     .buttonSend{
-        max-width: 52px;
+    
         
-        input{
+        
 
             width: 100%;
             height: 52px;
@@ -391,17 +392,17 @@ a button {
             background-repeat:no-repeat;
             background-position:center;
          }
-         input:hover{
+         .buttonSend:hover{
             background-image:url(../img/button_send_hover.svg);
             background-repeat:no-repeat;
             background-position:center;
          }
  
-    }
+    
     .buttonAdd{
         max-width: 52px;
         
-        input{
+       
 
             width: 100%;
             height: 52px;
@@ -415,12 +416,12 @@ a button {
             background-image:url(../img/button_add.svg);
             background-repeat:no-repeat;
         }
-        input:hover{
+        .buttonAdd:hover{
             background-image:url(../img/button_add_hover.svg);
             background-repeat:no-repeat;
          }
-    }
-  }
+    
+ 
 .telegram{
     width: 100%;
     
