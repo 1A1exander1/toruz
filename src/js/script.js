@@ -15,6 +15,18 @@ $(function(){
     });
   })
 
+  var fee = document.getElementById('fee'),
+  cost = document.getElementById('cost'),
+  cost = document.getElementById('profit'),
+  cost = document.getElementById('price');
+$(".js-range-slider").ionRangeSlider({
+  skin: "big",
+  onFinish: function (data) {
+      // Called then action is done and mouse is released
+      fee.innerHTML = 25 * data + '$';
+      console.log(data.from);
+  },
+});
 
   
   let slider = document.getElementById('slider')
