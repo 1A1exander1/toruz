@@ -375,6 +375,7 @@ a button {
             color: #DFAB5A;
         }
     }
+  
     .buttonSend{
     
         
@@ -420,8 +421,53 @@ a button {
             background-image:url(../img/button_add_hover.svg);
             background-repeat:no-repeat;
          }
-    
- 
+    .buttonLink{
+        background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+        box-shadow: inset 0px 4px 4px #3E3E3F;
+        display: inline-block;
+        padding: 26px 0;
+        max-width: 220px;
+        width: 100%;
+        border-radius: 20px;
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        cursor: pointer;
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #DFAB5A;
+     }
+     .buttonLink:hover{
+        background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+     .buttonLink:focus{
+        background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+     }
+    .linkUnderlined{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        /* or 111% */
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.2px;
+        text-decoration-line: underline;
+
+        color: #DAD2C6;
+    } 
+    .linkUnderlined:hover{
+        color: #DFAB5A;
+    }
+        
 .telegram{
     width: 100%;
     
@@ -6366,7 +6412,7 @@ a button {
                             border-bottom: 1px solid #404041;
                             height: 60px;
                             padding-top:10px ;
-                            background: url(../img/download.png) no-repeat;
+                            background: url(../img/icon_download.svg) no-repeat;
                             background-position: right 5px bottom 20px;
                             cursor: pointer;
                             .info{
@@ -6410,7 +6456,7 @@ a button {
                             }
                         }
                         .client:hover{
-                            background: url(../img/download1.png) no-repeat;
+                            background: url(../img/icon_download_hover.svg) no-repeat;
                             background-position: right 5px bottom 20px;
                             cursor: pointer;
                             .info{
