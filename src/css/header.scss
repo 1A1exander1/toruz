@@ -196,13 +196,16 @@ a button {
   }
   .kit{
       margin: 60px 60px ;
-    .buttonMenu{
+    .buttonShadow{
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-       
+        max-width: 314px;
+            width: 100%;
         a{
+            display: block;
             background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
             box-shadow: inset 0px 4px 4px #3E3E3F; 
-            padding: 23px 122px;
+            padding: 20px 0;
+           
             border-radius: 20px; 
             font-family: Futura PT;
             font-style: normal;
@@ -212,7 +215,7 @@ a button {
             cursor: pointer;
             text-align: center;
             letter-spacing: 0.1em;
-
+            margin: 0;
             color: #DFAB5A;
         }
         a:hover{
@@ -225,7 +228,198 @@ a button {
             box-shadow: inset 0px -4px 4px #2A2A2B, inset 0px 8px 4px rgba(0, 0, 0, 0.35);
             cursor: pointer;
         } 
-      }
+    }
+    .buttonBorder{
+        max-width: 210px;
+        
+        input{
+            padding: 14px 0;
+            width: 100%;
+            border-radius: 20px;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid #DAD2C6;
+            font-family: Futura PT;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            
+            text-align: center;
+
+            color: #DAD2C6;
+        }
+        input:hover{
+            color: #DFAB5A;
+            border: 1px solid #DFAB5A;
+        }
+        input:focus{
+            color: #DFAB5A;
+            border: 1px solid #DFAB5A;
+        }
+    }
+    .buttonBackground{
+        max-width: 210px;
+        
+        input{
+            padding: 14px 0;
+            width: 100%;
+            border-radius: 20px;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid #DFAB5A;
+            font-family: Futura PT;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 23px;
+            
+            text-align: center;
+
+            color: #DFAB5A;
+        }
+        input:hover{
+            color: #232323;
+            background-color:  #DFAB5A;
+           
+        }
+        input:focus{
+            color: #232323;
+            background-color:  #DFAB5A;
+        }
+    }
+    .buttonDoubleBig{
+        display: flex;
+         input{
+            font-family: Futura PT;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            width: 100%;
+            line-height: 23px;
+           
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 18px 0;
+            color: #DAD2C6;
+            
+            opacity: 0.7;
+        }
+        input:first-child{
+            background: linear-gradient(4.3deg, #191818 10%, #2B2929 99.96%);
+            border-radius: 20px  0 0 20px;
+            max-width: 275px;
+            
+            
+        }
+        input:last-child{
+            background: linear-gradient(360.3deg, #191818 10%, #2B2929 99.96%);
+            border-radius: 0 20px 20px 0;
+            max-width: 275px;
+        }
+        input:hover{
+            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #DFAB5A;
+        } 
+        input:focus{
+            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #DFAB5A;
+        }
+    }
+    .buttonDoubleLittle{
+        display: flex;
+         input{
+            font-family: Futura PT;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            width: 100%;
+            line-height: 23px;
+           
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            padding: 18px 0;
+            color: #DAD2C6;
+            
+            opacity: 0.7;
+        }
+        input:first-child{
+            background: linear-gradient(4.3deg, #191818 10%, #2B2929 99.96%);
+            border-radius: 20px  0 0 20px;
+            max-width: 167px;
+            
+            
+        }
+        input:last-child{
+            background: linear-gradient(360.3deg, #191818 10%, #2B2929 99.96%);
+            border-radius: 0 20px 20px 0;
+            max-width: 167px;
+        }
+        input:hover{
+            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #DFAB5A;
+        } 
+        input:focus{
+            background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: #DFAB5A;
+        }
+    }
+    .buttonSend{
+        max-width: 52px;
+        
+        input{
+
+            width: 100%;
+            height: 52px;
+            background-color:transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        
+      
+            background-image:url(../img/button_send.svg);
+            background-repeat:no-repeat;
+            background-position:center;
+         }
+         input:hover{
+            background-image:url(../img/button_send_hover.svg);
+            background-repeat:no-repeat;
+            background-position:center;
+         }
+ 
+    }
+    .buttonAdd{
+        max-width: 52px;
+        
+        input{
+
+            width: 100%;
+            height: 52px;
+            background-color:transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        
+      
+    
+            background-image:url(../img/button_add.svg);
+            background-repeat:no-repeat;
+        }
+        input:hover{
+            background-image:url(../img/button_add_hover.svg);
+            background-repeat:no-repeat;
+         }
+    }
   }
 .telegram{
     width: 100%;
