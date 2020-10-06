@@ -2358,6 +2358,7 @@ a button {
                                 .img{
                                     
                                     margin-right: 20px;
+                                    background: transparent;
                                 }
                             }
                         }
@@ -2615,7 +2616,7 @@ a button {
                     .income{
                         align-self:center;
                         margin-right:20px ;
-                        img{
+                        svg{
                             margin-right:10px ;
                         }
                         span{
@@ -2846,7 +2847,7 @@ a button {
                         align-self:center;
                         margin:0 auto ;
                         display: flex;
-                        img{
+                        svg{
                             margin-right:10px ;
                         }
                         span{
@@ -3154,29 +3155,10 @@ a button {
                         color: #EDEDED;
                     }
                 }
-                .btn-content{
-                    display: flex;
-                    justify-content: center;
-                    margin: 8% 0  4% 0;
-                    
-                       input{
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:314px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-                           cursor: pointer;
-                           color: #DFAB5A;
-                       }
-                   }
+                .buttonShadow{
+                    margin: 8% auto;
+                }
+              
             }
             .form{
                 @include col();
@@ -6524,7 +6506,7 @@ a button {
                         .client:nth-child(1){
                             .info{
                                 @include ssm-block(){
-                                    background-image: url("../img/Subtract.png");
+                                    background-image: url("../img/icon_user.svg");
                                     background-repeat: no-repeat;
                                     background-position-y: center ;
                                     p{
@@ -6537,7 +6519,7 @@ a button {
                         .client:nth-child(2){
                             .info{
                                 @include ssm-block(){
-                                    background-image: url("../img/$.png");
+                                    background-image: url("../img/icon_dollar.svg");
                                     background-repeat: no-repeat;
                                     background-position-y: center ;
                                     p{
@@ -6553,7 +6535,7 @@ a button {
                         .client:nth-child(3){
                             .info{
                                 @include ssm-block(){
-                                    background-image: url("../img/Ƀ.png");
+                                    background-image: url("../img/icon_bitcoin.svg");
                                     background-repeat: no-repeat;
                                     background-position-y: center ;
                                     p{
