@@ -10,6 +10,8 @@ body a{
    
 }
 body{
+    
+
     @include ssm-block(){
         display: flex;
         flex-direction: column-reverse;
@@ -467,7 +469,204 @@ a button {
     .linkUnderlined:hover{
         color: #DFAB5A;
     }
+   .btn-group{
+       margin: 20px 20px;
+       display: flex;
+       .button{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 21px;
+        cursor: pointer;
+        text-align: center;
         
+        color: #B1A99D;
+       }
+        .button.button-left {
+        align-self: center;
+        position: relative;
+        background: linear-gradient(24.83deg, #191818 0%, #2B2929 99.96%);
+        
+        max-width: 175px;
+        width: 100%;
+        border: none;
+        display: block;
+        padding: 21px 0;
+       
+        margin: 0 1px;
+        border-radius: 20px  0 0 20px;
+
+        } 
+        .button-left:after{
+            content: " ";
+            position: absolute;
+            
+            display: inline-block;
+            width: 50%;
+            height: 62px;
+            top: 0;
+            left: 86px;
+            z-index: -1;
+            background: linear-gradient(80.3deg, #191818 0%, #2B2929 100%);
+            
+            transform-origin: bottom left;
+            -ms-transform: skew(-28deg, 0deg);
+            -webkit-transform: skew(-18deg, 0deg);
+            transform: skew(-18deg, 0deg);
+        } 
+        .button.button-right {
+            align-self: center;
+            position: relative;
+            background: linear-gradient(244.83deg, #191818 0%, #2B2929 99.96%);
+           
+            max-width: 175px;
+            width: 100%;
+            border: none;
+            display: block;
+            padding: 21px 0;
+           
+            margin: 0 18px;
+            border-radius: 0 20px 20px 0;
+    
+            } 
+            .button-right:after{
+                content: " ";
+                position: absolute;
+                
+                display: inline-block;
+                width: 50%;
+                height: 62px;
+                top: 0;
+                left: -20px;
+                z-index: -1;
+                background: linear-gradient(220.3deg, #191818 0%, #2B2929 100%);
+                
+                transform-origin: bottom left;
+                -ms-transform: skew(-18deg, 0deg);
+                -webkit-transform: skew(-18deg, 0deg);
+                transform: skew(-18deg, 0deg);
+            }
+            .button.button-right:hover{
+                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #DFAB5A;
+            }
+            .button.button-right:hover:after{
+                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #DFAB5A;
+            }
+            .button.button-left:hover{
+                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #DFAB5A;
+            }
+            .button.button-left:hover:after{
+                background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                color: #DFAB5A;
+            }
+   }
+   .btn-group{
+    margin: 20px 20px;
+    display: flex;
+    .btn{
+     font-family: Futura PT;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 16px;
+     line-height: 21px;
+     cursor: pointer;
+     text-align: center;
+     
+     color: #B1A99D;
+    }
+     .btn.btn-left {
+     align-self: center;
+     position: relative;
+     background: linear-gradient(24.83deg, #191818 0%, #2B2929 99.96%);
+     
+     max-width: 275px;
+     width: 100%;
+     border: none;
+     display: block;
+     padding: 21px 0;
+    
+     margin: 0 1px;
+     border-radius: 20px  0 0 20px;
+
+     } 
+     .btn-left:after{
+         content: " ";
+         position: absolute;
+         
+         display: inline-block;
+         width: 50%;
+         height: 62px;
+         top: 0;
+         left: 136px;
+         z-index: -1;
+         background: linear-gradient(80.3deg, #191818 0%, #2B2929 100%);
+         
+         transform-origin: bottom left;
+         -ms-transform: skew(-28deg, 0deg);
+         -webkit-transform: skew(-18deg, 0deg);
+         transform: skew(-18deg, 0deg);
+     } 
+     .btn.btn-right {
+         align-self: center;
+         position: relative;
+         background: linear-gradient(244.83deg, #191818 0%, #2B2929 99.96%);
+        
+         max-width: 275px;
+         width: 100%;
+         border: none;
+         display: block;
+         padding: 21px 0;
+        
+         margin: 0 18px;
+         border-radius: 0 20px 20px 0;
+ 
+         } 
+         .btn-right:after{
+             content: " ";
+             position: absolute;
+             
+             display: inline-block;
+             width: 50%;
+             height: 62px;
+             top: 0;
+             left: -20px;
+             z-index: -1;
+             background: linear-gradient(220.3deg, #191818 0%, #2B2929 100%);
+             
+             transform-origin: bottom left;
+             -ms-transform: skew(-18deg, 0deg);
+             -webkit-transform: skew(-18deg, 0deg);
+             transform: skew(-18deg, 0deg);
+         }
+         .btn.btn-right:hover{
+             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             color: #DFAB5A;
+         }
+         .btn.btn-right:hover:after{
+             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             color: #DFAB5A;
+         }
+         .btn.btn-left:hover{
+             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             color: #DFAB5A;
+         }
+         .btn.btn-left:hover:after{
+             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             color: #DFAB5A;
+         }
+}         
 .telegram{
     width: 100%;
     
