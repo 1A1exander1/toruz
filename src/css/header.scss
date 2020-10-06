@@ -10,17 +10,30 @@ body a{
    
 }
 body{
-    
+    padding: 1,5rem !important;
 
     @include ssm-block(){
         display: flex;
         flex-direction: column-reverse;
     }
 }
+hr{
+    margin:1rem 0
+}
 .btn-content .button:hover button {
   cursor: pointer;
 }
+.link-opening{
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
 
+    color: #DFAB5A;
+}
 .content .wrapper .blocks .structure .user .img img{
   max-width: 60px;
   height: auto;
@@ -2374,33 +2387,9 @@ a button {
                     
                    
                 }
-                .link{
-                    display: flex;
-                    justify-content: center;
-                    margin: 15% 0 ;
-                    @include ssm-block(){
-                        display: none;
-                     }
-                    
-                       a{
-                           padding: 20px 0;
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:314px;
-                           
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-
-                           color: #DFAB5A;
-                       }
-                   }
+                .buttonShadow.shadow{
+                    margin: 60px auto;
+                }
             }
             .mining{
                 @include col();
@@ -2649,33 +2638,9 @@ a button {
                         }
                     }
                 }
-                .link{
-                    display: flex;
-                    justify-content: center;
-                    margin: 20% 0 ;
-                    @include ssm-block(){
-                        display: none;
-                     }
-                    
-                       a{
-                           padding: 20px 0;
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:314px;
-                           
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-
-                           color: #DFAB5A;
-                       }
-                   }
+                .buttonShadow.shadow{
+                    margin: 80px auto;
+                }
             }
               .operations{
                 @include col();
@@ -2866,33 +2831,9 @@ a button {
                     }
                   
                 }
-                .link{
-                    display: flex;
-                    justify-content: center;
-                    margin: 20% 0 ;
-                    @include ssm-block(){
-                        display: none;
-                     }
-                    
-                       a{
-                           padding: 20px 0;
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:314px;
-                           cursor: pointer;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-
-                           color: #DFAB5A;
-                       }
-                   }
+                .buttonShadow.shadow{
+                    margin: 80px auto;
+                }
             }
         }
     }
