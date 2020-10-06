@@ -25,6 +25,37 @@ hr{
 .btn-content .button:hover button {
   cursor: pointer;
 }
+.buttonBorder.btn-pos{
+    display: block;
+    margin: 20px auto;
+}
+.btn-single{
+    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
+    box-shadow: inset 0px 4px 4px #3E3E3F;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 23px 0;
+    text-align: center;
+    letter-spacing: 0.1em;
+    width: 100%;
+    max-width: 220px;
+    color: #DFAB5A;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+ .btn-single:hover{
+    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+ .btn-single:focus{
+    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
 .link-opening{
     display: inline-block;
     font-family: Roboto;
@@ -687,6 +718,7 @@ a button {
              box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
              color: #DFAB5A;
          }
+         
 }         
 .telegram{
     width: 100%;
@@ -5346,7 +5378,9 @@ a button {
                 }
               
             }
+           
             .calculator{
+               
                 @include col();
                 @include size(2);
                 background:#191818;
@@ -5354,6 +5388,11 @@ a button {
                 height: 350px;
                 margin:20px auto 20px auto;
                 border-radius: 20px;
+                
+                    .btn-single.button-pos{
+                        margin: 35px 15px ;    
+                       }
+                
                 .heading{
                     display: flex;
                     margin: 15% 10% ;
@@ -5435,33 +5474,7 @@ a button {
                         opacity: 0.8;
                     }
                 }
-                .btn-content{
-                    display: flex;
-                    justify-content: center;
-                    margin: 15% 0 ;
-                    
-                       input{
-                           
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           
-                           background-repeat:no-repeat;
-                           outline: none;
-                           width:220px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-                           cursor: pointer;
-                           color: #DFAB5A;
-                       }
-                   }
+             
             }
             .exit{
                 @include col();
@@ -5566,29 +5579,8 @@ a button {
                         color: #EDEDED;
                     }
                 }
-                .btn-content{
-                    display: flex;
-                    justify-content: center;
-                    margin: 15% 0 ;
-                    
-                       input{
-                        outline: none;
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:220px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-                           cursor: pointer;
-                           color: #DFAB5A;
-                       }
+                .btn-single.button-pos{
+                    margin: 35px 15px ;    
                    }
             }
             .transfer{
@@ -5701,29 +5693,8 @@ a button {
                         color: #EDEDED;
                     }
                 }
-                .btn-content{
-                    display: flex;
-                    justify-content: center;
-                    margin: 15% 0 ;
-                    
-                       input{
-                        cursor: pointer;
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:220px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-                           outline: none;
-                           color: #DFAB5A;
-                       }
+                .btn-single.button-pos{
+                    margin: 35px 15px ;    
                    }
             }
         }
@@ -5840,101 +5811,10 @@ a button {
                 }
             }
          
-            .btn-content{
-                display: flex;
-                justify-content: flex-end;
-                 margin: 0 80px;
-                .myEquipment{
-                    input{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
-                        height: 63px;
-                        border: none;
-                        border-radius: 23px 0 0 23px;
-                        cursor: pointer;
-                        outline: none;
-                       
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        
-                        text-align: center;
-                        
-                        color: #B1A99D;
-
-                    }
-                }
-               /* .myEquipment::after{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    z-index: 2;
-                    right:  46.2%;
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    
-                    transform: skew(-15deg);
-                }
-             
-                .buyEquipment::before{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    right:  45.6%;
-                    z-index: 2;
-                    
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    transform: skew(-15deg);
-                }*/
-             
-                 .buyEquipment{
-                    input{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        width:171px;
-                        height: 63px;
-                        border: none;
-                        border-radius: 0 23px 23px 0;
-                        outline: none;
-                        //transform: skew(-20deg);
-                        cursor: pointer;
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        
-                        text-align: center;
-                        
-                        color: #B1A99D;
-                    }
-                 }
-                
-                   
-                   
-                    
-               
-                input[type="submit"]:hover{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-                input[type="submit"]:focus{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-            }
+         .button-group.position{
+            @include size(4);
+            margin-left: 100px;
+         }
         }
         .time{
             @include col();
