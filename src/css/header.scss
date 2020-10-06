@@ -10,7 +10,9 @@ body a{
    
 }
 body{
-    padding: 1,5rem !important;
+    margin: 0;
+    padding: 0 2rem !important;
+  
 
     @include ssm-block(){
         display: flex;
@@ -2387,7 +2389,7 @@ a button {
                     
                    
                 }
-                .buttonShadow.shadow{
+                .buttonShadow.btn-pos{
                     margin: 60px auto;
                 }
             }
@@ -2638,7 +2640,7 @@ a button {
                         }
                     }
                 }
-                .buttonShadow.shadow{
+                .buttonShadow.btn-pos{
                     margin: 80px auto;
                 }
             }
@@ -2831,7 +2833,7 @@ a button {
                     }
                   
                 }
-                .buttonShadow.shadow{
+                .buttonShadow.btn-pos{
                     margin: 80px auto;
                 }
             }
@@ -6599,33 +6601,9 @@ a button {
                     
                    
                 }
-                .btn-content{
-                    @include ssm-block(){
-                       display: none;
-                      }
-                    display: flex;
-                    justify-content: center;
-                    margin:107px 0 ;
-                    
-                       input{
-                           
-                           background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                           box-shadow: inset 0px 4px 4px #3E3E3F;
-                           width:314px;
-                           height: 63px;
-                           border: none;
-                           border-radius: 23px;
-                           font-style: normal;
-                           font-weight: normal;
-                           font-size: 18px;
-                           line-height: 23px;
-                           font-family: Futura PT;
-                           text-align: center;
-                           letter-spacing: 0.1em;
-                           cursor: pointer;
-                           color: #DFAB5A;
-                       }
-                   }
+                .buttonShadow.btn-pos{
+                    margin: 80px auto;
+                }
             }
             .con{
                 @include col();
@@ -6681,7 +6659,7 @@ a button {
                                 font-size: 16px;
                                 line-height: 23px;
                                 
-                                background:url(../img/Polygon1.png) no-repeat;
+                                background:url(../img/icon_arrowDown.svg) no-repeat;
                                 background-position: center right;
                                 border: none;
                                 cursor: pointer;
@@ -6703,208 +6681,19 @@ a button {
                     } 
                 }
                 .button{
-                   display: flex;
-                   justify-content: space-between;
+                  @include row-flex();
+                  @include size (12);
+                  justify-content:center;
+                  .button-group.left{
                    
-                     .btn-content:nth-child(1){
-                        margin-top: 20px;
-                display: flex;
-                @include ssm-block(){
-                    display: none;
-                }
-                .myEquipment{
-                    align-self: center;
-                    a{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        padding: 21px 60px;
-                        height: 63px;
-                        border: none;
-                        border-radius: 23px 0 0 23px;
-                        cursor: pointer;
-                        outline: none;
-                       
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        
-                        text-align: center;
-                        
-                        color: #B1A99D;
-
-                    }
-                }
-              /*  .myEquipment::after{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    z-index: 2;
-                    right:  52%;
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    
-                    transform: skew(-15deg);
-                }
-             
-                .buyEquipment::before{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                      right:  51.3%;
-                    z-index: 2;
-                    
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    transform: skew(-15deg);
-                }*/
-             
-                 .buyEquipment{
-                    align-self: center;
-                    a{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        padding: 21px 60px;
-                        height: 63px;
-                        border: none;
-                        border-radius: 0 23px 23px 0;
-                        outline: none;
-                        //transform: skew(-20deg);
-                        cursor: pointer;
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        
-                        text-align: center;
-                        
-                        color: #B1A99D;
-                    }
-                 }
-                
+                   @include size (6);
+                  }
+                  .button-group.right{
+                    @include size (6);
+                    position: relative;
+                    left: 100px;
                    
-                   
-                    
-               
-                a:hover{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-                a:focus{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-            }
-            .btn-content:nth-child(2){
-                margin-top: 20px;
-                display: flex;
-                @include ssm-block(){
-                    display: none;
-                }
-                .myEquipment{
-                    align-self: center;
-                    a{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        
-                       
-                        border: none;
-                        border-radius: 23px 0 0 23px;
-                       
-                        outline: none;
-                        padding: 21px 40px;
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        
-                        text-align: center;
-                        cursor: pointer;
-                        color: #B1A99D;
-
-                    }
-                }
-               /* .myEquipment::after{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    z-index: 2;
-                    right:  16.0%;
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    
-                    transform: skew(-15deg);
-                }
-             
-                .buyEquipment::before{
-                    content:"";
-                    display: inline-block;
-                    position: absolute;
-                    right:  15.4%;
-                    z-index: 2;
-                    
-                    width: 9px;
-                    height: 63px;
-                    background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                    box-shadow: inset 0px 4px 0px #3E3E3F;
-                    transform: skew(-15deg);
-                }*/
-             
-                 .buyEquipment{
-                     align-self: center;
-                    a{
-                        background: linear-gradient(180.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
-                        box-shadow: inset 0px 4px 0px #3E3E3F;
-                        
-                        height: 63px;
-                        border: none;
-                        border-radius: 0 23px 23px 0;
-                        outline: none;
-                        //transform: skew(-20deg);
-                        cursor: pointer;
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 16px;
-                        line-height: 21px;
-                        padding: 21px 30px;
-                        
-                        text-align: center;
-                        
-                        color: #B1A99D;
-                    }
-                 }
-                
-                   
-                   
-                    
-               
-                a:hover{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-                a:focus{
-                    background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    color: #DFAB5A;
-                    cursor: pointer;
-                }
-            }
+                  }
                 }
                 .radio{
                     @include row-flex();
@@ -6957,7 +6746,7 @@ a button {
                         }
                         background:#191818;
                         width: 100%;
-                        
+                        max-width: 716px;
                         height: 716px;
                         margin:35px auto 20px auto;
                         border-radius: 50%;
