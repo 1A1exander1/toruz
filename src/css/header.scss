@@ -6509,11 +6509,11 @@ a button {
                 .button{
                   @include row-flex();
                   @include size (12);
-                  justify-content:center;
+                  justify-content:space-around;
                   height: 70px;
                   .button-group.left{
                     @include size (6);
-                    display: flex;
+                   
                     max-width: 368px;
                     a{
                         font-family: Futura PT;
@@ -6535,6 +6535,7 @@ a button {
                         display: block;
                         background-image:url(../img/background_btnLeft.svg);
                         background-repeat:no-repeat;
+                        
                         
                         max-width: 190px;
 
@@ -6559,7 +6560,7 @@ a button {
                         width: 100%;
                         
                         position: relative;
-                       
+                       right: 27px;
                     }
                     .btn-right:hover{
                         color: #DFAB5A;
@@ -6575,6 +6576,8 @@ a button {
                   .button-group.right{
                     @include size (6);
                     max-width: 368px;
+                    position: relative;
+                    left: 30px;
                     a{
                         font-family: Futura PT;
                         font-style: normal;
@@ -6595,9 +6598,11 @@ a button {
                         display: block;
                         background-image:url(../img/background_btnLeft.svg);
                         background-repeat:no-repeat;
-                        max-width: 182px;
+                        
                         position: relative;
-                        left:  28px;
+                        left: 27px;
+                        max-width: 190px;
+
                         width: 100%;
                       
                     }
@@ -6605,18 +6610,27 @@ a button {
                         color: #DFAB5A;
                         background-image:url(../img/background_btnLeft_hover.svg);
                         background-repeat:no-repeat;
+                        background-size:100% 90%;
+                        background-position-x: 3px;
+                        
+                        width: 100%;
+                        
                     }
                     .btn-right{
                         display: block;
                         background-image:url(../img/background_btnRight.svg);
                         background-repeat:no-repeat;
-                        max-width: 182px;
+                        max-width: 178px;
                         width: 100%;
+                        
+                       
                     }
                     .btn-right:hover{
                         color: #DFAB5A;
                         background-image:url(../img/background_btnRight_hover.svg);
                         background-repeat:no-repeat;
+                        background-size:100% 90%;
+                        background-position-x: 3px;
                     }
                   }
                   
