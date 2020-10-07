@@ -1851,7 +1851,7 @@ a button {
                             align-self:flex-end;
                             width: 30px;
                             height: 30px;
-                            background-image: url(../img/addImg.png);
+                            background-image: url(../img/icon_addPhoto.svg);
                             background-repeat: no-repeat;
                             background-position: center
                         }
@@ -1892,7 +1892,7 @@ a button {
                         justify-content: center;
                         width: 100%;
                         height: 30px;
-                        background-image: url(../img/telegr.png);
+                        background-image: url(../img/icon_telegram.svg);
                         background-repeat: no-repeat;
                         background-position-x:  20px;
                         p{
@@ -1916,7 +1916,7 @@ a button {
                         height: 40px;
                         display: flex;
                         justify-content: center;
-                        background-image: url(../img/mess.png);
+                        background-image: url(../img/icon_notifications.svg);
                         background-repeat: no-repeat;
                         background-position-x:  15px;
                         p{
@@ -2043,7 +2043,7 @@ a button {
                 .personal{
                     margin-top: 63px;
                     margin-left: 47px;
-                    background-image: url(../img/INFO.png);
+                    background-image: url(../img/icon_userInfo.svg);
                     background-repeat:no-repeat;
                     height: 30px;
                     display: flex;
@@ -2069,7 +2069,7 @@ a button {
                     flex-direction: column;
                     align-items: center; 
                     margin-top: 88px;  
-                    input{
+                    span{
                         background: transparent;
                         border: none;
                         cursor: pointer;
@@ -2092,7 +2092,7 @@ a button {
                         border-bottom: 2px solid #202020;
                         width: 68%;
                         height: 30px;
-                        input{
+                        span{
                            margin-left: 10px; 
                         }
                     }
@@ -2101,7 +2101,7 @@ a button {
                         width: 68%;
                         height: 30px;
                         margin-top: 61px;  
-                        input{
+                        span{
                            margin-left: 10px; 
                         }
                     }
@@ -2110,7 +2110,7 @@ a button {
                         width: 68%;
                         height: 30px;
                         margin-top: 62px;  
-                        input{
+                        span{
                            margin-left: 10px; 
                         }
                     }
@@ -2119,7 +2119,7 @@ a button {
                         width: 68%;
                         height: 30px;
                         margin-top: 68px;  
-                        input{
+                        span{
                            margin-left: 10px; 
                         }
                     }
@@ -2138,7 +2138,7 @@ a button {
                 .change{
                     margin-top: 63px;
                     margin-left: 47px;
-                    background-image: url(../img/pass.png);
+                    background-image: url(../img/icon_changePassword.svg);
                     background-repeat:no-repeat;
                     height: 30px;
                     display: flex;
