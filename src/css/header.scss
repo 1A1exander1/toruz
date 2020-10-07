@@ -6511,15 +6511,28 @@ a button {
                   @include size (12);
                   justify-content:center;
                   .button-group.left{
+                    @include size (6);
+                    .btn-right{
+                        position: relative;
+                        right: 27px;
+                    }
+                    svg{
+                        cursor: pointer;
+                    }
+                  
                    
-                   @include size (6);
                   }
                   .button-group.right{
                     @include size (6);
-                    position: relative;
-                    left: 100px;
-                   
+                    .btn-left{
+                        position: relative;
+                        left:  27px;
+                    }
+                    svg{
+                        cursor: pointer;
+                    }
                   }
+                  
                 }
                 .radio{
                     @include row-flex();
