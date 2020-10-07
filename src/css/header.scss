@@ -6514,7 +6514,7 @@ a button {
                   .button-group.left{
                     @include size (6);
                    
-                    max-width: 368px;
+                    width: 368px;
                     a{
                         font-family: Futura PT;
                         font-style: normal;
@@ -6575,7 +6575,7 @@ a button {
                   }
                   .button-group.right{
                     @include size (6);
-                    max-width: 368px;
+                    width: 368px;
                     position: relative;
                     left: 30px;
                     a{
