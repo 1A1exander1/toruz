@@ -6591,7 +6591,7 @@ a button {
        background-color:none;
       
     }
-    background: url(../img/roup2.png) no-repeat;
+    background: url(../img/background_footer.svg) no-repeat;
     background-color:black;
     background-position: right;
     @include size-ssm(12);
@@ -6902,6 +6902,7 @@ a button {
                         margin-top: 80px ;
                         position: relative;
                         left: 40px;
+                        display: flex;
                         img{
                             padding:0 27px ;
                             
