@@ -5487,7 +5487,7 @@ a button {
                 .heading{
                     display: flex;
                     margin: 15% 10% ;
-                    background-image: url(../img/d210.png);
+                    background-image: url(../img/icon_withdraw.svg);
                     background-repeat: no-repeat;
                     background-position: right;
                  
@@ -5595,7 +5595,7 @@ a button {
                 .heading{
                     display: flex;
                     margin: 13% 10% ;
-                    background-image: url(../img/B10.png);
+                    background-image: url(../img/icon_transfer.svg);
                     background-repeat: no-repeat;
                     background-position: right;
                     p{
@@ -5759,7 +5759,7 @@ a button {
                     align-self: flex-end;
                     
                     a{
-                        background:url(../img/Frame4.png) no-repeat;
+                        background:url(../img/icon_personal.svg) no-repeat;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -5777,7 +5777,7 @@ a button {
                    
                     a{
                         cursor: pointer;
-                        background:url(../img/Frame14.png) no-repeat;
+                        background:url(../img/icon_personal_hover.svg) no-repeat;
                         color:#DFAB5A;
                     }
                 }
@@ -5785,9 +5785,9 @@ a button {
                     display: flex;
                    
                     width: 100px;
-                    align-self: flex-end;
+                    
                     a{
-                        background:url(../img/Vector112.png) no-repeat;
+                        background:url(../img/icon_structure.svg) no-repeat;
                         font-family: Futura PT;
                         font-style: normal;
                         font-weight: normal;
@@ -5806,7 +5806,7 @@ a button {
                    
                     a{
                         cursor: pointer;
-                        background:url(../img/Vector121.png) no-repeat;
+                        background:url(../img/icon_structure_hover.svg) no-repeat;
                         color:#DFAB5A;
                     }
                 }
@@ -5841,7 +5841,7 @@ a button {
                     font-weight: normal;
                     font-size: 16px;
                     line-height: 21px;
-                    background:url(../img/Polygon1.png) no-repeat;
+                    background:url(../img/icon_triangleDown.svg) no-repeat;
                     background-position: center right;
                     border: none;
                     cursor: pointer;
