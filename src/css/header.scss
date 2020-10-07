@@ -6514,6 +6514,7 @@ a button {
                   .button-group.left{
                     @include size (6);
                     display: flex;
+                    max-width: 368px;
                     a{
                         font-family: Futura PT;
                         font-style: normal;
@@ -6545,6 +6546,7 @@ a button {
                         background-image:url(../img/background_btnLeft_hover.svg);
                         background-repeat:no-repeat;
                         background-size:100% 90%;
+                        background-position-x: 3px;
                         
                         width: 100%;
                         
@@ -6553,7 +6555,7 @@ a button {
                         display: block;
                         background-image:url(../img/background_btnRight.svg);
                         background-repeat:no-repeat;
-                        max-width: 182px;
+                        max-width: 178px;
                         width: 100%;
                         
                         position: relative;
@@ -6564,6 +6566,7 @@ a button {
                         background-image:url(../img/background_btnRight_hover.svg);
                         background-repeat:no-repeat;
                         background-size:100% 90%;
+                        background-position-x: 3px;
                     }
                    
                   
@@ -6571,6 +6574,7 @@ a button {
                   }
                   .button-group.right{
                     @include size (6);
+                    max-width: 368px;
                     a{
                         font-family: Futura PT;
                         font-style: normal;
