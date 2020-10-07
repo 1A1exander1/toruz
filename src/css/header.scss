@@ -644,8 +644,8 @@ a button {
      border: none;
      display: block;
      padding: 21px 0;
-    
-     margin: 0 1px;
+        
+     margin: 0 ;
      border-radius: 20px  0 0 20px;
 
      } 
@@ -657,10 +657,10 @@ a button {
          width: 50%;
          height: 62px;
          top: 0;
-         left: 136px;
+         left: 138px;
          z-index: -1;
          background: linear-gradient(80.3deg, #191818 0%, #2B2929 100%);
-         
+         margin: 0;
          transform-origin: bottom left;
          -ms-transform: skew(-28deg, 0deg);
          -webkit-transform: skew(-18deg, 0deg);
@@ -670,7 +670,7 @@ a button {
          align-self: center;
          position: relative;
          background: linear-gradient(244.83deg, #191818 0%, #2B2929 99.96%);
-        
+         margin: 0;  
          max-width: 275px;
          width: 100%;
          border: none;
@@ -684,12 +684,12 @@ a button {
          .btn-right:after{
              content: " ";
              position: absolute;
-             
+             margin: 0;
              display: inline-block;
              width: 50%;
              height: 62px;
              top: 0;
-             left: -20px;
+             left: -19px;
              z-index: -1;
              background: linear-gradient(220.3deg, #191818 0%, #2B2929 100%);
              
@@ -700,22 +700,22 @@ a button {
          }
          .btn.btn-right:hover{
              background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             
              color: #DFAB5A;
          }
          .btn.btn-right:hover:after{
              background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
              color: #DFAB5A;
          }
          .btn.btn-left:hover{
              background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+             
              color: #DFAB5A;
          }
          .btn.btn-left:hover:after{
              background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
              color: #DFAB5A;
          }
          
