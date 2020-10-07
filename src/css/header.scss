@@ -6512,6 +6512,12 @@ a button {
                   justify-content:center;
                   .button-group.left{
                     @include size (6);
+                    .btn-left:hover{
+                       
+                        background-image:url(../img/background_btnDiagram.svg);
+                        background-repeat:no-repeat;
+                      
+                    }
                     .btn-right{
                         position: relative;
                         right: 27px;
