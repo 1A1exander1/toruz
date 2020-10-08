@@ -5888,7 +5888,8 @@ a button {
                     
                      text-align: left;
                      height: 65px;
-                     background: #979085;
+                     background-color: rgba(151,144,133,0.2);
+                     
                     
                   div{
                       border-right: 1px solid #ffffff;
@@ -5906,21 +5907,25 @@ a button {
                  .views-field.views-field-created{
                     width: 10%;
                     text-align: center;
+                    padding-left: 10px;
                    
                 }
                 .views-field.views-field-field-order-amount{
                     width: 10%;
                     text-align: center;
+                    padding-left: 10px;
                 }
                 .views-field.views-field-field-order-status{
                     width: 10%;
+                    padding-left: 10px;
                     text-align: center;
                 }
                
                 }
                 tr:nth-child(even){
                     td{
-                        background: #DAD2C6;
+                        background: rgba(218,210,198,0.2);
+
                     }
                 }
               
