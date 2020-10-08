@@ -130,6 +130,21 @@ hr{
 
     color: #DFAB5A;
 }
+content .wrapper .time .text .period option {
+    background: #191818;
+    border: 0;
+    outline: 0;
+}
+content .wrapper .time .text .period {
+    word-wrap: break-word;
+    font-family: Futura PT;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+    color: #dad2c6;
+}
 .content .wrapper .blocks .structure .user .img img{
   max-width: 60px;
   height: auto;
