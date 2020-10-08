@@ -1074,7 +1074,7 @@ a button {
                   
                 }
             }
-            a:hover{
+          .active:hover{
                 color:#DFAB5A;
                 cursor: pointer;
             }
@@ -3148,19 +3148,19 @@ a button {
                             
                         }
                         .rig{
-                          background:url(../img/equip1.png) no-repeat ;
+                          background:url(../img/icon_equipment.svg) no-repeat ;
                            
                         }
                         .rig:hover{
-                            background:url(../img/equip.png) no-repeat ;
+                            background:url(../img/icon_equipment_hover.svg) no-repeat ;
                             color: #DFAB5A;
                             cursor: pointer;
                         }
                         .contracts{
-                            background:url(../img/contract.png) no-repeat ;
+                            background:url(../img/icon_contract.svg) no-repeat ;
                         }
                         .contracts:hover{
-                            background:url(../img/contract1.png) no-repeat ;
+                            background:url(../img/icon_contract_hover.svg) no-repeat ;
                             color: #DFAB5A;
                             cursor: pointer;
                         }
@@ -5862,7 +5862,7 @@ a button {
                         font-weight: 300;
                         font-size: 12px;
                         line-height: 14px;
-                      
+                        padding-right: 20px;
                         text-align: center;
 
                         color: #979085;
@@ -5882,9 +5882,10 @@ a button {
                     line-height: 16px;
                    
                     width: 22%;
+                    font-size: 15px;
+                    line-height: 18px;
                     
-                    
-                    color: #ffffff;
+                    color:#979085;
                     
                      text-align: left;
                      height: 65px;
@@ -5892,7 +5893,7 @@ a button {
                      
                     
                   div{
-                      border-right: 1px solid #ffffff;
+                      border-right: 1px solid #979085;
                       padding-right: 20px;
                       padding-top: 18px;
                       padding-bottom: 18px;  
