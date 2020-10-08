@@ -29,6 +29,69 @@ hr{
     display: block;
     margin: 20px auto;
 }
+.button-group{
+    @include size (6);
+   
+    width: 368px;
+    height: 62px;
+    a{
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #DAD2C6;
+
+        opacity: 0.7;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .btnLeft{
+        display: block;
+        background-image:url(../img/background_btnLeft.svg);
+        background-repeat:no-repeat;
+        
+        
+        max-width: 190px;
+
+        width: 100%;
+      
+    }
+    .btnLeft:hover{
+        color: #DFAB5A;
+        background-image:url(../img/background_btnLeft_hover.svg);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        background-position-x: 3px;
+        
+        width: 100%;
+        
+    }
+    .btnRight{
+        display: block;
+        background-image:url(../img/background_btnRight.svg);
+        background-repeat:no-repeat;
+        max-width: 178px;
+        width: 100%;
+        
+        position: relative;
+       right: 27px;
+    }
+    .btnRight:hover{
+        color: #DFAB5A;
+        background-image:url(../img/background_btnRight_hover.svg);
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        background-position-x: 3px;
+    }
+   
+  
+   
+  }
 .btn-single{
     background: linear-gradient(188.2deg, #2E2E2E 25.12%, #1E1D1D 95.07%);
     box-shadow: inset 0px 4px 4px #3E3E3F;
@@ -621,103 +684,65 @@ a button {
             }
    }
    .btn-group{
-    margin: 20px 20px;
-    display: flex;
+    
+    width: 605px;
+    height: 70px;
     .btn{
-     font-family: Futura PT;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 16px;
-     line-height: 21px;
-     cursor: pointer;
-     text-align: center;
-     
-     color: #B1A99D;
-    }
-     .btn.btn-left {
-     align-self: center;
-     position: relative;
-     background: linear-gradient(24.83deg, #191818 0%, #2B2929 99.96%);
-     
-     max-width: 275px;
-     width: 100%;
-     border: none;
-     display: block;
-     padding: 21px 0;
-        
-     margin: 0 ;
-     border-radius: 20px  0 0 20px;
+        font-family: Futura PT;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        text-align: center;
 
-     } 
-     .btn-left:after{
-         content: " ";
-         position: absolute;
-         
-         display: inline-block;
-         width: 50%;
-         height: 62px;
-         top: 0;
-         left: 138px;
-         z-index: -1;
-         background: linear-gradient(80.3deg, #191818 0%, #2B2929 100%);
-         margin: 0;
-         transform-origin: bottom left;
-         -ms-transform: skew(-28deg, 0deg);
-         -webkit-transform: skew(-18deg, 0deg);
-         transform: skew(-18deg, 0deg);
-     } 
-     .btn.btn-right {
-         align-self: center;
-         position: relative;
-         background: linear-gradient(244.83deg, #191818 0%, #2B2929 99.96%);
-         margin: 0;  
-         max-width: 275px;
-         width: 100%;
-         border: none;
-         display: block;
-         padding: 21px 0;
+        color: #DAD2C6;
         
-         margin: 0 18px;
-         border-radius: 0 20px 20px 0;
- 
-         } 
-         .btn-right:after{
-             content: " ";
-             position: absolute;
-             margin: 0;
-             display: inline-block;
-             width: 50%;
-             height: 62px;
-             top: 0;
-             left: -19px;
-             z-index: -1;
-             background: linear-gradient(220.3deg, #191818 0%, #2B2929 100%);
-             
-             transform-origin: bottom left;
-             -ms-transform: skew(-18deg, 0deg);
-             -webkit-transform: skew(-18deg, 0deg);
-             transform: skew(-18deg, 0deg);
-         }
-         .btn.btn-right:hover{
-             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             
-             color: #DFAB5A;
-         }
-         .btn.btn-right:hover:after{
-             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-            
-             color: #DFAB5A;
-         }
-         .btn.btn-left:hover{
-             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-             
-             color: #DFAB5A;
-         }
-         .btn.btn-left:hover:after{
-             background: linear-gradient(205.8deg, #191818 2.81%, #2B2929 97.41%);
-            
-             color: #DFAB5A;
-         }
+        opacity: 0.7;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .btn-left{
+        display: block;
+        background-image:url(../img/background_buttonLeft.svg);
+        background-repeat:no-repeat;
+        
+        
+        max-width: 305px;
+
+        width: 100%;
+      
+    }
+    .btn-left:hover{
+        color: #DFAB5A;
+        background-image:url(../img/background_buttonLeft_hover.svg);
+        background-repeat:no-repeat;
+        background-size:98%;
+        background-position-x: 3px;
+        
+        width: 100%;
+        
+    }
+    .btn-right{
+        display: block;
+        background-image:url(../img/background_buttonRight.svg);
+        background-repeat:no-repeat;
+        max-width: 299px;
+        width: 100%;
+        
+        position: relative;
+       right: 30px;
+    }
+    .btn-right:hover{
+        color: #DFAB5A;
+        background-image:url(../img/background_buttonRight_hover.svg);
+        background-repeat:no-repeat;
+        background-size:95%;
+        background-position-x: 3px;
+    }
+   
+  
          
 }         
 .telegram{
@@ -5697,11 +5722,11 @@ a button {
                 justify-content: center;
                 @include col();
                 @include size(4);
-                margin-bottom: 25px ;
+                margin-top: 15px;
                 .personal{
                     display: flex;
                  
-                    align-self: flex-end;
+                    
                     
                     a{
                         background:url(../img/icon_personal.svg) no-repeat;
@@ -5712,6 +5737,7 @@ a button {
                         line-height: 31px;
                         padding:2px 50px ;
                         text-align: center;
+                        align-self: center;
                         text-transform: capitalize;
                         cursor: pointer;
                         color: #DAD2C6;
@@ -5742,7 +5768,7 @@ a button {
                         text-align: center;
                         cursor: pointer;
                         text-transform: capitalize;
-
+                        align-self: center;
                         color: #DAD2C6;
 
                     }
@@ -5757,10 +5783,14 @@ a button {
                 }
             }
          
-         .button-group.position{
-            @include size(4);
-            margin-left: 100px;
-         }
+            .button-group.position{
+                margin-left: 125px;  
+                   
+               
+               
+              
+               
+              }
         }
         .time{
             @include col();
@@ -6511,10 +6541,11 @@ a button {
                   @include size (12);
                   justify-content:space-around;
                   height: 70px;
-                  .button-group.left{
-                    @include size (6);
+                  .button-group{
+                    
                    
                     width: 368px;
+                    height: 62px;
                     a{
                         font-family: Futura PT;
                         font-style: normal;
@@ -6524,35 +6555,35 @@ a button {
                         display: flex;
                         align-items: center;
                         text-align: center;
-
+                
                         color: #DAD2C6;
-
+                
                         opacity: 0.7;
                         text-align: center;
                         padding-top: 20px;
                     }
-                    .btn-left{
+                    .btnLeft{
                         display: block;
                         background-image:url(../img/background_btnLeft.svg);
                         background-repeat:no-repeat;
                         
                         
                         max-width: 190px;
-
+                
                         width: 100%;
                       
                     }
-                    .btn-left:hover{
+                    .btnLeft:hover{
                         color: #DFAB5A;
                         background-image:url(../img/background_btnLeft_hover.svg);
                         background-repeat:no-repeat;
-                        background-size:100% 90%;
+                        background-size:100% 100%;
                         background-position-x: 3px;
                         
                         width: 100%;
                         
                     }
-                    .btn-right{
+                    .btnRight{
                         display: block;
                         background-image:url(../img/background_btnRight.svg);
                         background-repeat:no-repeat;
@@ -6562,76 +6593,20 @@ a button {
                         position: relative;
                        right: 27px;
                     }
-                    .btn-right:hover{
+                    .btnRight:hover{
                         color: #DFAB5A;
                         background-image:url(../img/background_btnRight_hover.svg);
                         background-repeat:no-repeat;
-                        background-size:100% 90%;
+                        background-size:100% 100%;
                         background-position-x: 3px;
                     }
                    
                   
                    
                   }
-                  .button-group.right{
-                    @include size (6);
-                    width: 368px;
-                    position: relative;
-                    left: 30px;
-                    a{
-                        font-family: Futura PT;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 18px;
-                        line-height: 23px;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-
-                        color: #DAD2C6;
-
-                        opacity: 0.7;
-                        text-align: center;
-                        padding-top: 20px;
-                    }
-                    .btn-left{
-                        display: block;
-                        background-image:url(../img/background_btnLeft.svg);
-                        background-repeat:no-repeat;
-                        
-                        position: relative;
-                        left: 27px;
-                        max-width: 190px;
-
-                        width: 100%;
-                      
-                    }
-                    .btn-left:hover{
-                        color: #DFAB5A;
-                        background-image:url(../img/background_btnLeft_hover.svg);
-                        background-repeat:no-repeat;
-                        background-size:100% 90%;
-                        background-position-x: 3px;
-                        
-                        width: 100%;
-                        
-                    }
-                    .btn-right{
-                        display: block;
-                        background-image:url(../img/background_btnRight.svg);
-                        background-repeat:no-repeat;
-                        max-width: 178px;
-                        width: 100%;
-                        
-                       
-                    }
-                    .btn-right:hover{
-                        color: #DFAB5A;
-                        background-image:url(../img/background_btnRight_hover.svg);
-                        background-repeat:no-repeat;
-                        background-size:100% 90%;
-                        background-position-x: 3px;
-                    }
+                  .button-group.rightPos{
+                      position: relative;
+                      left: 50px;
                   }
                   
                 }
