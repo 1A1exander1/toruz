@@ -5880,21 +5880,31 @@ a button {
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 16px;
-                    
+                   
+                    width: 22%;
                     
                     
                     color: #ffffff;
                     text-align: left;
-                     position: relative;
+                     text-align: center;
                      height: 65px;
                      background: #979085;
                      opacity: 0.2;
-                  span{
-                      border-right: 1px solid red;
-                      padding-right: 10%;
-                  }   
+                  div{
+                      border-right: 1px solid #ffffff;
+                      padding-right: 20px;
+                      padding-top: 18px;
+                      padding-bottom: 18px;  
+                      width: 100%;
+                  } 
+
                  }
-                
+                 td:first-child{
+                     text-align: left;
+                 }
+                 td:last-child{
+                    text-align: left;
+                }
               
                 }
                 tr:nth-child(even){
