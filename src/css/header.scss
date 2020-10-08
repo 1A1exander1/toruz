@@ -1089,13 +1089,17 @@ a button {
                   
                 }
             }
-          .active:hover{
+          a:hover{
                 color:#DFAB5A;
                 cursor: pointer;
             }
         }
+        .nav.active{
+            color:#DFAB5A;
+        }
+       
     }
-   
+    
    
 }   
 .items::before{
@@ -2478,6 +2482,20 @@ a button {
                                             background: #191818; 
                                             border: 0px; 
                                             outline: 0px;
+                                            
+                                   
+                                                background: #191818; 
+                                                border: 0px; 
+                                                outline: 0px;
+                                                word-wrap: break-word;
+                                                font-family: Futura PT;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 21px;
+                                                cursor: pointer;
+                                                color: #dad2c6;
+                                         
                                         }
                                     }
                              
@@ -3933,9 +3951,19 @@ a button {
                                             }
                                             option{
                                                
+                                              
                                                 background: #191818; 
                                                 border: 0px; 
                                                 outline: 0px;
+                                                word-wrap: break-word;
+                                                font-family: Futura PT;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                font-size: 16px;
+                                                line-height: 21px;
+                                                cursor: pointer;
+                                                color: #dad2c6;
+                                                
                                             }
                                         }
                                  
@@ -5840,9 +5868,18 @@ a button {
                     color:#DAD2C6;
                     option{
                        
+                       
                         background: #191818; 
                         border: 0px; 
                         outline: 0px;
+                        word-wrap: break-word;
+                        font-family: Futura PT;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 21px;
+                        cursor: pointer;
+                        color: #dad2c6;
                     }
                 }
          
@@ -6083,9 +6120,18 @@ a button {
                                         }
                                         option{
                                            
+                                           
                                             background: #191818; 
                                             border: 0px; 
                                             outline: 0px;
+                                            word-wrap: break-word;
+                                            font-family: Futura PT;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 16px;
+                                            line-height: 21px;
+                                            cursor: pointer;
+                                            color: #dad2c6;
                                         }
                                     }
                              
@@ -6569,6 +6615,14 @@ a button {
                                     background: #191818; 
                                     border: 0px; 
                                     outline: 0px;
+                                    word-wrap: break-word;
+                                    font-family: Futura PT;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 21px;
+                                    cursor: pointer;
+                                    color: #dad2c6;
                                 }
                             }
                      
