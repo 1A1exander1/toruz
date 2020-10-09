@@ -4031,12 +4031,21 @@ a button {
                         ul{
                             display: flex;
                             margin-left:250px;
-                            
+                           .number{
+                               
+                                a{
+                                    width: 80px;
+                                  
+                                }
+                           } 
                          li{
                              padding:0 10px ;
                              height: 30px;
+                             width: 80px;
                              img{
                                 position: relative;
+                                    height: 90px;
+                                    width: 80px;
                                  bottom:  170%;
                                 
                              }
