@@ -3720,7 +3720,7 @@ a button {
             }
         }
         .tableEquipment{
-           display: none;
+           display: block;
             #listСhoice{
                display: flex;
                
@@ -3791,7 +3791,7 @@ a button {
                      width: 60%;
                     
                     table{
-                        
+                     
                        width: 100%;
                         
                        thead{
@@ -3819,8 +3819,16 @@ a button {
                            }
                        }
                        tbody{
+                     
                         tr{
                          td{
+                            div{
+                                border-right: 1px solid #979085;
+                                padding-right: 20px;
+                                padding-top: 18px;
+                                padding-bottom: 18px;  
+                                width: 100%;
+                            }
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
@@ -4007,7 +4015,7 @@ a button {
         }
         
         .calculator{
-           height: 900px;
+         
             #calculatorСhoice{
                 .bugContainer{
                     @include col();
@@ -4167,31 +4175,11 @@ a button {
                         }
                         li:nth-child(2){
                             
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               
-                              
-                                  box-sizing: border-box;
-                                  width: 230px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
+                           
                         }
                         li:nth-child(3){
                           text-align: center;
-                          border-bottom: 1px solid #404041;
+                          
                           width: 40px;
                           margin-left: 15px;
                           
@@ -4290,7 +4278,7 @@ a button {
                             margin-left:237px;
                             
                          li{
-                             padding:0 10px ;
+                             padding:0 12px ;
                              height: 30px;
                              img{
                                 position: relative;
@@ -4341,28 +4329,12 @@ a button {
                             }
                         }
                         li:nth-child(3){
-                          
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                text-align: center;
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               border-bottom: 1px solid #404041;
-                              
-                                  box-sizing: border-box;
-                                  width: 30px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
+                           text-align: center;
+                            border-bottom: 1px solid #404041;
+                            width: 100%;
+                            max-width: 67px;
+                            padding: 0;
+                            
                         }
                     }
                     .form{
@@ -4489,116 +4461,7 @@ a button {
                     @include ssm-block(){
                         display: none;
                     }
-                    .rowTableOne{
-                        display: flex;
-                      
-                    }
-                    .calculatorTable{
-                        position: relative;
-                        top: 40px;
-                        left: 20px;
-                    }
-                    align-items: flex-start;
-                    background: #191818;
-                    display: block;
-                  
-                   td{
-                       width: 100%;
-                   }
-                    .text{
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        color: #DFAB5A;
-                        text-align: center;
-                        text-transform: uppercase; 
-                        padding-top: 10px;  
-                    }
-                    tr{
-                        height: 41px;
-                    }
-                    .border.list{
-                        transform: translate(35%,0);
-                    }
-                 
-                    .border{
-                        border-bottom: 1px solid #404041;
-                        
-                        .time{
-                           width: 209px;
-                           
-                           margin:  0;
-
-                           .period{
-                            @include col();
-                            @include size(12);
-                            appearance: none;
-                            width:209px ;
-                            font-family: Futura PT;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: 21px;
-                            background:url(../img/icon_triangleDown.svg) no-repeat;
-                            background-position: center right;
-                            border: none;
-                            cursor: pointer;
-                            background-color: transparent;
-                            outline: none;
-                            color:#DAD2C6;
-                            option{
-                               
-                               
-                                background: #191818; 
-                                border: 0px; 
-                                outline: 0px;
-                                word-wrap: break-word;
-                                font-family: Futura PT;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 16px;
-                                line-height: 21px;
-                                cursor: pointer;
-                                color: #dad2c6;
-                            }
-                        }
-                         
-                        }
-                    }
-                    .border.heading{
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: normal;
-                        font-size: 12px;
-                        line-height: 14px;
-                       
-                        text-align: left;
-
-                        color: #A7A4A0;
-                    }
-                    .border.heading.widthModel{
-                        width: 170px;
-                        
-                    }
-                    .border.heading.widthQuantity{
-                        width: 113px;
-                         text-align: center;
-                    }
-                    .hardwareCalculator{
-                        font-family: Roboto;
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 18px;
-                        line-height: 21px;
-                        display: flex;
-                        align-items: center;
-                        text-transform: uppercase;
-                        
-                        color: #979085; 
-                        img{
-                            margin-right: 20px;
-                        }
-                    }
+               
 
                   }
                 
