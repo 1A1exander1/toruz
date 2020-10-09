@@ -3816,12 +3816,14 @@ a button {
                             th:first-child{
                                 border-radius: 20px 0 0 0;
                             }
+                            th:first-child{
+                                border-radius: 20px 0 0 0;
+                            }
                            }
                        }
                        tbody{
                      
                         tr{
-                         td{
                             div{
                                 border-right: 1px solid #979085;
                                 padding-right: 20px;
@@ -3829,6 +3831,8 @@ a button {
                                 padding-bottom: 18px;  
                                 width: 100%;
                             }
+                         td{
+                           
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
@@ -4173,10 +4177,7 @@ a button {
                              
                          }
                         }
-                        li:nth-child(2){
-                            
-                           
-                        }
+                       
                         li:nth-child(3){
                           text-align: center;
                           
