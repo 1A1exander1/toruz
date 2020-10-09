@@ -3789,7 +3789,10 @@ a button {
                         
                         height: 100%;
                      width:100%;
-                    
+                    .none{
+                        background: transparent !important;
+                        width: 14px!important;
+                    }
                     table{
                      
                        width: 100%;
@@ -3816,8 +3819,8 @@ a button {
                             th:first-child{
                                 border-radius: 20px 0 0 0;
                             }
-                            th:first-child{
-                                border-radius: 20px 0 0 0;
+                            th:last-child{
+                                border-radius: 0 20px 0 0;
                             }
                            }
                        }
@@ -3838,14 +3841,14 @@ a button {
                             font-weight: normal;
                             font-size: 14px;
                             line-height: 16px;
-                           
-                           
+                           text-align: center;
+                            padding-right: 20px;
                             font-size: 15px;
                             line-height: 18px;
                             
                             color:#979085;
                             
-                             text-align: left;
+                            
                              height: 65px;
                              background-color: rgba(151,144,133,0.2);
                              
@@ -3891,130 +3894,10 @@ a button {
                        
                     }
                    }
-                   table:nth-child(1){
                   
-                    tbody{
-                        tr{
-                            td{
-                                padding: 0 30px ;
-                              
-                            }
-                        }
-                    }
-                   }
                 
                 }
-                .tableRight{
-                    @include ssm-block(){
-                        display: none;
-                    }
-                        
-                        height: 100%;
-                     width: 38%;
-                     margin-left: 20px;
-                    
-                    table{
-                        
-                       width: 100%;
-                        
-                       thead{
-                        
-                           tr{
-                             
-                            th{
-                                
-                                
-                                height: 65px;
-                                background: #191818;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 12px;
-                                line-height: 14px;
-                                padding-right: 20px;
-                                text-align: center;
-        
-                                color: #979085;
-                            }
-                            th:nth-child(1){
-                                border-radius: 20px 0 0 0;
-                            }
-                           }
-                       }
-                       tbody{
-                        tr{
-                         td{
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 16px;
-                           
-                            width: 22%;
-                            font-size: 15px;
-                            line-height: 18px;
-                            
-                            color:#979085;
-                            
-                             text-align: center;
-                             height: 65px;
-                             background-color: rgba(151,144,133,0.2);
-                             
-                            
-                          div{
-                              border-right: 1px solid #979085;
-                              padding-right: 20px;
-                              padding-top: 18px;
-                              padding-bottom: 18px;  
-                              width: 100%;
-                          } 
-                          
-        
-                         }
-                         .views-field.views-field-field-order-type{
-                             width: 15%;
-                         }
-                         .views-field.views-field-created{
-                            width: 10%;
-                            text-align: center;
-                            padding-left: 10px;
-                           
-                        }
-                        .views-field.views-field-field-order-amount{
-                            width: 10%;
-                            text-align: center;
-                            padding-left: 10px;
-                        }
-                        .views-field.views-field-field-order-status{
-                            width: 10%;
-                            padding-left: 10px;
-                            text-align: center;
-                        }
-                       
-                        }
-                        tr:nth-child(even){
-                            td{
-                                background: rgba(218,210,198,0.2);
-        
-                            }
-                        }
-                      
-                       
-                    }
-                   }
-                   table:nth-child(1){
-                  
-                    tbody{
-                        tr{
-                            td{
-                                padding: 0 30px ;
-                              
-                            }
-                        }
-                    }
-                   }
-                
-                }
+              
             }
         }
         
