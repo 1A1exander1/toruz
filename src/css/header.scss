@@ -4045,7 +4045,7 @@ a button {
                         border-radius: 3px;
                     }
                 }
-                
+                 
                   .container{
                     max-width: 100%;
                     width: 1200px;
@@ -4053,6 +4053,10 @@ a button {
                     @include row-flex();
                     @include ssm-block(){
                         display: none;
+                    }
+                    .rowTableOne{
+                        display: flex;
+                      
                     }
                     .calculatorTable{
                         position: relative;
@@ -4081,11 +4085,7 @@ a button {
                     .border.list{
                         transform: translate(35%,0);
                     }
-                    th{
-                        img{
-                            display: block;
-                        }
-                    }
+                 
                     .border{
                         border-bottom: 1px solid #404041;
                         
