@@ -4989,6 +4989,11 @@ a button {
                         opacity: 0.8;
                     }
                 }
+                .btn-single.button-pos{
+                    transform: translate(0, 50%);
+                       margin: 0 auto;
+                       display: block;
+                   }
              
             }
             .exit{
@@ -5096,7 +5101,9 @@ a button {
                     }
                 }
                 .btn-single.button-pos{
-                    margin: 35px 15px ;    
+                    transform: translate(0, 50%);
+                       margin: 0 auto;
+                       display: block;
                    }
             }
             .transfer{
@@ -5210,7 +5217,9 @@ a button {
                     }
                 }
                 .btn-single.button-pos{
-                    margin: 35px 15px ;    
+                    transform: translate(0, 50%);
+                       margin: 0 auto;
+                       display: block;
                    }
             }
         }
