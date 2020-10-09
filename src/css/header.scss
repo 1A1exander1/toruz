@@ -3030,7 +3030,7 @@ a button {
                 width: 100%;
              }
             @include row-flex();
-            height: 350px;
+          
             .income{
                 @include col();
                 @include size(4);
@@ -3788,7 +3788,7 @@ a button {
                     }
                         
                         height: 100%;
-                     width: 60%;
+                     width:100%;
                     
                     table{
                      
@@ -3799,7 +3799,7 @@ a button {
                            tr{
                              
                             th{
-                                
+                               
                                 
                                 height: 65px;
                                 background: #191818;
@@ -3813,7 +3813,7 @@ a button {
         
                                 color: #979085;
                             }
-                            th:nth-child(1){
+                            th:first-child{
                                 border-radius: 20px 0 0 0;
                             }
                            }
@@ -3835,7 +3835,7 @@ a button {
                             font-size: 14px;
                             line-height: 16px;
                            
-                            width: 22%;
+                           
                             font-size: 15px;
                             line-height: 18px;
                             
@@ -4306,27 +4306,11 @@ a button {
                          }
                         }
                         li:nth-child(2){
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               border-bottom: 1px solid #404041;
-                              
-                                  box-sizing: border-box;
-                                  width: 230px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
+                            text-align: center;
+                            border-bottom: 1px solid #404041;
+                            width: 100%;
+                            max-width: 250px;
+                            padding: 0;
                         }
                         li:nth-child(3){
                            text-align: center;
@@ -4456,12 +4440,17 @@ a button {
                   .container{
                     max-width: 100%;
                     width: 1200px;
-                    height: 486px;
+                    
                     @include row-flex();
                     @include ssm-block(){
                         display: none;
                     }
-               
+                 
+                    align-items: flex-start;
+                    background: #191818;
+                    display: block;
+                  
+                 
 
                   }
                 
