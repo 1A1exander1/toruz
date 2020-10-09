@@ -143,7 +143,7 @@ content .wrapper .time .text .period {
     color: #dad2c6;
 }
 .content {
-    min-height: calc(100vh - 306px);
+    min-height: calc(100vh - 306px - 140px);
 }
 .content .wrapper .blocks .structure .user .img img{
   max-width: 60px;
@@ -3964,7 +3964,7 @@ a button {
                                             font-size: 16px;
                                             line-height: 23px;
                                             
-                                            background:url(../img/Polygon1.png) no-repeat;
+                                            
                                             background-position: center right;
                                             border: none;
                                             cursor: pointer;
