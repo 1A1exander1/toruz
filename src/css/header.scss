@@ -9,15 +9,12 @@ body a{
  
    
 }
-body{
+.kit{
     margin: 0;
     padding: 0 2rem !important;
   
 
-    @include ssm-block(){
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    
 }
 hr{
     margin:1rem 0
@@ -144,6 +141,9 @@ content .wrapper .time .text .period {
     line-height: 21px;
     cursor: pointer;
     color: #dad2c6;
+}
+.content {
+    min-height: calc(100vh - 306px);
 }
 .content .wrapper .blocks .structure .user .img img{
   max-width: 60px;
@@ -1094,8 +1094,8 @@ a button {
                 cursor: pointer;
             }
         }
-        .nav.active{
-            color:#DFAB5A;
+        .nav.active a{
+            color:#dfab5a
         }
        
     }
@@ -3197,7 +3197,13 @@ a button {
                             color: #DFAB5A;
                             cursor: pointer;
                         }
+                        
                     }
+                    li.rig.active a{
+                        color: #DFAB5A;
+                        cursor: pointer;
+                    }
+                  
                 }
                 .box{
                     #rig{
@@ -3714,8 +3720,9 @@ a button {
         .tableEquipment{
            display: none;
             #listСhoice{
+               display: flex;
                
-                .heading{
+               /* .heading{
                     display: flex;
                     
                     max-width: 100%;
@@ -3772,18 +3779,25 @@ a button {
                             }
                         }
                     }
-                }
-                .table{
-                    display: flex;
-                    width: 100%;
+                }*/
+                .tableLeft{
+                    @include ssm-block(){
+                        display: none;
+                    }
+                        
+                        height: 100%;
+                     width: 60%;
+                    
                     table{
-                        margin:0 10px ;
+                        
+                       width: 100%;
                         
                        thead{
+                        
                            tr{
                              
                             th{
-                               
+                                
                                 
                                 height: 65px;
                                 background: #191818;
@@ -3792,54 +3806,206 @@ a button {
                                 font-weight: 300;
                                 font-size: 12px;
                                 line-height: 14px;
-                              
+                                padding-right: 20px;
                                 text-align: center;
-    
+        
                                 color: #979085;
+                            }
+                            th:nth-child(1){
+                                border-radius: 20px 0 0 0;
                             }
                            }
                        }
                        tbody{
                         tr{
                          td{
-                            text-align: center;
-                             
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 16px;
+                           
+                            width: 22%;
+                            font-size: 15px;
+                            line-height: 18px;
+                            
+                            color:#979085;
+                            
+                             text-align: left;
                              height: 65px;
-                             background: #979085;
-                             opacity: 0.2;
+                             background-color: rgba(151,144,133,0.2);
+                             
+                            
+                          div{
+                              border-right: 1px solid #979085;
+                              padding-right: 20px;
+                              padding-top: 18px;
+                              padding-bottom: 18px;  
+                              width: 100%;
+                          } 
+                          
+        
                          }
+                         .views-field.views-field-field-order-type{
+                             width: 15%;
+                         }
+                         .views-field.views-field-created{
+                            width: 10%;
+                            text-align: center;
+                            padding-left: 10px;
+                           
+                        }
+                        .views-field.views-field-field-order-amount{
+                            width: 10%;
+                            text-align: center;
+                            padding-left: 10px;
+                        }
+                        .views-field.views-field-field-order-status{
+                            width: 10%;
+                            padding-left: 10px;
+                            text-align: center;
+                        }
+                       
                         }
                         tr:nth-child(even){
                             td{
-                                background: #DAD2C6;
+                                background: rgba(218,210,198,0.2);
+        
                             }
                         }
+                      
+                       
                     }
                    }
                    table:nth-child(1){
-                    max-width: 793px;
-                    width: 100%;
+                  
                     tbody{
                         tr{
                             td{
-                                padding: 0 23px ;
-                              img{
-                                  margin: 0 10px ;
-                              }  
+                                padding: 0 30px ;
+                              
                             }
                         }
                     }
                    }
-                   table:nth-child(2){
-                    max-width: 352px;
-                    width: 100%;
+                
+                }
+                .tableRight{
+                    @include ssm-block(){
+                        display: none;
+                    }
+                        
+                        height: 100%;
+                     width: 38%;
+                     margin-left: 20px;
+                    
+                    table{
+                        
+                       width: 100%;
+                        
+                       thead{
+                        
+                           tr{
+                             
+                            th{
+                                
+                                
+                                height: 65px;
+                                background: #191818;
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 300;
+                                font-size: 12px;
+                                line-height: 14px;
+                                padding-right: 20px;
+                                text-align: center;
+        
+                                color: #979085;
+                            }
+                            th:nth-child(1){
+                                border-radius: 20px 0 0 0;
+                            }
+                           }
+                       }
+                       tbody{
+                        tr{
+                         td{
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 16px;
+                           
+                            width: 22%;
+                            font-size: 15px;
+                            line-height: 18px;
+                            
+                            color:#979085;
+                            
+                             text-align: center;
+                             height: 65px;
+                             background-color: rgba(151,144,133,0.2);
+                             
+                            
+                          div{
+                              border-right: 1px solid #979085;
+                              padding-right: 20px;
+                              padding-top: 18px;
+                              padding-bottom: 18px;  
+                              width: 100%;
+                          } 
+                          
+        
+                         }
+                         .views-field.views-field-field-order-type{
+                             width: 15%;
+                         }
+                         .views-field.views-field-created{
+                            width: 10%;
+                            text-align: center;
+                            padding-left: 10px;
+                           
+                        }
+                        .views-field.views-field-field-order-amount{
+                            width: 10%;
+                            text-align: center;
+                            padding-left: 10px;
+                        }
+                        .views-field.views-field-field-order-status{
+                            width: 10%;
+                            padding-left: 10px;
+                            text-align: center;
+                        }
+                       
+                        }
+                        tr:nth-child(even){
+                            td{
+                                background: rgba(218,210,198,0.2);
+        
+                            }
+                        }
+                      
+                       
+                    }
                    }
+                   table:nth-child(1){
+                  
+                    tbody{
+                        tr{
+                            td{
+                                padding: 0 30px ;
+                              
+                            }
+                        }
+                    }
+                   }
+                
                 }
             }
         }
         
         .calculator{
-           
+           height: 900px;
             #calculatorСhoice{
               
                 .slidecontainer{
@@ -4429,18 +4595,25 @@ a button {
                     .blockInfo{
                         @include col();
                         @include size(2);
+                        margin-top: 20px;
+                        div{
+                            border-right: 1px solid #060606;
+                            height: 112px;
+                            
+                        }
                         display: block;
-                            padding: 20px 0;
+                            padding: 20x 0;
                         .img{
-                            padding:20px 0 ;
-                         img{
-                             margin-left:75px ;
-
-                         }
-                           
+                            padding-bottom: 10px;
+                           display: flex;
+                          
+                           justify-content: center;
+                            margin: 10px 0;
+                            svg{
+                                width: 150px;
+                            }
                         }
                         p{
-                            text-align: center;
                             font-family: Roboto;
                             font-style: normal;
                             font-weight: normal;
@@ -4448,11 +4621,20 @@ a button {
                             line-height: 20px;
                             /* or 125% */
 
-                          
+                           
+                            text-align: center;
 
                             color: #AAAAAA;
                         }
                        
+                    }
+                  }
+                  .info.pageTwo{
+                    display: flex;
+                    justify-content: center;
+                    .blockInfo{
+                        width: 170px;
+                        margin-left: 80px;
                     }
                   }
             }
@@ -5824,7 +6006,11 @@ a button {
                         color:#DFAB5A;
                     }
                 }
+                .data.active a{
+                    color:#DFAB5A;  
+                }
             }
+
          
             .button-group.position{
                 margin-left: 125px;  
