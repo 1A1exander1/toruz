@@ -4062,19 +4062,32 @@ a button {
                     align-items: flex-start;
                     background: #191818;
                     display: block;
-                    table{
-                        width: 100%;
-                        
+                  
+                   td{
+                       width: 100%;
+                   }
+                    .text{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #DFAB5A;
+                        text-align: center;
+                        text-transform: uppercase; 
+                        padding-top: 10px;  
                     }
                     tr{
                         height: 41px;
                     }
                     .border.list{
-                        display: flex;
-                        justify-content: flex-end;
+                        transform: translate(35%,0);
+                    }
+                    th{
+                        img{
+                            display: block;
+                        }
                     }
                     .border{
-                        border-bottom: 1px solid red;
+                        border-bottom: 1px solid #404041;
                         
                         .time{
                            width: 209px;
@@ -4130,11 +4143,11 @@ a button {
                     }
                     .border.heading.widthModel{
                         width: 170px;
-                        padding:0!important ;
+                        
                     }
                     .border.heading.widthQuantity{
                         width: 113px;
-                        
+                         text-align: center;
                     }
                     .hardwareCalculator{
                         font-family: Roboto;
