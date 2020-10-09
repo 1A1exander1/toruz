@@ -4632,9 +4632,18 @@ a button {
                   .info.pageTwo{
                     display: flex;
                     justify-content: center;
+                    
                     .blockInfo{
-                        width: 170px;
-                        margin-left: 80px;
+                       
+                        width: 25%;
+                        margin: 0;
+                        .text{
+                            
+                            width: 50%;
+                            border: none;
+                            margin: 30px auto;
+                          
+                        }
                     }
                   }
             }
