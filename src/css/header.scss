@@ -4045,272 +4045,7 @@ a button {
                         border-radius: 3px;
                     }
                 }
-                  .bugContainer{
-                    @include col();
-                    @include size(12);
-                    width: 100%;
-                    height: 50px;
-                    display: flex;
-                    justify-content: space-between;
-                    .heading{
-                        margin-top:50px ;
-                        margin-left:7px ;
-                        height: 30px;
-                       display: flex;
-                       .img{
-                           align-self: center;
-                           
-                       }
-                        p{  
-                            margin-top:5px;
-                            margin-left:10px ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 18px;
-                            line-height: 21px;
-                            align-self: center;
-                            text-align: center;
-                            text-transform: uppercase;
-                            
-                            color: #979085;
-                          }
-                    }
-                    .nav{
-                        ul{
-                            width: 570px;
-                            display: flex;
-                            justify-content: space-between;
-                            border-bottom: 1px solid #404041;
-                            margin-right:50px ;
-                            li{
-                                align-self: center;
-                                height: 30px;
-                                .timeCalculator{
-                                   width: 95px;
-                                   
-                                   margin-top: 40px;
-                                    .text{
-                                      
-                                       width: 95px;
-                                        border:0px!important;
-                                        
-                                        
-                                        .period{
-                                            width: 95px;
-                                            appearance: none;
-                                            font-family: Futura PT;
-                                            font-style: normal;
-                                            font-weight: normal;
-                                            font-size: 16px;
-                                            line-height: 23px;
-                                            
-                                            background:url(../img/Polygon1.png) no-repeat;
-                                            background-position: center right;
-                                            border: none;
-                                            cursor: pointer;
-                                            background-color: transparent;
-                                            outline: none;
-                                            color:#DAD2C6;
-                                            .allTime{
-                                                padding: 30px;
-                                            }
-                                            option{
-                                               
-                                              
-                                                background: #191818; 
-                                                border: 0px; 
-                                                outline: 0px;
-                                                word-wrap: break-word;
-                                                font-family: Futura PT;
-                                                font-style: normal;
-                                                font-weight: 400;
-                                                font-size: 16px;
-                                                line-height: 21px;
-                                                cursor: pointer;
-                                                color: #dad2c6;
-                                                
-                                            }
-                                        }
-                                 
-                                    }
-                                }  
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 12px;
-                            line-height: 14px;
-                            display: flex;
-                            align-items: center;
-
-                            color: #A7A4A0;
-                            a{
-                                font-family: Futura PT;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 18px;
-                                line-height: 23px;
-                               
-                                text-decoration: none;
-                                color: #DAD2C6;
-                            }
-                            }
-                        }
                 
-                    }
-                  }
-                  .counterContainer{
-                    @include col();
-                    @include size(12);
-                    display: flex;
-                    justify-content: center;
-                   
-                    .counter{
-                        height: 30px;
-                        position: relative;
-                        top: 55px;
-                        ul{
-                            display: flex;
-                            margin-left:250px;
-                            
-                         li{
-                             padding:0 10px ;
-                             height: 30px;
-                             img{
-                                position: relative;
-                                 bottom:  170%;
-                                
-                             }
-                             a{
-                                 position: relative;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 23px;
-                                line-height: 33px;
-                                display: flex;
-                                align-items: center;
-                                text-align: center;
-                                text-transform: uppercase;
-                                text-decoration:none ;
-                                color: #DFAB5A;
-                                padding: 0 15px;
-                               
-                             }
-                           
-                             
-                         }
-                        }
-                        li:nth-child(2){
-                            
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               
-                              
-                                  box-sizing: border-box;
-                                  width: 230px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
-                        }
-                        li:nth-child(3){
-                          text-align: center;
-                          border-bottom: 1px solid #404041;
-                          width: 40px;
-                          margin-left: 15px;
-                          
-                        }
-                    }
-                    .form{
-                        position: relative;
-                        top: 48px;
-                        left: 130px;
-                        color:white;
-                        ul{
-                           li{
-                            display: flex;
-                            justify-content: space-between;
-                            border-bottom: 1px solid #404041;
-                            width: 207px;
-                            height: 50px;
-                            p{
-                                align-self: center;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 14px;
-                                line-height: 16px;
-                              
-                                letter-spacing: 0.1em;
-
-                                color: #DAD2C6;
-                            }
-                           }
-                           span{
-                            align-self: center;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 24px;
-                            line-height: 28px;
-                           
-
-                            color: #DAD2C6;
-                            }
-                            li:nth-child(4){
-                                p{
-                                    font-size: 12px;
-                                    line-height: 14px;
-                                    text-transform: uppercase;
-                                    letter-spacing: 0.5em;
-                                }
-                            }
-                        }
-                        p{
-                            text-align: center ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 16px;
-                            padding:10px 0 ;
-                            text-align: center;
-                            letter-spacing: 0.095em;
-
-                            color: #979085;
-                            span{
-                                color: #DFAB5A;
-                            }
-                        }
-                        button{
-                            margin-top:10px ;
-                            font-family: Futura PT;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 23px;
-                            border-radius: 20px;
-                            background:transparent;
-                            border: 1px solid #DAD2C6;
-                            text-align: center;
-                            width: 210px;
-                            height: 52px;
-                            color: #DAD2C6;
-                        }
-                    }
-                  }
                   .container{
                     max-width: 100%;
                     width: 1200px;
@@ -4319,9 +4054,104 @@ a button {
                     @include ssm-block(){
                         display: none;
                     }
+                    .calculatorTable{
+                        position: relative;
+                        top: 40px;
+                        left: 20px;
+                    }
                     align-items: flex-start;
                     background: #191818;
                     display: block;
+                    table{
+                        width: 100%;
+                        
+                    }
+                    tr{
+                        height: 41px;
+                    }
+                    .border.list{
+                        display: flex;
+                        justify-content: flex-end;
+                    }
+                    .border{
+                        border-bottom: 1px solid red;
+                        
+                        .time{
+                           width: 209px;
+                           
+                           margin:  0;
+
+                           .period{
+                            @include col();
+                            @include size(12);
+                            appearance: none;
+                            width:209px ;
+                            font-family: Futura PT;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 21px;
+                            background:url(../img/icon_triangleDown.svg) no-repeat;
+                            background-position: center right;
+                            border: none;
+                            cursor: pointer;
+                            background-color: transparent;
+                            outline: none;
+                            color:#DAD2C6;
+                            option{
+                               
+                               
+                                background: #191818; 
+                                border: 0px; 
+                                outline: 0px;
+                                word-wrap: break-word;
+                                font-family: Futura PT;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 21px;
+                                cursor: pointer;
+                                color: #dad2c6;
+                            }
+                        }
+                         
+                        }
+                    }
+                    .border.heading{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 14px;
+                       
+                        text-align: left;
+
+                        color: #A7A4A0;
+                    }
+                    .border.heading.widthModel{
+                        width: 170px;
+                        padding:0!important ;
+                    }
+                    .border.heading.widthQuantity{
+                        width: 113px;
+                        
+                    }
+                    .hardwareCalculator{
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 18px;
+                        line-height: 21px;
+                        display: flex;
+                        align-items: center;
+                        text-transform: uppercase;
+                        
+                        color: #979085; 
+                        img{
+                            margin-right: 20px;
+                        }
+                    }
+
                   }
                 
                   .slider {
@@ -4774,710 +4604,7 @@ a button {
                 }
             }
         }
-        .box-5{
-            #cho2{
-                .radio{
-                    @include row-flex();
-                    width: 100%;
-                    display: flex;
-                    margin-bottom: 30px;
-                    .textRadio{
-                        margin-top: 30px;
-                        position: relative;
-                        right: 20px;
-                        width: 235px;
-                        display: flex;
-                        justify-content: space-between;
-                       
-                        
-                        
-                        p{
-                            padding:0 20px ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-align: center;
-
-                            color: #DFAB5A;
-                            span{
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: 300;
-                                font-size: 12px;
-                                line-height: 14px;
-                                display: flex;
-                                align-items: center;
-
-                                color: #DFAB5A;
-                            }
-                        }
-                    }
-                    margin-top:20px ;
-                    .form{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
-                    }
-                    .form2{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
-                    }
-                    .form3{
-                        @include col();
-                        @include size(4); 
-                        input[type="checkbox"] {
-                            display: none;
-
-                          }
-                          label {
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 21px;
-                            display: flex;
-                            align-items: center;
-                            text-transform: uppercase;
-
-                            color: #A7A4A0;
-                          }
-                          label::after {
-                            content: '';
-                            display: inline-block;
-                            width: 15px;
-                            height: 15px;
-                            vertical-align: middle;
-                            margin-left: 10px;
-                            margin-right: 20px;
-                            border-radius: 50%;
-                            border: 3px solid #191818;
-                          }
-                          input[type="checkbox"]:checked + label::after {
-                            content: '';
-                            background: linear-gradient(180deg, #DFAB5A 0%, #7E5310 100%);
-                          }
-                    }
-                }
-                .slidecontainer{
-                    position: relative;
-                        bottom: 55px;
-                    width: 775px;
-                    @include col();
-                    @include size(8);
-                }
-                  .bugContainer{
-                    @include col();
-                    @include size(12);
-                    width: 100%;
-                    height: 50px;
-                    display: flex;
-                    justify-content: space-between;
-                    .heading{
-                        margin-top:50px ;
-                        margin-left:7px ;
-                        height: 30px;
-                       display: flex;
-                       .img{
-                           align-self: center;
-                           
-                       }
-                        p{  
-                            margin-top:5px;
-                            margin-left:10px ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 18px;
-                            line-height: 21px;
-                            align-self: center;
-                            text-align: center;
-                            text-transform: uppercase;
-                            
-                            color: #979085;
-                          }
-                    }
-                    .nav{
-                        ul{
-                            width: 570px;
-                            display: flex;
-                            justify-content: space-between;
-                            border-bottom: 1px solid #404041;
-                            margin-right:50px ;
-                            li{
-                                
-                                
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 12px;
-                            line-height: 14px;
-                            display: flex;
-                            align-items: center;
-
-                            color: #A7A4A0;
-                            a{
-                                font-family: Futura PT;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 18px;
-                                line-height: 23px;
-                               
-                                text-decoration: none;
-                                color: #DAD2C6;
-                            }
-                            }
-                        }
-                
-                    }
-                  }
-                  .counterContainer{
-                    @include col();
-                    @include size(12);
-                    display: flex;
-                    justify-content: center;
-                   
-                    .counter{
-                        height: 30px;
-                        position: relative;
-                        top: 55px;
-                        ul{
-                            display: flex;
-                            margin-left:237px;
-                            
-                         li{
-                             padding:0 10px ;
-                             height: 30px;
-                             img{
-                                position: relative;
-                                 bottom:  170%;
-                                
-                             }
-                             a{
-                                 position: relative;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 23px;
-                                line-height: 33px;
-                                display: flex;
-                                align-items: center;
-                                text-align: center;
-                                text-transform: uppercase;
-                                text-decoration:none ;
-                                color: #DFAB5A;
-                                padding: 0 15px;
-                               
-                             }
-                           
-                             
-                         }
-                        }
-                        li:nth-child(2){
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               border-bottom: 1px solid #404041;
-                              
-                                  box-sizing: border-box;
-                                  width: 230px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
-                        }
-                        li:nth-child(3){
-                          
-                            a::after{
-                                content: '';
-                                display: inline-block;
-                                vertical-align: middle;
-                                position: absolute;
-                                left:  7px;
-                                text-align: center;
-                                bottom: -10px;
-                                z-index: 1;
-                                background: transparent;
-                               //border-right:1px  solid white;
-                              
-                               border-bottom: 1px solid #404041;
-                              
-                                  box-sizing: border-box;
-                                  width: 30px;
-                                  height: 50px;
-                                
-                                z-index: 1;
-                               
-                            }
-                        }
-                    }
-                    .form{
-                        position: relative;
-                        top: 48px;
-                        left: 130px;
-                        color:white;
-                        ul{
-                           li{
-                            display: flex;
-                            justify-content: space-between;
-                            border-bottom: 1px solid #404041;
-                            width: 207px;
-                            height: 50px;
-                            p{
-                                align-self: center;
-                                font-family: Roboto;
-                                font-style: normal;
-                                font-weight: normal;
-                                font-size: 14px;
-                                line-height: 16px;
-                              
-                                letter-spacing: 0.1em;
-
-                                color: #DAD2C6;
-                            }
-                           }
-                           span{
-                            align-self: center;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: 300;
-                            font-size: 24px;
-                            line-height: 28px;
-                           
-
-                            color: #DAD2C6;
-                            }
-                            li:nth-child(4){
-                                p{
-                                    font-size: 12px;
-                                    line-height: 14px;
-                                    text-transform: uppercase;
-                                    letter-spacing: 0.5em;
-                                }
-                            }
-                        }
-                        p{
-                            text-align: center ;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 14px;
-                            line-height: 16px;
-                            padding:10px 0 ;
-                            text-align: center;
-                            letter-spacing: 0.095em;
-
-                            color: #979085;
-                            span{
-                                color: #DFAB5A;
-                            }
-                        }
-                        button{
-                            margin-top:10px ;
-                            font-family: Futura PT;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 18px;
-                            line-height: 23px;
-                            border-radius: 20px;
-                            background:transparent;
-                            border: 1px solid #DAD2C6;
-                            text-align: center;
-                            width: 210px;
-                            height: 52px;
-                            color: #DAD2C6;
-                        }
-                    }
-                  }
-                  .container{
-                    max-width: 100%;
-                    width: 1200px;
-                    height: 486px;
-                    @include row-flex();
-                   
-                    align-items: flex-start;
-                    background: #191818;
-                
-                  }
-                
-                  .slider {
-                    -webkit-appearance: none;
-                    width: 100%;
-                    height: 15px;
-                    border-radius: 5px;  
-                    background: linear-gradient(90deg, rgb(196,154,105) 60%, rgb(51, 51, 48) 60% );
-                    border: 2px solid #525254;
-                    
-                    
-                    outline: none;
-                    opacity: 0.7;
-                    -webkit-transition: .2s;
-                    transition: opacity .2s;
-                  }
-                  
-                    
-                  
-                  
-                  
-                  .slider::-moz-range-thumb {
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
-                    background: #4CAF50;
-                    cursor: pointer;
-                  }
-                  .slider {
-                    -webkit-appearance: none;
-                    width: 100%;
-                    height: 15px;
-                    border-radius: 5px;  
-                    
-                    
-                     outline: none;
-                    opacity: 0.7;
-                    -webkit-transition: .2s;
-                    transition: opacity .2s;
-                  }
-                  
-                  .slider::-webkit-slider-thumb {
-                    -webkit-appearance: none;
-                    appearance: none;
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%; 
-                    background-repeat:no-repeat ;
-                    background-image: url(/img/Group.png);
-                    background-size: 100%;
-                    
-                    cursor: pointer;
-                  }
-                  
-                  .slider::-moz-range-thumb {
-                    width: 25px;
-                    height: 25px;
-                    border-radius: 50%;
-                    
-                    cursor: pointer;
-                  }
-                  .value{
-                    background: url(/img/Vector.png);
-                    width: 60px;
-                    background-repeat: no-repeat;
-                    
-                    height: 50px;
-                    color: #DFAB5A;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                  }
-                  .block{
-                    display: flex;
-                    color: white;
-                    justify-content: center;
-                    &__text {
-                     display: flex;
-                     justify-content: center;
-                     margin-left: 26px;
-                     margin-top: 3px;
-                     
-                     width: 100%;
-                    
-                     color: white;
-                     p{
-                      padding: 0 33px;
-                     }
-                     
-                    }
-                 
-                  }
-                  .name{
-                    color: silver;
-                    display: flex;
-                    justify-content: center;
-                    .th{
-                      width: 300px;
-                      text-align: center;
-                      font-family: Roboto;
-                        font-style: normal;
-                        font-weight: 300;
-                      margin-left: 45px;
-                      margin-top: 50px;
-                      font-size: 12px;
-                      position: relative;
-                      bottom: 20px;
-                      
-                    }
-                    .th::before{
-                      content: '';
-                  
-                      /* делаем линию строчно-блочной */
-                      display: inline-block;
-                    vertical-align: middle;
-                    position: absolute;
-                    left: -232px;
-                    
-                    bottom: 50%;
-                      box-sizing: border-box;
-                      width:332px;
-                    height: 25px;
-                    z-index: 1;
-                    background: transparent;
-                    border-left:1px solid silver ;
-                  
-                    border-bottom:1px solid silver ;
-                  
-                  
-                  
-                    }
-                    .th::after{
-                      content: '';
-                  
-                      /* делаем линию строчно-блочной */
-                      display: inline-block;
-                    vertical-align: middle;
-                    position: absolute;
-                    left: 202px;
-                    bottom: 50%;
-                      box-sizing: border-box;
-                      width: 307px;
-                    height: 25px;
-                    z-index: 1;
-                    background: transparent;
-                    border-right:1px solid silver ;
-                  
-                    border-bottom:1px solid silver ;
-                  
-                  
-                  
-                    }
-                    
-                    
-               
-                  
-                  
-                  
-                    
-                  }
-            
-                  .text{
-                    width: 800px;
-                    position: relative;
-                    bottom: 22px;
-                   
-                    p{
-                      
-                      text-align: center;
-                      color: #86888a;
-                      height: 40px;
-                      font-weight: 500;
-                    }
-                  }
-                  
-                  
-                  .main {
-                    width: 95%;
-                    margin: 1% auto;
-                    position: relative;
-                    left: 10px;
-                  }
-                  
-                  #slider {
-                    -webkit-appearance: none; 
-                    width: 100%;
-                    height: 7px;
-                    border-radius: 3px;
-                  }
-                  
-                  /* Design slider button */
-                  #slider::-webkit-slider-thumb {
-                    -webkit-appearance: none;
-                    width: 20px;
-                    height: 20px;
-                    cursor: pointer;
-                    background:#e6b978;
-                    border-radius:100%;
-                    position: relative;
-                    z-index: 3;
-                  }
-                  
-                  #selector {
-                    height: 104px;
-                    width: 48px;
-                    position: absolute;
-                    bottom: -20px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    z-index: 2;
-                  }
-                  .selectBtn {
-                    height: 100px;
-                    width: 100px;
-                    //background-image: url(https://previews.dropbox.com/p/thumb/AA0zAgmvEVKwlRKUYUmDNoZpI54UjiqjFZkMhrgnshfbs66P7Lw1gyndpy9WpH7sADvxhbR_97g7GeYOBRsqpwluHtPLru0TSSVV66iOamH-1Ub8B1PS6i_j4VDad8D1eT17KNf03pPIMowXkgO6oUde4GLLLVr4nRl9gUp8JIg9LGmEUFTKf8q4_rddz4ZZfbspnLeEK96Jv26nfOYN9wn7Ft6VdzqhHKG3IVpX-0k7hjDlkybDao0fqNyhOySN-OqBZcr9PHq2biSxX32D4uXvf0_hakdBgWHcBYiW_EYzXohN2KGKiiJ_9b4c4fmO_h75y3NNhP6wZAcG_jfxLLJI7MmQtc3N1BqhUoR6lRftLA/p.png?fv_content=true&size_mode=5);
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 50%;
-                    position: absolute;
-                    bottom: 0;
-                  }
-                  #selectValue {
-                    width: 48px;
-                    height: 40px;
-                    position: absolute;
-                    color: #b28b5c;
-                    top: 0;
-                    background: #525254;
-                    border-radius: 4px;
-                    text-align: center;
-                    line-height: 45px;
-                    font-size: 20px;
-                    font-weight: bold;
-                  }
-                  
-                  #selectValue2 {
-                    width: 40px;
-                    height: 40px;
-                    position: absolute;
-                    top: 0;
-                   
-                    border-radius: 100%;
-                  }
-                  #selectValue::after {
-                    content: '';
-                    border-top: 17px solid #525254;
-                    border-left: 24px solid transparent;
-                    border-right: 24px solid transparent;
-                    position: absolute;
-                    bottom: -14px;
-                    left: 0;
-                  }
-                  #progressBar {
-                    width: 50%;
-                    height: 7px;
-                    background: #b28b5c;
-                    border-radius: 3px;
-                    position: absolute;
-                    bottom: 4px;
-                    left: 0;
-                  }
-                   input{
-                     background: #525254;
-                     
-                   }
-                  #progressBar {
-                    width: 50%;
-                    height: 7px;
-                    background: #b28b5c;
-                    border-radius: 3px;
-                    position: absolute;
-                    bottom: 4px;
-                    left: 0;
-                  } 
-                  .info{
-                    @include row-flex();
-                    .blockInfo{
-                        @include col();
-                        @include size(3);
-                            padding: 20px 0;
-                        .img{
-                            padding:20px 0 ;
-                         img{
-                             margin-left:130px ;
-                         }
-                           
-                        }
-                        p{
-                            text-align: center;
-                            font-family: Roboto;
-                            font-style: normal;
-                            font-weight: normal;
-                            font-size: 16px;
-                            line-height: 20px;
-                            /* or 125% */
-
-                          
-
-                            color: #AAAAAA;
-                        }
-                       
-                    }
-                  }
-            }
-        }
+      
     }
     .wrapper{
         .operation{

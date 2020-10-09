@@ -186,105 +186,31 @@
                     <div id="calculatorСhoice">
         
                         <aside class="container active">
-                            <aside class="bugContainer">
-                                <aside class="heading">
-                                    <aside class="img">
-                                        <img src="/<?php echo drupal_get_path('theme', 'clean'); ?>/img/cal.png" alt="">
-                                    </aside>
-                                    <p>Калькулятор оборрудования</p>
-                                </aside>
-                                <aside class="nav">
-                                    <ul>
-        
-                                        <li>Модель</li>
-                                        <li>Количество</li>
-                                        <li>
-                                            <div class="timeCalculator">
-                                                <div class="text">
-                                                    <select name="period" id="period" class="period">
-                                                        <option value="allTime">Все время</option>
-                                                        <option value="day">В день</option>
-                                                        <option value="week">В неделю</option>
-                                                        <option value="month">В месяц</option>
-                                                        <option value="quarter">В квартал</option>
-                                                        <option value="year">В год</option>
-                                                    </select>
-                                                    
-                                                 
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li><a href=""><img src="/<?php echo drupal_get_path('theme', 'clean'); ?>/img/Polygon1.png" alt=""></a></li>
-                                    </ul>
-                                </aside>
-        
-                            </aside>
-                            <aside class="counterContainer">
-                                <aside class="counter">
-                                    <ul>
-                                        <li><img src="/img/Group0077.png" alt=""></li>
-                                        <li><a href="">Whatsminer M21S</a></li>
-                                        <li ><a href="">6</a></li>
-                                    </ul>
-        
-                                </aside>
-                                <aside class="form">
-                                    <ul>
-                                        <li>
-                                            <p>Приход </p><span>25 $ </span>
-                                        </li>
-                                        <li>
-                                            <p>Расход </p><span>25 $ </span>
-                                        </li>
-                                        <li>
-                                            <p>Прибыль </p><span>25 $ </span>
-                                        </li>
-                                        <li>
-                                            <p>Цена </p><span>25 $ </span>
-                                        </li>
-                                    </ul>
-                                    <p>Отгрузка: <span>Конец Октября</span></p>
-                                    <button>Оформить заказ</button>
-                                </aside>
-                            </aside>
-                            <aside class="formContainer">
-                                
-                            </aside>
-                            <aside class="slidecontainer">
+                           <div class="calculatorTable">
+                            <table>
+                                <tr><th class="hardwareCalculator"> <img src="img/icon_hardwareCalculator.svg" alt="">КАЛЬКУЛЯТОР Оборудования</th><th rowspan="2" ><img src="img/icon_whatsminer.svg" alt=""></th><th class="border heading widthModel">Модель</th><th class="border heading widthQuantity">Количество</th>
+                                    <th class="border list">
+                                     <div class="time">
+                                      
+                                            <select name="period" id="period" class="period">
+                                                <option value="allTime">Все время</option>
+                                                <option value="day">В день</option>
+                                                <option value="week">В неделю</option>
+                                                <option value="month">В месяц</option>
+                                                <option value="quarter">В квартал</option>
+                                                <option value="year">В год</option>
+                                            </select>
+                                            
+                                         
+                                        
+                                    </div></th></tr> 
+                                <tr><td></td><td ></td><td>данные</td><td>данные</td><td>данные</td></tr> 
+                                </table>
 
-                                <aside class="main">
-                                    <span class="irs irs--flat js-irs-0"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="visibility: visible;">10</span><span class="irs-max" style="visibility: visible;">100</span><span class="irs-from" style="visibility: hidden;">0</span><span class="irs-to" style="visibility: hidden;">0</span><span class="irs-single" style="left: 40.9815%;">48</span></span><span class="irs-grid"></span><span class="irs-bar irs-bar--single" style="left: 0px; width: 42.389%;"></span><span class="irs-shadow shadow-single" style="display: none;"></span><span class="irs-handle single" style="left: 41.3167%;"><i></i><i></i><i></i></span></span><input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="" tabindex="-1" readonly="">
-                                    <input type="range" min="10" max="100" value="50" id="slider" style="height: 16px; outline: none;">
-                                    <aside id="selector">
-                                        <aside class="selectBtn"></aside>
-                                        <aside id="selectValue"></aside>
-                                    </aside>
-                                    <aside id="progressBar"></aside>
-                                </aside>
-                                <aside class="block">
-                                    <aside class="block__text">
-                                        <p>10</p>
-                                        <p>20</p>
-                                        <p>30</p>
-                                        <p>40</p>
-                                        <p>50</p>
-                                        <p>60</p>
-        
-                                        <p>70</p>
-                                        <p>80</p>
-                                        <p>90</p>
-                                        <p>100</p>
-                                    </aside>
-                                </aside>
-                                <aside class="name">
-                                    <aside class="th">
-                                        целый мейнер
-                                    </aside>
-        
-                                </aside>
-        
-                            </aside>
-                        <aside class="info active">
+                           </div>
+                            
+                          
+                        <aside class="info active" style="display: none;">
                             <aside class="blockInfo">
                                <div>
                                 <aside class="img">
@@ -345,7 +271,7 @@
                                     оборудования <br> минимум 1 год</p>
                             </aside>
                         </aside>
-                        <aside class="info pageTwo">
+                        <aside class="info pageTwo" style="display: none;">
                             <aside class="blockInfo">
                                <div>
                                 <aside class="img">
